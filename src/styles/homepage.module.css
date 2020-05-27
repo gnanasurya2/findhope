@@ -1,44 +1,104 @@
 .wrapper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #ffce00;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffce00;
 }
 
 .mainTitle {
-    width: 90%;
-    text-align: center;
-    color: black;
-    font-size: 48px;
-    font-weight: 600;
+  width: 90%;
+  text-align: center;
+  color: black;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 .subTitle {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 32px;
-    font-weight: 500;
-    width: 80%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  width: 80%;
 }
-
-
 
 .illustrationWrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
 }
 
-@media screen and (min-width:1200px) {
-    .illustrationWrapper {
-        flex-direction: row;
-    }
+.backgroundContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+}
+
+.cont {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.boxy {
+  background-color: green;
+}
+
+.contentContainer {
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  top: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.backgroundTitle {
+  font-size: 32px;
+  text-align: center;
+  color: #556a78;
+}
+
+.backgroundContent {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 32px;
+  color: #556a78;
+}
+
+@media screen and (min-width: 1200px) {
+  .illustrationWrapper {
+    flex-direction: row;
+  }
+
+  .contentContainer {
+    top: 50%;
+  }
+
+  .backgroundTitle {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contentContainer {
+    top: 45%;
+  }
+
+  .backgroundTitle {
+    font-size: 40px;
+  }
 }
