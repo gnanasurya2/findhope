@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Svg from "../components/Svg";
 import Button from "../components/Button";
@@ -9,11 +9,13 @@ const Container = styled.div`
   position: relative;
 `;
 const Content = styled.div`
+  transition: all 0.5s;
   position: sticky;
   width: 80%;
   margin-left: 10%;
   top: 40%;
-  display: ${(props) => (props.visible ? "flex" : "none")};
+  opacity: ${(props) => (props.visible ? "1" : "0")};
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -43,6 +45,9 @@ const SubContent = styled.p`
 `;
 
 const BackgroundContainer = (props) => {
+  useEffect(() => {
+    console.log(props.visible, props.num);
+  });
   return (
     <Container>
       <Svg styles={props.svgStyles} />

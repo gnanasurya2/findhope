@@ -9,12 +9,11 @@ import BackgroundContainer from "../components/BackgroundContainer";
 
 const Homepage = (props) => {
   const [visible, setVisible] = useState([false, false, false, false]);
-  const [previous, setPrevious] = useState(0);
+  const [previous, setPrevious] = useState(-1);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let screenPosition = window.scrollY / window.innerHeight;
-
       if (screenPosition > 1.5 && screenPosition < 3) {
         screenPosition = 0;
       } else if (screenPosition > 3 && screenPosition < 4.5) {
@@ -26,12 +25,12 @@ const Homepage = (props) => {
       } else {
         screenPosition = -1;
       }
-      if (previous !== screenPosition && screenPosition >= 0) {
-        console.log(previous, screenPosition);
+      if (previous !== screenPosition && screenPosition > -1) {
         setPrevious(screenPosition);
         const pos = [false, false, false, false];
         pos[screenPosition] = true;
         setVisible(pos);
+        console.log(screenPosition);
       }
     });
     return () => {
@@ -66,7 +65,7 @@ const Homepage = (props) => {
           color="#556a78"
           title="Reaching out for help doesn't mean you are weak"
           visible={visible[0]}
-          num={1}
+          num={0}
         />
         <BackgroundContainer
           svgStyles={{ fill: "#73c4be", backgroundColor: "#79cec7" }}
@@ -76,7 +75,7 @@ const Homepage = (props) => {
           you may need help"
           buttonText="free assessment"
           visible={visible[1]}
-          num={2}
+          num={1}
         />
         <BackgroundContainer
           svgStyles={{ fill: "#5ea0d2", backgroundColor: "#63a9dc" }}
@@ -85,7 +84,7 @@ const Homepage = (props) => {
           content="Felling better starts with a single message"
           buttonText="support for free"
           visible={visible[2]}
-          num={3}
+          num={2}
         />
         <BackgroundContainer
           svgStyles={{ fill: "#f68891", backgroundColor: "#ff8f9b" }}
@@ -95,7 +94,7 @@ const Homepage = (props) => {
         more positively, and so much more !"
           buttonText="support for free"
           visible={visible[3]}
-          num={4}
+          num={3}
         />
       </div>
     </div>
