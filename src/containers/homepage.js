@@ -1,15 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/homepage.module.css";
 
 import Illustration from "../components/Illustration";
 import FirstIllustration from "../asset/first_circle_illustration.svg";
 import SecondIllustration from "../asset/second_circle_illustration.svg";
-import Svg from "../components/Svg";
-import Button from "../components/Button";
-import backgroundContainer from "../components/BackgroundContainer";
+
 import BackgroundContainer from "../components/BackgroundContainer";
 
 const Homepage = (props) => {
+  const [visible, setVisible] = useState([false, false, false, false]);
+  const [previous, setPrevious] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let screenPosition = window.scrollY / window.innerHeight;
+
+      if (screenPosition > 1.5 && screenPosition < 3) {
+        screenPosition = 0;
+      } else if (screenPosition > 3 && screenPosition < 4.5) {
+        screenPosition = 1;
+      } else if (screenPosition > 4.5 && screenPosition < 6) {
+        screenPosition = 2;
+      } else if (screenPosition > 6 && screenPosition < 7) {
+        screenPosition = 3;
+      } else {
+        screenPosition = -1;
+      }
+      if (previous !== screenPosition && screenPosition >= 0) {
+        console.log(previous, screenPosition);
+        setPrevious(screenPosition);
+        const pos = [false, false, false, false];
+        pos[screenPosition] = true;
+        setVisible(pos);
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -36,6 +65,8 @@ const Homepage = (props) => {
           svgStyles={{ fill: "#73c4be", backgroundColor: "#79cec7" }}
           color="#556a78"
           title="Reaching out for help doesn't mean you are weak"
+          visible={visible[0]}
+          num={1}
         />
         <BackgroundContainer
           svgStyles={{ fill: "#73c4be", backgroundColor: "#79cec7" }}
@@ -44,6 +75,8 @@ const Homepage = (props) => {
           content="Taking care of your yourself start withs a single step:recognizing
           you may need help"
           buttonText="free assessment"
+          visible={visible[1]}
+          num={2}
         />
         <BackgroundContainer
           svgStyles={{ fill: "#5ea0d2", backgroundColor: "#63a9dc" }}
@@ -51,6 +84,8 @@ const Homepage = (props) => {
           title="Worry Less Live More"
           content="Felling better starts with a single message"
           buttonText="support for free"
+          visible={visible[2]}
+          num={3}
         />
         <BackgroundContainer
           svgStyles={{ fill: "#f68891", backgroundColor: "#ff8f9b" }}
@@ -59,6 +94,8 @@ const Homepage = (props) => {
           content="Build the skills to feel more confident, deal with stress, think
         more positively, and so much more !"
           buttonText="support for free"
+          visible={visible[3]}
+          num={4}
         />
       </div>
     </div>
