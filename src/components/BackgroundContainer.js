@@ -13,6 +13,7 @@ const Content = styled.div`
   position: sticky;
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 100px;
   top: 40%;
   opacity: ${(props) => (props.visible ? "1" : "0")};
   display: flex;
@@ -45,9 +46,6 @@ const SubContent = styled.p`
 `;
 
 const BackgroundContainer = (props) => {
-  useEffect(() => {
-    console.log(props.visible, props.num);
-  });
   return (
     <Container>
       <Svg styles={props.svgStyles} />

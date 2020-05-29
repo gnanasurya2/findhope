@@ -79,6 +79,35 @@
   color: #556a78;
 }
 
+.textContainer {
+  padding: 48px 10%;
+  background-color: #F2F2F2;
+}
+
+.messageText {
+  font-size: 32px;
+  text-align: center;
+}
+
+.youthAdvocateContainer {
+  padding: 32px 10%;
+  background-color: #F2F2F2;
+}
+
+.youthAdvocateTitle {
+  font-size: 32x;
+  text-align: center;
+}
+
+.youthAdvocateIllustration {
+  width: 100%;
+}
+
+.youthAdvocateContent {
+  font-size: 24px;
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .illustrationWrapper {
     flex-direction: row;

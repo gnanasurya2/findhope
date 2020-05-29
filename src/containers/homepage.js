@@ -4,7 +4,7 @@ import styles from "../styles/homepage.module.css";
 import Illustration from "../components/Illustration";
 import FirstIllustration from "../asset/first_circle_illustration.svg";
 import SecondIllustration from "../asset/second_circle_illustration.svg";
-
+import FlyingIllustration from "../asset/FlyingIllustration.svg";
 import BackgroundContainer from "../components/BackgroundContainer";
 
 const Homepage = (props) => {
@@ -14,23 +14,26 @@ const Homepage = (props) => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let screenPosition = window.scrollY / window.innerHeight;
-      if (screenPosition > 1.5 && screenPosition < 3) {
+      if (screenPosition > 1.9 && screenPosition < 2.3) {
         screenPosition = 0;
-      } else if (screenPosition > 3 && screenPosition < 4.5) {
+      } else if (screenPosition > 3 && screenPosition < 4.1) {
         screenPosition = 1;
-      } else if (screenPosition > 4.5 && screenPosition < 6) {
+      } else if (screenPosition > 4.5 && screenPosition < 5.4) {
         screenPosition = 2;
-      } else if (screenPosition > 6 && screenPosition < 7) {
+      } else if (screenPosition > 6 && screenPosition < 6.5) {
         screenPosition = 3;
       } else {
         screenPosition = -1;
       }
-      if (previous !== screenPosition && screenPosition > -1) {
+      // console.log(screenPosition);
+      if (previous !== screenPosition) {
         setPrevious(screenPosition);
         const pos = [false, false, false, false];
-        pos[screenPosition] = true;
+        if (screenPosition !== -1) {
+          pos[screenPosition] = true;
+        }
         setVisible(pos);
-        console.log(screenPosition);
+        console.log(pos);
       }
     });
     return () => {
@@ -96,6 +99,25 @@ const Homepage = (props) => {
           visible={visible[3]}
           num={3}
         />
+        <div className={styles.textContainer}>
+          <h1 className={styles.messageText}>
+            findhope's mission is to make wellbeing accessible to every Youth.
+          </h1>
+        </div>
+        <div className={styles.youthAdvocateContainer}>
+          <h1 className={styles.youthAdvocateTitle}>
+            Mental Health Advocacy program: A Leadership program for Youth
+          </h1>
+          <img
+            src={FlyingIllustration}
+            alt="hero"
+            className={styles.youthAdvocateIllustration}
+          />
+          <h3 className={styles.youthAdvocateContent}>
+            Mental Health Advocates* “a change agent, someone who educates their
+            community on mental health & reduces the stigma .”
+          </h3>
+        </div>
       </div>
     </div>
   );
