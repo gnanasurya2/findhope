@@ -6,6 +6,8 @@ import FirstIllustration from "../asset/first_circle_illustration.svg";
 import SecondIllustration from "../asset/second_circle_illustration.svg";
 import FlyingIllustration from "../asset/FlyingIllustration.svg";
 import BackgroundContainer from "../components/BackgroundContainer";
+import BackSvg from "../components/BackSvg";
+import PrimaryButton from "../components/PrimaryButton";
 
 const Homepage = (props) => {
   const [visible, setVisible] = useState([false, false, false, false]);
@@ -49,6 +51,8 @@ const Homepage = (props) => {
           No matter what's troubling you, get the support you need, right here,
           right now.
         </h3>
+        <PrimaryButton />
+        <BackSvg />
       </div>
       <div className={styles.illustrationWrapper}>
         <Illustration

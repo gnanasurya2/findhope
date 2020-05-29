@@ -1,10 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 const Svg = (props) => {
-  const svg = useRef();
-  useEffect(() => {
-    console.log(svg.current.getBBox());
-  }, []);
   return (
     <svg
       version="1.1"
@@ -14,7 +10,6 @@ const Svg = (props) => {
       height="100%"
       viewBox="0 258 1080 542"
       preserveAspectRatio="none"
-      ref={svg}
       style={{ ...props.styles, position: "absolute" }}
     >
       <g>
