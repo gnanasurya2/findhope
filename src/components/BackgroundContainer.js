@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Svg from "../components/Svg";
 import Button from "../components/Button";
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
-  position: ${(props) => (props.position ? "fixed" : "relative")};
+  height: 475vh;
+  position: relative;
   top: 0;
 `;
 const Content = styled.div`
@@ -47,13 +47,13 @@ const SubContent = styled.p`
 `;
 
 const BackgroundContainer = (props) => {
+  const [svgStyles, setSvgStyles] = useState("");
+  useEffect(() => {
+    setSvgStyles({ backgroundColor: props.fill });
+  }, [props]);
   return (
     <Container position={props.position}>
-      <Svg
-        styles={{ backgroundColor: "#73c4be" }}
-        fill="#73c4be"
-        background="#79cec7"
-      />
+      <Svg styles={svgStyles} fill={props.fill} background={props.background} />
       <Content visible={props.visible} position={props.position}>
         <Title color={props.color}>{props.title}</Title>
         <SubContent color={props.color}>{props.content}</SubContent>

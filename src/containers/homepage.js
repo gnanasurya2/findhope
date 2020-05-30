@@ -8,26 +8,77 @@ import FlyingIllustration from "../asset/FlyingIllustration.svg";
 import BackgroundContainer from "../components/BackgroundContainer";
 import BackSvg from "../components/BackSvg";
 import PrimaryButton from "../components/PrimaryButton";
-
+const titleData = [
+  "Reaching out for help doesnt mean you are weak",
+  "Understand yourself better",
+  "Worry less live more",
+  "Boost Happiness",
+];
+const contentData = [
+  "",
+  "Taking care of your yourself starts with a single step: recongizing you may need help",
+  "Feeling better with a single message",
+  "Build the skills to feel more confident, deal with stress, think more positively, and so much more!",
+];
+const buttonTextData = [
+  "",
+  "free assessment",
+  "support for free",
+  "support for free",
+];
+const colorsData = [
+  ["#73c4be", "#79cec7", "#556a78"],
+  ["#73c4be", "#79cec7", "#556a78"],
+  ["#63a9dc", "#5ea0d2", "#e1dac5"],
+  ["#f68891", "#ff8f9b", "#6a6369"],
+];
 const Homepage = (props) => {
-  const [visible, setVisible] = useState([false, false, false, false]);
-  const [previous, setPrevious] = useState(-1);
   const [wrapperstyles, setWrapperStyles] = useState({ marginTop: "0vh" });
   const [position, setPosition] = useState(false);
+  const [title, setTitle] = useState(
+    "Reaching out for help doesnt mean you are weak"
+  );
+  const [content, setContent] = useState("");
+  const [buttonText, setButtonText] = useState("");
+  const [colors, setColors] = useState(["#73c4be", "#79cec7", "#556a78"]);
 
   const ref = useRef();
 
+  const changeTextHandler = (id) => {
+    setTitle(titleData[id]);
+    setContent(contentData[id]);
+    setButtonText(buttonTextData[id]);
+    setColors(colorsData[id]);
+  };
+
   const scrollHandler = (totalHeight) => {
     let screenPosition = (window.scrollY / window.innerHeight) * 100;
-    if (totalHeight) {
-      if (screenPosition < totalHeight) {
-        setPosition(false);
-      }
-      if (screenPosition > totalHeight && !position) {
-        setPosition(true);
-      }
-      setWrapperStyles({ marginTop: screenPosition + "vh" });
+    if (screenPosition < totalHeight) {
+      setPosition(false);
     }
+    if (screenPosition > totalHeight && screenPosition < totalHeight + 100) {
+      setPosition(true);
+      changeTextHandler(0);
+    } else if (
+      screenPosition > totalHeight + 100 &&
+      screenPosition < totalHeight + 200
+    ) {
+      changeTextHandler(1);
+    } else if (
+      screenPosition > totalHeight + 200 &&
+      screenPosition < totalHeight + 300
+    ) {
+      changeTextHandler(2);
+    } else if (
+      screenPosition > totalHeight + 300 &&
+      screenPosition < totalHeight + 400
+    ) {
+      setPosition(true);
+      changeTextHandler(3);
+    } else {
+      setPosition(false);
+    }
+    setWrapperStyles({ marginTop: screenPosition + "vh" });
   };
   useEffect(() => {
     console.log("created");
@@ -44,7 +95,7 @@ const Homepage = (props) => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.marker} style={wrapperstyles}></div>
+      {/*<div className={styles.marker} style={wrapperstyles}></div>*/}
       <div ref={ref}>
         <div className={styles.container}>
           <h1 className={styles.mainTitle}>Free mental health support</h1>
@@ -70,14 +121,14 @@ const Homepage = (props) => {
       </div>
       <div className={styles.backgroundContainer}>
         <BackgroundContainer
-          svgStyles={{ fill: "#73c4be", backgroundColor: "#79cec7" }}
-          color="#556a78"
-          title="Reaching out for help doesn't mean you are weak"
-          visible={visible[0]}
-          num={0}
+          fill={colors[0]}
+          background={colors[1]}
+          color={colors[2]}
+          title={title}
+          content={content}
           position={position}
+          buttonText={buttonText}
         />
-        <div style={{ width: "100%", height: "300vh" }}></div>
         <div className={styles.textContainer}>
           <h1 className={styles.messageText}>
             findhope's mission is to make wellbeing accessible to every Youth.
