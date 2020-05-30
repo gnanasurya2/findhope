@@ -13,20 +13,15 @@ const Content = styled.div`
   position: ${(props) => (props.position ? "fixed" : "relative")};
   transition: all 0.3s;
   width: 80%;
-  margin-left: 10%;
   margin-bottom: 100px;
-  top: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   opacity: ${(props) => (props.position ? "1" : "0")};
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @media screen and (min-width: 1200px) {
-    top: 50%;
-  }
-  @media screen and (min-width: 700px) {
-    top: 45%;
-  }
 `;
 const Title = styled.h1`
   font-size: 32px;
