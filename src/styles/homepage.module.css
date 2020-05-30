@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #FFCE00;
+  background-color: #ffce00;
 }
 
 .mainTitle {
@@ -82,7 +82,7 @@
 
 .textContainer {
   padding: 48px 10%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .messageText {
@@ -92,7 +92,7 @@
 
 .youthAdvocateContainer {
   padding: 32px 10%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .youthAdvocateTitle {
@@ -131,4 +131,12 @@
   .backgroundTitle {
     font-size: 40px;
   }
+}
+
+.marker {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  height: 1px;
+  background-color: indigo;
 }

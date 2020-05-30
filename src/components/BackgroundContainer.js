@@ -5,18 +5,19 @@ import Button from "../components/Button";
 
 const Container = styled.div`
   width: 100%;
-  height: 150vh;
-  position: relative;
+  height: 100vh;
+  position: ${(props) => (props.position ? "fixed" : "relative")};
+  top: 0;
 `;
 const Content = styled.div`
-  transition: all 0.5s;
-  position: sticky;
+  position: ${(props) => (props.position ? "fixed" : "relative")};
+  transition: all 0.3s;
   width: 80%;
   margin-left: 10%;
   margin-bottom: 100px;
-  top: 40%;
-  opacity: ${(props) => (props.visible ? "1" : "0")};
+  top: 45%;
   display: flex;
+  opacity: ${(props) => (props.position ? "1" : "0")};
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -47,9 +48,13 @@ const SubContent = styled.p`
 
 const BackgroundContainer = (props) => {
   return (
-    <Container>
-      <Svg styles={props.svgStyles} />
-      <Content visible={props.visible}>
+    <Container position={props.position}>
+      <Svg
+        styles={{ backgroundColor: "#73c4be" }}
+        fill="#73c4be"
+        background="#79cec7"
+      />
+      <Content visible={props.visible} position={props.position}>
         <Title color={props.color}>{props.title}</Title>
         <SubContent color={props.color}>{props.content}</SubContent>
         {props.buttonText ? (
