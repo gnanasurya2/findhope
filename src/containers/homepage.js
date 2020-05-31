@@ -8,6 +8,10 @@ import FlyingIllustration from "../asset/FlyingIllustration.svg";
 import BackgroundContainer from "../components/BackgroundContainer";
 import BackSvg from "../components/BackSvg";
 import PrimaryButton from "../components/PrimaryButton";
+import Testimonial from "../components/Testimonial";
+import LastIllustration from "../asset/HomePageLastIllustration.svg";
+import Stat from "../components/Stat";
+
 const titleData = [
   "Reaching out for help doesnt mean you are weak",
   "Understand yourself better",
@@ -81,15 +85,17 @@ const Homepage = (props) => {
     setWrapperStyles({ marginTop: screenPosition + "vh" });
   };
   useEffect(() => {
+    let func;
     console.log("created");
-
-    window.addEventListener("scroll", () =>
-      scrollHandler(
-        (ref.current.clientHeight / window.innerHeight).toFixed(2) * 100 + 5
-      )
+    window.addEventListener(
+      "scroll",
+      (func = () =>
+        scrollHandler(
+          (ref.current.clientHeight / window.innerHeight).toFixed(2) * 100 + 5
+        ))
     );
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", func);
     };
   }, []);
 
@@ -103,7 +109,7 @@ const Homepage = (props) => {
             No matter what's troubling you, get the support you need, right
             here, right now.
           </h3>
-          <PrimaryButton />
+          <PrimaryButton title="Start for free" />
           <BackSvg />
         </div>
         <div className={styles.illustrationWrapper}>
@@ -129,24 +135,57 @@ const Homepage = (props) => {
           position={position}
           buttonText={buttonText}
         />
+        <Testimonial />
         <div className={styles.textContainer}>
           <h1 className={styles.messageText}>
-            findhope's mission is to make wellbeing accessible to every Youth.
+            Introducing
+            <br />
+            Mental Health Advocates
           </h1>
         </div>
         <div className={styles.youthAdvocateContainer}>
           <h1 className={styles.youthAdvocateTitle}>
-            Mental Health Advocacy program: A Leadership program for Youth
+            Procative change agents who educate themselves and their community
+            on mental health & reduces the stigma
           </h1>
-          <img
-            src={FlyingIllustration}
-            alt="hero"
-            className={styles.youthAdvocateIllustration}
+        </div>
+        <img
+          src={FlyingIllustration}
+          alt="hero"
+          className={styles.youthAdvocateIllustration}
+        />
+        <div className={styles.joinusContainer}>
+          <h1 className={styles.joinusTitle}>
+            Join us to transform the future of mental wellbeing:
+          </h1>
+          <p className={styles.joinusContent}>
+            Because you may have suffered but won't let others to suufer alone.
+          </p>
+        </div>
+        <img
+          src={LastIllustration}
+          alt="people using phone"
+          className={styles.youthAdvocateIllustration}
+        />
+        <div className={styles.statsContainer}>
+          <h1 className={styles.statsTitle}>
+            Clinically Validated to help people feel better
+          </h1>
+          <Stat
+            number={100}
+            content="Of mental health advocates reported higher levels of happiness and
+          stress free life after the program end"
           />
-          <h3 className={styles.youthAdvocateContent}>
-            Mental Health Advocates* “a change agent, someone who educates their
-            community on mental health & reduces the stigma .”
-          </h3>
+          <Stat
+            number={70}
+            content="Of community around mental health advocates reported easy recognition of their problems and found relief"
+          />
+        </div>
+        <div className={styles.advocatesJoinContainer}>
+          <h1 className={styles.advocatesJoinTitle}>
+            Ready to Transform into a Mental health Advocate?
+          </h1>
+          <PrimaryButton title="Get Started" />
         </div>
       </div>
     </div>
@@ -154,33 +193,3 @@ const Homepage = (props) => {
 };
 
 export default Homepage;
-
-// <BackgroundContainer
-// svgStyles={{ fill: "#73c4be", backgroundColor: "#79cec7" }}
-// color="#556a78"
-// title="Understand yourself better"
-// content="Taking care of your yourself start withs a single step:recognizing
-// you may need help"
-// buttonText="free assessment"
-// visible={visible[1]}
-// num={1}
-// />
-// <BackgroundContainer
-// svgStyles={{ fill: "#5ea0d2", backgroundColor: "#63a9dc" }}
-// color="#e7e3ad"
-// title="Worry Less Live More"
-// content="Felling better starts with a single message"
-// buttonText="support for free"
-// visible={visible[2]}
-// num={2}
-// />
-// <BackgroundContainer
-// svgStyles={{ fill: "#f68891", backgroundColor: "#ff8f9b" }}
-// color="#696172"
-// title="Boost your happiness"
-// content="Build the skills to feel more confident, deal with stress, think
-// more positively, and so much more !"
-// buttonText="support for free"
-// visible={visible[3]}
-// num={3}
-// />
