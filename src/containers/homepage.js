@@ -98,7 +98,7 @@ const Homepage = (props) => {
       {/*<div className={styles.marker} style={wrapperstyles}></div>*/}
       <div ref={ref}>
         <div className={styles.container}>
-          <h1 className={styles.mainTitle}>Free mental health support</h1>
+          <h1 className={styles.mainTitle}>Mental health made accessible</h1>
           <h3 className={styles.subTitle}>
             No matter what's troubling you, get the support you need, right
             here, right now.
@@ -115,7 +115,7 @@ const Homepage = (props) => {
           <Illustration
             svg={SecondIllustration}
             title="The help you need, right in your pocket"
-            content="Reaching out for help doesn't mean you are weak"
+            content=""
           />
         </div>
       </div>

@@ -13,7 +13,7 @@ const BackSvg = (props) => {
       x="0px"
       y="0px"
       viewBox="346 375 381 550"
-      style={{ zIndex: 2, height: "30vh", marginTop: "10vh" }}
+      style={{ zIndex: 2, height: "30vh" }}
       ref={ref}
     >
       <g>
