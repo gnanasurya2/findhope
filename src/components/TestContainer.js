@@ -17,7 +17,7 @@ const Title = styled.h1`
 `;
 const TestContainer = (props) => {
   return (
-    <Wrapper background={props.background}>
+    <Wrapper background={props.background} onClick={props.clicked}>
       <Title color={props.color}>{props.title}</Title>
     </Wrapper>
   );

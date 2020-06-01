@@ -45,8 +45,9 @@ const Homepage = (props) => {
   const [content, setContent] = useState("");
   const [buttonText, setButtonText] = useState("");
   const [colors, setColors] = useState(["#73c4be", "#79cec7", "#556a78"]);
-
+  const [animatableNumber, setAnimatableNumber] = useState([0, 0]);
   const ref = useRef();
+  const movg = useRef();
 
   const changeTextHandler = (id) => {
     setTitle(titleData[id]);
@@ -57,6 +58,11 @@ const Homepage = (props) => {
 
   const scrollHandler = (totalHeight) => {
     let screenPosition = (window.scrollY / window.innerHeight) * 100;
+    const element =
+      (movg.current.getBoundingClientRect().top / window.innerHeight) * 100;
+    if (element < 60) {
+      setAnimatableNumber([100, 70]);
+    }
     if (screenPosition < totalHeight) {
       setPosition(false);
     }
@@ -162,24 +168,26 @@ const Homepage = (props) => {
             Because you may have suffered but won't let others to suufer alone.
           </p>
         </div>
-        <img
-          src={LastIllustration}
-          alt="people using phone"
-          className={styles.youthAdvocateIllustration}
-        />
-        <div className={styles.statsContainer}>
-          <h1 className={styles.statsTitle}>
-            Clinically Validated to help people feel better
-          </h1>
-          <Stat
-            number={100}
-            content="Of mental health advocates reported higher levels of happiness and
+        <div style={{ backgroundColor: "#FFDEA7" }}>
+          <img
+            src={LastIllustration}
+            alt="people using phone"
+            className={styles.youthAdvocateIllustration}
+          />
+          <div className={styles.statsContainer} ref={movg}>
+            <h1 className={styles.statsTitle}>
+              Clinically Validated to help people feel better
+            </h1>
+            <Stat
+              number={animatableNumber[0]}
+              content="Of mental health advocates reported higher levels of happiness and
           stress free life after the program end"
-          />
-          <Stat
-            number={70}
-            content="Of community around mental health advocates reported easy recognition of their problems and found relief"
-          />
+            />
+            <Stat
+              number={animatableNumber[1]}
+              content="Of community around mental health advocates reported easy recognition of their problems and found relief"
+            />
+          </div>
         </div>
         <div className={styles.advocatesJoinContainer}>
           <h1 className={styles.advocatesJoinTitle}>

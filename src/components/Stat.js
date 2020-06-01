@@ -14,7 +14,7 @@ const Content = styled.p`
   font-size: 24px;
   text-align: right;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 10%;
 `;
 const Stat = (props) => {
   const value = useSpring({
@@ -26,16 +26,14 @@ const Stat = (props) => {
     },
     config: config.molasses,
   });
-  useEffect(() => {
-    console.log("created");
-  }, []);
+
   return (
     <Wrapper>
       <animated.h1
         style={{
-          fontSize: "40px",
+          fontSize: "56px",
           fontWeight: "bold",
-          paddingRight: "5%",
+          paddingRight: "10%",
         }}
       >
         {value.number.interpolate((x) => x.toFixed(0) + "%")}
