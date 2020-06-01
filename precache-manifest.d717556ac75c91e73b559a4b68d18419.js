@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37a2b32280c5dc56e43ef509d882d8ac",
+    "revision": "e5b3ab37525480acf2ddcd891d695c53",
     "url": "/findhope/index.html"
   },
   {
-    "revision": "9dcb4162187305edcaf4",
-    "url": "/findhope/static/css/main.576381ba.chunk.css"
+    "revision": "24028741ff8ae53bb63c",
+    "url": "/findhope/static/css/main.ddff763d.chunk.css"
   },
   {
-    "revision": "0bbc3005b8ba17aa6d53",
-    "url": "/findhope/static/js/2.2e3a0d0e.chunk.js"
+    "revision": "4f65bb0a1c749e5f0257",
+    "url": "/findhope/static/js/2.af377818.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/findhope/static/js/2.2e3a0d0e.chunk.js.LICENSE.txt"
+    "url": "/findhope/static/js/2.af377818.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9dcb4162187305edcaf4",
-    "url": "/findhope/static/js/main.d6ee14b0.chunk.js"
+    "revision": "24028741ff8ae53bb63c",
+    "url": "/findhope/static/js/main.98f33d17.chunk.js"
   },
   {
     "revision": "7a6ea221958ad584b345",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/findhope/static/media/HomePageLastIllustration.9568d098.svg"
   },
   {
-    "revision": "0543c2e29172c2690c7686f97c755e08",
-    "url": "/findhope/static/media/depression_hero.0543c2e2.svg"
+    "revision": "1349274cac13cd413729909c2ebbc14a",
+    "url": "/findhope/static/media/feelbetter.1349274c.svg"
   },
   {
     "revision": "9d1acbedcf40f880a3dfc4b5788dc5ca",
