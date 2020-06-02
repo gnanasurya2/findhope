@@ -7,6 +7,7 @@ import Test from "./containers/Test";
 
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import YouthAdvocates from "./containers/YouthAdvocates";
+import PeerCounsellor from "./containers/PeerCounsellor";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/youthAdvocates">
               <YouthAdvocates />
+            </Route>
+            <Route path="/peercounsellor">
+              <PeerCounsellor />
             </Route>
             <Route path="/">
               <Homepage />

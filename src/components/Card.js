@@ -16,14 +16,14 @@ const Image = styled.img`
 `;
 
 const Title = styled.h1`
-  font-size: 32px;
+  font-size: 36px;
   color: ${(props) => props.color};
   text-align: center;
 `;
 
 const Content = styled.p`
   width: 90%;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-top: 32px;
 `;
