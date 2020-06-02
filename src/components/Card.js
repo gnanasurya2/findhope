@@ -11,13 +11,14 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  width: 40%;
+  width: 56%;
   margin-bottom: 24px;
 `;
 
 const Title = styled.h1`
   font-size: 32px;
   color: ${(props) => props.color};
+  text-align: center;
 `;
 
 const Content = styled.p`
@@ -30,7 +31,7 @@ const Card = (props) => {
   console.log(props.content);
   return (
     <Wrapper>
-      <Image src={props.image} />
+      <Image src={props.image} alt={props.alt} />
       <Title color={props.color}>{props.title}</Title>
       <Content>{props.content}</Content>
     </Wrapper>
