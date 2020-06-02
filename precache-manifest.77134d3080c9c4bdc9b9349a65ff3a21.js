@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26d82777cc7d0b1b5c8771a1c420c4f3",
+    "revision": "8c7923ae8d2a5a01ec6f8ca3274d921c",
     "url": "/findhope/index.html"
   },
   {
-    "revision": "9788dea31d32b4cbb212",
+    "revision": "c21fc23803b85abe5f89",
     "url": "/findhope/static/css/main.7fab7b79.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/findhope/static/js/2.aa555f2f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9788dea31d32b4cbb212",
-    "url": "/findhope/static/js/main.a36245f3.chunk.js"
+    "revision": "c21fc23803b85abe5f89",
+    "url": "/findhope/static/js/main.ab550d54.chunk.js"
   },
   {
     "revision": "7a6ea221958ad584b345",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9568d0983602249ac6003e15f09386f7",
     "url": "/findhope/static/media/HomePageLastIllustration.9568d098.svg"
-  },
-  {
-    "revision": "01399f7b287480cd35a31916859f9c84",
-    "url": "/findhope/static/media/certified (2).01399f7b.svg"
   },
   {
     "revision": "0a738ca1c047ebe704da221fba779575",
@@ -58,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9d1acbedcf40f880a3dfc4b5788dc5ca",
     "url": "/findhope/static/media/first_circle_illustration.9d1acbed.svg"
+  },
+  {
+    "revision": "f23dbf67d91e97f0a9c0ade1e27006c3",
+    "url": "/findhope/static/media/icons8-checked.f23dbf67.svg"
   },
   {
     "revision": "5b92220d30135aed708799e381c4c195",
