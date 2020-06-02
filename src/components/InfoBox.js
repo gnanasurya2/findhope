@@ -15,7 +15,11 @@ const Wrapper = styled.div`
   box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
 `;
 const InfoBox = (props) => (
-  <Wrapper background={props.background} color={props.color}>
+  <Wrapper
+    background={props.background}
+    color={props.color}
+    style={props.styles}
+  >
     {props.children}
   </Wrapper>
 );

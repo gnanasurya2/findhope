@@ -16,7 +16,7 @@ const Button = styled.button`
   }
 `;
 const PrimaryButton = (props) => {
-  return <Button>{props.title}</Button>;
+  return <Button style={props.style}>{props.title}</Button>;
 };
 
 export default PrimaryButton;

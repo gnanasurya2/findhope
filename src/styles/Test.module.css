@@ -1,67 +1,92 @@
 .wrapper {
-    width: 100%;
-    height: 100vh;
-    background-color: #fed691;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4592d1;
+  z-index: -1;
+  overflow: hidden;
+}
+.square1 {
+  position: absolute;
+  width: 70vw;
+  height: 70vw;
+  border-radius: 40px;
+  transform: rotateZ(45deg);
+  top: -5%;
+  left: -50%;
+  background-color: #73b5ec;
+}
+.square2 {
+  position: absolute;
+  width: 70vw;
+  height: 70vw;
+  transform: rotateZ(45deg);
+  border-radius: 40px;
+  top: 45%;
+  right: -40%;
+  background-color: #73b5ec;
+}
 .mainTitleContentContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mainImage {
-    flex: 1;
-    height: 100%;
-    width: 100%;
+  flex: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .mainTitle {
-    font-size: 32px;
-    text-align: center;
-    padding-top: 32px;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 32px;
 }
 
 .mainContent {
-    font-size: 24px;
-    text-align: center;
-    padding-top: 24px;
-    width: 80%;
-    margin: 0px 10%;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 24px;
+  width: 80%;
+  margin: 0px 10%;
 }
 
 .statTitle {
-    font-size: 56px;
-    margin-bottom: 24px;
+  font-size: 56px;
+  margin-bottom: 24px;
 }
 
 .statContent {
-    text-align: center;
-    width: 95%;
-    margin-left: 2.5%;
-    font-size: 20px;
-
+  text-align: center;
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 20px;
 }
 
 .testWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 24px;
 }
 
 .testContainer {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 32px;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 32px;
 }
 
 .testContent {
-    text-align: center;
-    width: 90%;
-    font-size: 24px;
+  text-align: center;
+  width: 90%;
+  font-size: 24px;
 }

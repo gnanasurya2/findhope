@@ -146,13 +146,14 @@ const Homepage = (props) => {
           <h1 className={styles.messageText}>
             Introducing
             <br />
-            Mental Health Advocates
+            Our Leadership Program
           </h1>
         </div>
         <div className={styles.youthAdvocateContainer}>
           <h1 className={styles.youthAdvocateTitle}>
-            Procative change agents who educate themselves and their community
-            on mental health & reduces the stigma
+            Learn mental health basics that are essential for your wellbeing and
+            parallely leverage your social media to spread this knowledge for
+            your community's wellbeing.
           </h1>
         </div>
         <img
@@ -180,18 +181,18 @@ const Homepage = (props) => {
             </h1>
             <Stat
               number={animatableNumber[0]}
-              content="Of mental health advocates reported higher levels of happiness and
+              content="Of program participants reported higher levels of happiness and
           stress free life after the program end"
             />
             <Stat
               number={animatableNumber[1]}
-              content="Of community around mental health advocates reported easy recognition of their problems and found relief"
+              content="Of community around participants reported easy recognition of their problems and found relief"
             />
           </div>
         </div>
         <div className={styles.advocatesJoinContainer}>
           <h1 className={styles.advocatesJoinTitle}>
-            Ready to Transform into a Mental health Advocate?
+            You can be a Mental Health Leader too
           </h1>
           <PrimaryButton title="Get Started" />
         </div>

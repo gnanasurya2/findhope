@@ -13,6 +13,9 @@ const Layout = (props) => {
             <Link to="/">Home</Link>
           </div>
           <div>
+            <Link to="/youthadvocates">Youth Advocates</Link>
+          </div>
+          <div>
             <Link to="/test">Test</Link>
           </div>
         </nav>

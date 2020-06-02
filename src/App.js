@@ -6,6 +6,7 @@ import Testpage from "./containers/Testpage";
 import Test from "./containers/Test";
 
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import YouthAdvocates from "./containers/YouthAdvocates";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path="/test">
               <Testpage />
+            </Route>
+            <Route path="/youthAdvocates">
+              <YouthAdvocates />
             </Route>
             <Route path="/">
               <Homepage />
