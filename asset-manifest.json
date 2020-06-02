@@ -1,30 +1,36 @@
 {
   "files": {
-    "main.css": "/findhope/static/css/main.f9bbbb82.chunk.css",
-    "main.js": "/findhope/static/js/main.943cf3a6.chunk.js",
-    "main.js.map": "/findhope/static/js/main.943cf3a6.chunk.js.map",
+    "main.css": "/findhope/static/css/main.7fab7b79.chunk.css",
+    "main.js": "/findhope/static/js/main.a36245f3.chunk.js",
+    "main.js.map": "/findhope/static/js/main.a36245f3.chunk.js.map",
     "runtime-main.js": "/findhope/static/js/runtime-main.1cbb8e34.js",
     "runtime-main.js.map": "/findhope/static/js/runtime-main.1cbb8e34.js.map",
-    "static/js/2.234f8372.chunk.js": "/findhope/static/js/2.234f8372.chunk.js",
-    "static/js/2.234f8372.chunk.js.map": "/findhope/static/js/2.234f8372.chunk.js.map",
+    "static/js/2.aa555f2f.chunk.js": "/findhope/static/js/2.aa555f2f.chunk.js",
+    "static/js/2.aa555f2f.chunk.js.map": "/findhope/static/js/2.aa555f2f.chunk.js.map",
     "index.html": "/findhope/index.html",
-    "precache-manifest.384c718c365dc5f99f6366cabfe7b5b5.js": "/findhope/precache-manifest.384c718c365dc5f99f6366cabfe7b5b5.js",
+    "precache-manifest.9c925b68750ca3ad266a435841a4397c.js": "/findhope/precache-manifest.9c925b68750ca3ad266a435841a4397c.js",
     "service-worker.js": "/findhope/service-worker.js",
-    "static/css/main.f9bbbb82.chunk.css.map": "/findhope/static/css/main.f9bbbb82.chunk.css.map",
-    "static/js/2.234f8372.chunk.js.LICENSE.txt": "/findhope/static/js/2.234f8372.chunk.js.LICENSE.txt",
+    "static/css/main.7fab7b79.chunk.css.map": "/findhope/static/css/main.7fab7b79.chunk.css.map",
+    "static/js/2.aa555f2f.chunk.js.LICENSE.txt": "/findhope/static/js/2.aa555f2f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/findhope/static/media/ApercuLight.64a8711f.otf",
     "static/media/FlyingIllustration.svg": "/findhope/static/media/FlyingIllustration.30cdec98.svg",
     "static/media/HomePageLastIllustration.svg": "/findhope/static/media/HomePageLastIllustration.9568d098.svg",
-    "static/media/depression_hero.svg": "/findhope/static/media/depression_hero.0543c2e2.svg",
+    "static/media/certified (2).svg": "/findhope/static/media/certified (2).01399f7b.svg",
+    "static/media/certified.svg": "/findhope/static/media/certified.0a738ca1.svg",
+    "static/media/drive the change.svg": "/findhope/static/media/drive the change.7513c803.svg",
     "static/media/feelbetter.svg": "/findhope/static/media/feelbetter.1349274c.svg",
+    "static/media/findingsupport.svg": "/findhope/static/media/findingsupport.66678ab4.svg",
     "static/media/first_circle_illustration.svg": "/findhope/static/media/first_circle_illustration.9d1acbed.svg",
     "static/media/logo.jpeg": "/findhope/static/media/logo.5b92220d.jpeg",
-    "static/media/second_circle_illustration.svg": "/findhope/static/media/second_circle_illustration.18a63887.svg"
+    "static/media/recognising.svg": "/findhope/static/media/recognising.218ea7f9.svg",
+    "static/media/second_circle_illustration.svg": "/findhope/static/media/second_circle_illustration.18a63887.svg",
+    "static/media/stigma.svg": "/findhope/static/media/stigma.d403b1e7.svg",
+    "static/media/time.svg": "/findhope/static/media/time.74f810fe.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1cbb8e34.js",
-    "static/js/2.234f8372.chunk.js",
-    "static/css/main.f9bbbb82.chunk.css",
-    "static/js/main.943cf3a6.chunk.js"
+    "static/js/2.aa555f2f.chunk.js",
+    "static/css/main.7fab7b79.chunk.css",
+    "static/js/main.a36245f3.chunk.js"
   ]
 }
