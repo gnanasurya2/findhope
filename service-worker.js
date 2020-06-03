@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/findhope/precache-manifest.0bc1ed2eb12d601f3001d8b7b158aa1b.js"
+  "/findhope/precache-manifest.c4efa4f81653d8f6f92853f6903e47d1.js"
 );
 
 self.addEventListener('message', (event) => {
