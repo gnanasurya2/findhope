@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Svg from "../components/Svg";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
@@ -31,7 +32,8 @@ const Title = styled.h1`
     font-size: 48px;
   }
   @media screen and (min-width: 700px) {
-    font-size: 40px;
+    font-size: 56px;
+    line-height: 54px;
   }
 `;
 const SubContent = styled.p`
@@ -39,6 +41,13 @@ const SubContent = styled.p`
   text-align: center;
   margin-top: 32px;
   color: ${(props) => props.color};
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 32px;
+    line-height: 34px;
+  }
 `;
 
 const BackgroundContainer = (props) => {
@@ -53,7 +62,9 @@ const BackgroundContainer = (props) => {
         <Title color={props.color}>{props.title}</Title>
         <SubContent color={props.color}>{props.content}</SubContent>
         {props.buttonText ? (
-          <Button text={props.buttonText} color={props.color} />
+          <Link to="/test">
+            <Button text={props.buttonText} color={props.color} />
+          </Link>
         ) : null}
       </Content>
     </Container>

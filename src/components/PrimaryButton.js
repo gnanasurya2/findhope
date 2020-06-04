@@ -14,6 +14,9 @@ const Button = styled.button`
     background-color: #005ee5;
     cursor: pointer;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 `;
 const PrimaryButton = (props) => {
   return <Button style={props.style}>{props.title}</Button>;

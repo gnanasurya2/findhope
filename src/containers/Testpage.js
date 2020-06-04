@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/Testpage.module.css";
 import TestContainer from "../components/TestContainer";
 import Testimonial from "../components/Testimonial";
@@ -8,6 +8,9 @@ const TestPage = (props) => {
     console.log(props.route);
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className={styles.container}>

@@ -51,3 +51,42 @@
     text-align: center;
     margin-top: 48px;
 }
+
+@media screen and (min-width:700px) {
+    .backgroundSquare {
+        width: 50vw;
+        height: 50vw;
+        top: 0px;
+        left: -30%;
+    }
+
+    .mainTitle {
+        font-size: 48px;
+    }
+
+    .mainContent {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .backgroundSquare {
+        width: 30vw;
+        height: 30vw;
+        left: -10%;
+    }
+
+    .backgroundCircle {
+        width: 40vw;
+        height: 40vw;
+        left: 35vw;
+    }
+
+    .mainTitle {
+        font-size: 56px;
+    }
+
+    .mainContent {
+        font-size: 36px;
+    }
+}

@@ -1,98 +1,135 @@
 .wrapper {
-    width: 100%;
-    padding: 56px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 100%;
+  padding: 56px 0px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #f9f7f1;
-    z-index: -1;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f7f1;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .bar1 {
-    position: absolute;
-    width: 16vw;
-    height: 60vw;
-    background-color: #F7EDDF;
-    border-radius: 40px;
-    top: 30%;
-    left: 19%;
-    transform: rotateZ(45deg);
+  position: absolute;
+  width: 16vw;
+  height: 60vw;
+  background-color: #f7eddf;
+  border-radius: 40px;
+  top: 30%;
+  left: 19%;
+  transform: rotateZ(45deg);
 }
 
 .bar2 {
-    position: absolute;
-    width: 16vw;
-    height: 60vw;
-    background-color: #F7EDDF;
-    border-radius: 40px;
-    top: 30%;
-    left: 19%;
-    transform: rotateZ(-45deg);
+  position: absolute;
+  width: 16vw;
+  height: 60vw;
+  background-color: #f7eddf;
+  border-radius: 40px;
+  top: 30%;
+  left: 19%;
+  transform: rotateZ(-45deg);
 }
 
 .circle {
-    position: absolute;
-    width: 40vw;
-    height: 40vw;
-    border-radius: 50%;
-    background-color: #F7EDDF;
-    top: 50%;
-    left: 80%;
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background-color: #f7eddf;
+  top: 50%;
+  left: 80%;
 }
 
 .title {
-    width: 90%;
-    font-size: 36px;
-    text-align: center;
+  width: 90%;
+  font-size: 36px;
+  text-align: center;
 }
 
 .content {
-    width: 80%;
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .problemWrapper {
-    background-color: #f9f7f1;
+  background-color: #f9f7f1;
 }
 
 .scheduleWrapper {
-    background-color: #828ca9;
+  background-color: #828ca9;
 }
 
 .scheduleTitle {
-    color: #f6d8a6;
-    text-align: center;
-    padding: 48px 0px;
-    font-size: 37px;
-    width: 95%;
-    margin-left: 2.5%;
+  color: #f6d8a6;
+  text-align: center;
+  padding: 48px 0px;
+  font-size: 37px;
+  width: 95%;
+  margin-left: 2.5%;
 }
 
 .signUpWrapper {
-    background-color: #f9f7f1;
-    padding: 40px 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #f9f7f1;
+  padding: 40px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .signUpContent {
-    text-align: center;
-    font-size: 24px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .image {
-    margin: 32px 0px;
+  margin: 32px 0px;
+}
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    height: 60vh;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .content {
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .signUpContent {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .image {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signUpContent {
+    width: 70%;
+  }
+  .image {
+    width: 30%;
+  }
+  .title {
+    font-size: 56px;
+  }
 }

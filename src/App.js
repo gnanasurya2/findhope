@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import Homepage from "./containers/homepage";
 import Layout from "./components/Layout";
 import Testpage from "./containers/Testpage";
 import Test from "./containers/Test";
+import Homepage from "./containers/homepage";
 
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import YouthAdvocates from "./containers/YouthAdvocates";
 import PeerCounsellor from "./containers/PeerCounsellor";
+import Profile from "./containers/Profile";
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,9 @@ function App() {
             </Route>
             <Route path="/peercounsellor">
               <PeerCounsellor />
+            </Route>
+            <Route path="/profile">
+              <Profile />
             </Route>
             <Route path="/">
               <Homepage />

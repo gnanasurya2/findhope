@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { useParams } from "react-router-dom";
 import styles from "../styles/Test.module.css";
 import InfoBox from "../components/InfoBox";
@@ -6,6 +6,9 @@ import PrimaryButton from "../components/PrimaryButton";
 import Tree from "../asset/feelbetter.svg";
 
 const Test = (props) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className={styles.wrapper}>
@@ -29,15 +32,7 @@ const Test = (props) => {
       </InfoBox>
       <div className={styles.contentWrapper}>
         <h1 className={styles.mainTitle}>You are not alone</h1>
-        <p
-          className={styles.mainContent}
-          style={{
-            width: "95%",
-            marginLeft: "5%",
-            textAlign: "left",
-            marginBottom: "32px",
-          }}
-        >
+        <p className={styles.mainContent} style={{ textAlign: "left" }}>
           Depression is the leading cause of disability worldwide and one of the
           most common mental health conditions globally. That’s right:
           depression can be a serious illness and knows no borders. While we all

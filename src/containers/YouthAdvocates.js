@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/YouthAdvocates.module.css";
 import Card from "../components/Card";
 import PrimaryButton from "../components/PrimaryButton";
@@ -12,6 +12,9 @@ import CertifiedImage from "../asset/icons8-checked.svg";
 import DriveImage from "../asset/drive the change.svg";
 
 const YouthAdvocates = (props) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className={styles.wrapper}>
@@ -77,7 +80,7 @@ const YouthAdvocates = (props) => {
         <img src={DriveImage} alt="sign up" className={styles.image} />
         <PrimaryButton
           title="Sign Up"
-          style={{ width: "70%", backgroundColor: "grey" }}
+          style={{ width: "50%", backgroundColor: "grey" }}
         />
       </div>
     </div>

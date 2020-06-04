@@ -15,6 +15,14 @@ const Content = styled.p`
   text-align: right;
   padding-left: 5%;
   padding-right: 10%;
+  @media screen and (min-width: 700px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    width: 50%;
+    padding-top: 40px;
+  }
 `;
 const Stat = (props) => {
   const value = useSpring({

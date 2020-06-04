@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
 
 const Wrapper = styled.div`
   width: 90%;
@@ -19,33 +20,50 @@ const Circle = styled.div`
   border-radius: 50%;
   cursor: pointer;
 `;
-const Arrow = styled.div`
+const Arrow = styled(animated.div)`
   width: 20px;
   height: 20px;
   position: relative;
   border: solid 3px grey;
   border-color: white white transparent transparent;
-  top: 30%;
-  left: 30%;
-  transform: rotateZ(135deg);
+  top: 25%;
+  left: 27%;
 `;
 const Content = styled.p`
   width: 90%;
+  height: 0%;
   text-align: center;
   margin: 25px 2.5%;
   font-size: 20px;
-  display: ${(props) => (props.closed ? "none" : "flex")};
+  display: ${(props) => (props.clicked ? "none" : "flex")};
+  @media screen and (min-width: 700px) {
+    font-size: 32px;
+  }
 `;
 const Faq = (props) => {
+  const [visible, setVisible] = useState(true);
+  const [value, set, stop] = useSpring(() => ({
+    angle: 135,
+    onFrame: () => console.log("working"),
+  }));
+  const clickHandler = () => {
+    console.log("clicked");
+    setVisible((state) => !state);
+    set({ angle: visible ? -45 : 135 });
+  };
   return (
     <Wrapper>
       <InnerWrapper>
-        <h1>{props.title}</h1>
-        <Circle>
-          <Arrow />
+        <h1 style={{ fontSize: "32px", width: "100%" }}>{props.title}</h1>
+        <Circle onClick={clickHandler}>
+          <Arrow
+            style={{
+              transform: value.angle.interpolate((x) => `rotateZ(${x}deg)`),
+            }}
+          />
         </Circle>
       </InnerWrapper>
-      <Content closed>{props.content}</Content>
+      <Content clicked={visible}>{props.content}</Content>
     </Wrapper>
   );
 };

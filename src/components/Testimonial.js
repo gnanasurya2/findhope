@@ -11,6 +11,11 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   border solid 3px orange;
+  @media screen and (min-width:1200px) {
+    width: 40%;
+    margin-left:30%;
+    padding:100px 0px;
+  }
 `;
 const ImageWrapper = styled.div`
   display: flex;

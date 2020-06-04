@@ -13,6 +13,11 @@ const Wrapper = styled.div`
   align-items: center;
   color: ${(props) => props.color};
   box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+    margin-left: 20%;
+    min-height: 500px;
+  }
 `;
 const InfoBox = (props) => (
   <Wrapper

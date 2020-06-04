@@ -11,6 +11,7 @@ import PrimaryButton from "../components/PrimaryButton";
 import Testimonial from "../components/Testimonial";
 import LastIllustration from "../asset/HomePageLastIllustration.svg";
 import Stat from "../components/Stat";
+import { Link } from "react-router-dom";
 
 const titleData = [
   "Reaching out for help doesnt mean you are weak",
@@ -127,7 +128,7 @@ const Homepage = (props) => {
           <Illustration
             svg={SecondIllustration}
             title="The help you need, right in your pocket"
-            content=""
+            content="The help you need, right in your pocket's content"
           />
         </div>
       </div>
@@ -144,9 +145,7 @@ const Homepage = (props) => {
         <Testimonial />
         <div className={styles.textContainer}>
           <h1 className={styles.messageText}>
-            Introducing
-            <br />
-            Our Leadership Program
+            Introducing Our Leadership Program
           </h1>
         </div>
         <div className={styles.youthAdvocateContainer}>
@@ -155,18 +154,19 @@ const Homepage = (props) => {
             parallely leverage your social media to spread this knowledge for
             your community's wellbeing.
           </h1>
+
+          <img
+            src={FlyingIllustration}
+            alt="hero"
+            className={styles.youthAdvocateIllustration}
+          />
         </div>
-        <img
-          src={FlyingIllustration}
-          alt="hero"
-          className={styles.youthAdvocateIllustration}
-        />
         <div className={styles.joinusContainer}>
           <h1 className={styles.joinusTitle}>
             Join us to transform the future of mental wellbeing:
           </h1>
           <p className={styles.joinusContent}>
-            Because you may have suffered but won't let others to suufer alone.
+            Because you may have suffered but won't let others to suffer alone.
           </p>
         </div>
         <div style={{ backgroundColor: "#FFDEA7" }}>
@@ -194,7 +194,9 @@ const Homepage = (props) => {
           <h1 className={styles.advocatesJoinTitle}>
             You can be a Mental Health Leader too
           </h1>
-          <PrimaryButton title="Get Started" />
+          <Link to="youthadvocates">
+            <PrimaryButton title="Get Started" />
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/PeerCounsellor.module.css";
 
 import CounsellingHero from "../asset/couneslling Hero Illustration.svg";
@@ -7,8 +7,12 @@ import Counsellor from "../components/Counsellor";
 import PrimaryButton from "../components/PrimaryButton";
 import Testimonial from "../components/Testimonial";
 import Faq from "../components/Faq";
+import { Link } from "react-router-dom";
 
 const PeerCounsellor = (props) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className={styles.wrapper}>
@@ -33,7 +37,11 @@ const PeerCounsellor = (props) => {
         alt="peer counsellor"
         className={styles.image}
       />
-      <Counsellor />
+      <div className={styles.counsellorWrapper}>
+        <Counsellor />
+        <Counsellor />
+        <Counsellor />
+      </div>
       <div className={styles.sessionWrapper}>
         <p className={styles.sessionTitle}>Wellbeing is just a click away</p>
         <PrimaryButton title="Peer Session" />
@@ -44,22 +52,35 @@ const PeerCounsellor = (props) => {
         <h1 className={styles.assessmentTitle}>
           Not Sure if you need counseling
         </h1>
-        <PrimaryButton title="Free Assessment" />
+        <Link to="/test">
+          <PrimaryButton title="Free Assessment" />
+        </Link>
       </div>
       <div className={styles.faqWrapper}>
         <h1 className={styles.faqTitle}>Frequently Asked Questions</h1>
         <Faq
-          title="lorem ipsum dolor"
-          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-        ipsa recusandae suscipit unde amet tenetur est aliquid placeat veniam
-        saepe?"
+          title="Is peer Counseling completely free ?"
+          content="Yes, There are no charges. "
         />
         <Faq
-          title="lorem ipsum dolor"
-          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-      ipsa recusandae suscipit unde amet tenetur est aliquid placeat veniam
-      saepe?"
-          closed
+          title="Is Peer Counseling effective ? "
+          content="It is highly subjective to your case, take our free mental wellness test to know more about the cause, severity and treatment about your case."
+        />
+        <Faq
+          title="Why should I mention my WhatsApp number ?"
+          content="You can connect with a peer Counselor through whatsapp and proceed further via phone. "
+        />
+        <Faq
+          title="Does findhope record/use any of my personal information ?"
+          content=" No we do not record/save any of the users personal issue but we end the Counselling session with a feedback , this is the only information we save. "
+        />
+        <Faq
+          title="Does findhope have Psychologists ?"
+          content="Yes, we work with Psychologists.Infact, a peer Counselor may recommend professional intervention depending on a user's case. "
+        />
+        <Faq
+          title="How can I be a peer Counselor ?"
+          content="Anyone can be a Peer Counselors given that they are passionate about Counselling , while not expecting a fee and can go through a training session."
         />
       </div>
     </div>

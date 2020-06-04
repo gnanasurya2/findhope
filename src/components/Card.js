@@ -13,12 +13,25 @@ const Wrapper = styled.div`
 const Image = styled.img`
   width: 56%;
   margin-bottom: 24px;
+  @media screen and (min-width: 700px) {
+    width: 35%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 15%;
+    margin-top: 40px;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 36px;
   color: ${(props) => props.color};
   text-align: center;
+  @media screen and (min-width: 700px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 56px;
+  }
 `;
 
 const Content = styled.p`
@@ -26,6 +39,14 @@ const Content = styled.p`
   font-size: 20px;
   text-align: center;
   margin-top: 32px;
+  @media screen and (min-width: 700px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+    font-size: 32px;
+  }
 `;
 const Card = (props) => {
   console.log(props.content);

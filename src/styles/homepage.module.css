@@ -5,7 +5,7 @@
 
 .container {
   width: 100%;
-  height: calc(100vh - 60px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,6 +100,7 @@
 
 .youthAdvocateTitle {
   font-size: 24px;
+  margin-right: 25px;
 
 }
 
@@ -112,27 +113,13 @@
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .illustrationWrapper {
-    flex-direction: row;
-  }
-
-  .contentContainer {
-    top: 50%;
-  }
-
-  .backgroundTitle {
-    font-size: 48px;
-  }
-}
-
 .joinusContainer {
   width: 100%;
   background-color: #FFDEA7;
 }
 
 .joinusTitle {
-  padding: 24px 0px 24px 10%;
+  padding: 24px 10px 24px 10%;
   font-size: 32px;
 }
 
@@ -165,6 +152,14 @@
   font-size: 32px;
 }
 
+.marker {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  height: 1px;
+  background-color: indigo;
+}
+
 @media screen and (min-width: 700px) {
   .contentContainer {
     top: 45%;
@@ -173,12 +168,101 @@
   .backgroundTitle {
     font-size: 40px;
   }
+
+  .mainTitle {
+    font-size: 48px;
+  }
+
+  .messageText {
+    font-size: 40px;
+  }
+
+  .youthAdvocateTitle {
+    font-size: 24px;
+  }
+
+  .youthAdvocateIllustration {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .joinusTitle {
+    font-size: 40px;
+  }
+
+  .joinusContent {
+    font-size: 26px;
+  }
+
+  .statsTitle {
+    font-size: 40px;
+  }
+
+  .advocatesJoinTitle {
+    font-size: 40px;
+  }
 }
 
-.marker {
-  position: absolute;
-  z-index: 100;
-  width: 200px;
-  height: 1px;
-  background-color: indigo;
+@media screen and (min-width: 1200px) {
+  .mainTitle {
+    font-size: 63px;
+  }
+
+  .subTitle {
+    font-size: 40px;
+  }
+
+  .illustrationWrapper {
+    flex-direction: row;
+  }
+
+  .contentContainer {
+    top: 50%;
+  }
+
+  .backgroundTitle {
+    font-size: 48px;
+  }
+
+  .messageText {
+    font-size: 48px;
+  }
+
+  .youthAdvocateTitle {
+    font-size: 36px;
+    font-weight: 300;
+    padding-right: 250px;
+  }
+
+  .youthAdvocateIllustration {
+    width: 60%;
+    height: 60vh;
+    margin-left: 20%;
+  }
+
+  .youthAdvocateIllustration {
+    width: 50%;
+    height: 60%;
+    margin-left: 25%;
+  }
+
+  .joinusTitle {
+    font-size: 48px;
+  }
+
+  .joinusContent {
+    font-size: 32px;
+  }
+
+  .statsTitle {
+    font-size: 48px;
+  }
+
+  .advocatesJoinContainer {
+    padding: 5% 0;
+  }
+
+  .advocatesJoinTitle {
+    font-size: 48px;
+  }
 }
