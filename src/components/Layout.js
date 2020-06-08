@@ -3,19 +3,21 @@ import styles from "../styles/Layout.module.css";
 import Logo from "../asset/logo.jpeg";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import Hamburger from "./Hamburger";
 // <img src={Logo} alt="Findhope" className={styles.logoImage} />
 const Layout = (props) => {
   const [opacity, setOpacity] = useState({ opacity: 0, display: "none" });
+  const [toggle, setToggle] = useState(true);
   const [value, set, stop] = useSpring(() => ({
     width: 0,
   }));
-  const clickHandler = () => {
-    setOpacity({ opacity: 0, display: "none" });
-    set({ width: 0 });
-  };
+
   const openMenuHandler = () => {
-    setOpacity({ opacity: 1, display: "flex" });
-    set({ width: 70 });
+    setToggle((state) => !state);
+    setOpacity(
+      toggle ? { opacity: 1, display: "flex" } : { opacity: 0, display: "none" }
+    );
+    set(toggle ? { width: 70 } : { width: 0 });
   };
   return (
     <>
@@ -26,13 +28,9 @@ const Layout = (props) => {
           style={{ width: value.width.interpolate((x) => x + "vw") }}
         >
           <div style={opacity}>
-            <div className={styles.close} onClick={clickHandler}>
-              <div className={styles.cross1}></div>
-              <div className={styles.cross2}></div>
-            </div>
             <span>
               <div>
-                <Link to="/" className={styles.link} onClick={clickHandler}>
+                <Link to="/" className={styles.link} onClick={openMenuHandler}>
                   Home
                 </Link>
               </div>
@@ -40,13 +38,17 @@ const Layout = (props) => {
                 <Link
                   to="/youthadvocates"
                   className={styles.link}
-                  onClick={clickHandler}
+                  onClick={openMenuHandler}
                 >
                   Youth Advocates
                 </Link>
               </div>
               <div>
-                <Link to="/test" className={styles.link} onClick={clickHandler}>
+                <Link
+                  to="/test"
+                  className={styles.link}
+                  onClick={openMenuHandler}
+                >
                   Test
                 </Link>
               </div>
@@ -54,7 +56,7 @@ const Layout = (props) => {
                 <Link
                   to="/peercounsellor"
                   className={styles.link}
-                  onClick={clickHandler}
+                  onClick={openMenuHandler}
                 >
                   Peer Counsellor
                 </Link>
@@ -62,10 +64,11 @@ const Layout = (props) => {
             </span>
           </div>
         </animated.nav>
-        <div className={styles.hamburger} onClick={openMenuHandler}>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
+        <div
+          style={{ marginLeft: "40px", zIndex: 200 }}
+          onClick={openMenuHandler}
+        >
+          <Hamburger color="white" toggle={toggle} />
         </div>
       </header>
       {props.children}
@@ -74,3 +77,7 @@ const Layout = (props) => {
 };
 
 export default Layout;
+// <div className={styles.close} onClick={clickHandler}>
+// <div className={styles.cross1}></div>
+// <div className={styles.cross2}></div>
+// </div>

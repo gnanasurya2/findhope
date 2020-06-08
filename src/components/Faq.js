@@ -44,10 +44,8 @@ const Faq = (props) => {
   const [visible, setVisible] = useState(true);
   const [value, set, stop] = useSpring(() => ({
     angle: 135,
-    onFrame: () => console.log("working"),
   }));
   const clickHandler = () => {
-    console.log("clicked");
     setVisible((state) => !state);
     set({ angle: visible ? -45 : 135 });
   };

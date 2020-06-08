@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import YouthAdvocates from "./containers/YouthAdvocates";
 import PeerCounsellor from "./containers/PeerCounsellor";
 import Profile from "./containers/Profile";
+import Questions from "./containers/Questions";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/profile">
               <Profile />
+            </Route>
+            <Route path="/questions">
+              <Questions />
             </Route>
             <Route path="/">
               <Homepage />

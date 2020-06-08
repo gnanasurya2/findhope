@@ -128,7 +128,7 @@ const Homepage = (props) => {
           <Illustration
             svg={SecondIllustration}
             title="The help you need, right in your pocket"
-            content="The help you need, right in your pocket's content"
+            content="Free virtual counseling for a healthier, happier life"
           />
         </div>
       </div>

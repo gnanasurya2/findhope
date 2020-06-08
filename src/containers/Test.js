@@ -4,6 +4,7 @@ import styles from "../styles/Test.module.css";
 import InfoBox from "../components/InfoBox";
 import PrimaryButton from "../components/PrimaryButton";
 import Tree from "../asset/feelbetter.svg";
+import { Link } from "react-router-dom";
 
 const Test = (props) => {
   useEffect(() => {
@@ -61,7 +62,9 @@ const Test = (props) => {
           Take our short online test, and learn whether you may be living with
           depression.
         </p>
-        <PrimaryButton title="Begin test" />
+        <Link to="/questions">
+          <PrimaryButton title="Begin test" />
+        </Link>
       </div>
     </div>
   );

@@ -49,7 +49,6 @@ const Content = styled.p`
   }
 `;
 const Card = (props) => {
-  console.log(props.content);
   return (
     <Wrapper>
       <Image src={props.image} alt={props.alt} />
