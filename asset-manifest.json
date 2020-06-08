@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/findhope/static/css/main.f9bdb3c2.chunk.css",
+    "main.css": "/findhope/static/css/main.aef0c766.chunk.css",
     "main.js": "/findhope/static/js/main.aff912ec.chunk.js",
     "main.js.map": "/findhope/static/js/main.aff912ec.chunk.js.map",
     "runtime-main.js": "/findhope/static/js/runtime-main.1cbb8e34.js",
@@ -8,9 +8,9 @@
     "static/js/2.51ed1d6e.chunk.js": "/findhope/static/js/2.51ed1d6e.chunk.js",
     "static/js/2.51ed1d6e.chunk.js.map": "/findhope/static/js/2.51ed1d6e.chunk.js.map",
     "index.html": "/findhope/index.html",
-    "precache-manifest.480cced8f36b623fbc45ce080410fc01.js": "/findhope/precache-manifest.480cced8f36b623fbc45ce080410fc01.js",
+    "precache-manifest.5cee8eb6911458871402270310e1dd38.js": "/findhope/precache-manifest.5cee8eb6911458871402270310e1dd38.js",
     "service-worker.js": "/findhope/service-worker.js",
-    "static/css/main.f9bdb3c2.chunk.css.map": "/findhope/static/css/main.f9bdb3c2.chunk.css.map",
+    "static/css/main.aef0c766.chunk.css.map": "/findhope/static/css/main.aef0c766.chunk.css.map",
     "static/js/2.51ed1d6e.chunk.js.LICENSE.txt": "/findhope/static/js/2.51ed1d6e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/findhope/static/media/ApercuLight.64a8711f.otf",
     "static/media/FlyingIllustration.svg": "/findhope/static/media/FlyingIllustration.30cdec98.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.1cbb8e34.js",
     "static/js/2.51ed1d6e.chunk.js",
-    "static/css/main.f9bdb3c2.chunk.css",
+    "static/css/main.aef0c766.chunk.css",
     "static/js/main.aff912ec.chunk.js"
   ]
 }
