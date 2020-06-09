@@ -10,6 +10,7 @@ import YouthAdvocates from "./containers/YouthAdvocates";
 import PeerCounsellor from "./containers/PeerCounsellor";
 import Profile from "./containers/Profile";
 import Questions from "./containers/Questions";
+import Result from "./containers/Result";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/questions">
               <Questions />
+            </Route>
+            <Route path="/result/:test/:score">
+              <Result />
             </Route>
             <Route path="/">
               <Homepage />
