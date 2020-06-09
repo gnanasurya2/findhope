@@ -10,12 +10,13 @@ const Button = styled.button`
   border-radius: 50%;
   font-size: 20px;
   color: white;
-  opacity: ${(props) => (props.opacity ? "0.3" : "1")};
+  opacity: ${(props) => (props.opacit ? "0.3" : "1")};
   cursor: pointer;
+  transition: all 0.2s linear;
 `;
 
 const ToggleButton = (props) => (
-  <Button color={props.color} opacity={props.opacity}>
+  <Button color={props.color} opacit={props.opacity} onClick={props.clicked}>
     {props.title}
   </Button>
 );

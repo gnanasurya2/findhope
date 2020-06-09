@@ -5,7 +5,7 @@ import Testpage from "./containers/Testpage";
 import Test from "./containers/Test";
 import Homepage from "./containers/homepage";
 
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import YouthAdvocates from "./containers/YouthAdvocates";
 import PeerCounsellor from "./containers/PeerCounsellor";
 import Profile from "./containers/Profile";
@@ -36,7 +36,7 @@ function App() {
             <Route path="/questions">
               <Questions />
             </Route>
-            <Route path="/result/:test/:score">
+            <Route path="/result/:testname/:score/:tips">
               <Result />
             </Route>
             <Route path="/">
