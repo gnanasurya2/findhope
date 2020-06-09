@@ -12,6 +12,12 @@ const Card = styled.div`
   margin-top: 40px;
   margin-bottom: 20px;
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: 700px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 40%;
+  }
 `;
 
 const Wrapper = (props) => <Card>{props.children}</Card>;
