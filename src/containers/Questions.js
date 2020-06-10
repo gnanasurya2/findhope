@@ -12,6 +12,12 @@ const Questions = (props) => {
   const [question, setQuestion] = useState(0);
   const [progress, setProgress] = useState(0);
   const [points, setPoints] = useState(0);
+  const [options, setOptions] = useState([
+    "Not at all",
+    "Several days",
+    "More than half days",
+    "Nearly everyday",
+  ]);
   const [redirect, setRedirect] = useState(false);
   const [data, setData] = useState([]);
   const [tips, setTips] = useState(0);
@@ -26,19 +32,26 @@ const Questions = (props) => {
       setQuestions(questionsData.depression);
     } else if (testname === "Stress") {
       setQuestions(questionsData.stress);
+      setOptions([
+        "Never",
+        "Almost never",
+        "Sometimes",
+        "Fairly often",
+        "Very often",
+      ]);
     } else if (testname === "Anxiety") {
       setQuestions(questionsData.anxiety);
     }
   }, [setQuestions, testname]);
   const clickHandler = (id) => {
-    if (question < questions.length - 1) {
-      console.log(jump, progress);
+    if (question < questions.length) {
       setProgress((state) => state + jump);
       setQuestion((state) => state + 1);
       setPoints((state) => state + id);
+      console.log(points, question);
       setData(data.concat(id));
     }
-    if (question === questions.length - 2) {
+    if (question === questions.length - 1) {
       setRedirect(true);
       let final = data.map((ele, index) => [ele, index]);
       final = final.sort((a, b) => b[0] - a[0]).splice(0, 3);
@@ -60,10 +73,9 @@ const Questions = (props) => {
           <h1 className={styles.question}>{questions[question]}</h1>
         </div>
         <div className={styles.optionsWrapper}>
-          <Option title="Not at all" clicked={() => clickHandler(0)} />
-          <Option title="Several days" clicked={() => clickHandler(1)} />
-          <Option title="More than half days" clicked={() => clickHandler(2)} />
-          <Option title="Nearly everyday" clicked={() => clickHandler(3)} />
+          {options.map((ele, index) => (
+            <Option title={ele} clicked={() => clickHandler(index)} />
+          ))}
         </div>
       </div>
     </div>

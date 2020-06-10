@@ -58,7 +58,7 @@ const Layout = (props) => {
                   className={styles.link}
                   onClick={openMenuHandler}
                 >
-                  Peer Counsellor
+                  Free Counseling
                 </Link>
               </div>
             </span>

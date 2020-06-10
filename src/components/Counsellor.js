@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import DefaultImage from "../asset/fbmale.png";
@@ -39,13 +39,19 @@ const Name = styled.h1`
   maring-bottom: 20px;
 `;
 const Counsellor = (props) => {
+  const [image, setImage] = useState({});
+
+  const imageLoader = async () => {
+    const img = import("../asset/Swetha Desiraju.jpeg").then((imag) => imag);
+    console.log(img);
+    return <Image src={img} />;
+  };
   return (
     <Wrapper>
-      <Image src={DefaultImage} alt="Councellor" />
       <ContentWrapper>
-        <Name>gnanasurya</Name>
-        <p>B.Tech</p>
-        <p>English,Tamil</p>
+        <Name>{props.name}</Name>
+        <p>{props.qualification}</p>
+        <p>{props.languages}</p>
         <p>100% (36votes)</p>
         <p>23356 conversations</p>
         <Link to="/profile">

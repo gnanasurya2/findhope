@@ -84,6 +84,22 @@
   padding: 0 10px;
 }
 
+.dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin-left: 40%;
+  height: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
 @media screen and (min-width:1200px) {
   .title {
     font-size: 48px;

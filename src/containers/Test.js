@@ -6,6 +6,7 @@ import PrimaryButton from "../components/PrimaryButton";
 import Tree from "../asset/feelbetter.svg";
 import { Link, Redirect } from "react-router-dom";
 import TestData from "../helpers/TestData.json";
+import GoogleLogin from "react-google-login";
 
 const Test = (props) => {
   const [data, setData] = useState({});
@@ -25,7 +26,22 @@ const Test = (props) => {
       setRedirect(true);
     }
   }, [testName]);
-
+  const googleLoginHandler = (response) => {
+    fetch(
+      "https://docs.google.com/forms/u/5/d/e/1FAIpQLSdaUun4-lKr9hkPmjtLQsbl24SPO3-Gh5OS8_JzokqGH8eERA/formResponse",
+      {
+        method: "POST",
+        headers: { Content: "xml" },
+        body: JSON.stringify({
+          "entry.1758988128": "gnanasurya",
+          "entry.1916594965": "gnanasurya2@gmail.com",
+        }),
+      }
+    )
+      .then(() => console.log("success"))
+      .catch((err) => console.log(err));
+    console.log(response);
+  };
   return (
     <div>
       {redirect ? <Redirect to="/test" /> : null}
@@ -72,7 +88,14 @@ const Test = (props) => {
           {data.depression}
         </p>
         <Link to={`/questions/${data.name}`}>
-          <PrimaryButton title="Begin test" />
+          <GoogleLogin
+            clientId="355243087266-ejcdhnmpjthed1jli8dtv2grq3gtoua7.apps.googleusercontent.com"
+            onSuccess={googleLoginHandler}
+            onFailure={googleLoginHandler}
+            cookiePolicy={"single_host_origin"}
+            buttonText="Sign in with google to continue"
+            theme="dark"
+          />
         </Link>
       </div>
     </div>

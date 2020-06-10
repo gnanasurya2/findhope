@@ -42,7 +42,7 @@ const YouthAdvocates = (props) => {
           image={SelfHelpImage}
           alt="Self help"
           title="Self-Help"
-          content="Just like physical first aid, Mental Health self help has the potential to save a lot of pain by leveraging the advantage of early intervention. Mental Health leaders learn and proliferate basic mental health self-help like Mindfulness,Relaxation,Constructive Problem Solving etc."
+          content="Just like physical first aid, Mental Health self help has the potential to save a lot of pain by leveraging the advantage of early intervention. Mental Health leaders learn and proliferate basic M.H. Self-Help"
         />
         <Card
           image={StigmaImage}

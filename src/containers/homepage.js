@@ -149,11 +149,11 @@ const Homepage = (props) => {
           </h1>
         </div>
         <div className={styles.youthAdvocateContainer}>
-          <h1 className={styles.youthAdvocateTitle}>
+          <p className={styles.youthAdvocateTitle}>
             Learn mental health basics that are essential for your wellbeing and
             parallely leverage your social media to spread this knowledge for
             your community's wellbeing.
-          </h1>
+          </p>
 
           <img
             src={FlyingIllustration}

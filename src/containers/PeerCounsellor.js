@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../styles/PeerCounsellor.module.css";
 
 import CounsellingHero from "../asset/couneslling Hero Illustration.svg";
@@ -8,8 +8,13 @@ import PrimaryButton from "../components/PrimaryButton";
 import Testimonial from "../components/Testimonial";
 import Faq from "../components/Faq";
 import { Link } from "react-router-dom";
+import Data from "../helpers/PeerCounsellor.json";
 
 const PeerCounsellor = (props) => {
+  const scrollRef = useRef();
+  useEffect(() => {
+    console.log(scrollRef.current.scroll);
+  });
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -37,10 +42,19 @@ const PeerCounsellor = (props) => {
         alt="peer counsellor"
         className={styles.image}
       />
-      <div className={styles.counsellorWrapper}>
-        <Counsellor />
-        <Counsellor />
-        <Counsellor />
+      <div className={styles.counsellorWrapper} ref={scrollRef}>
+        {Data.peerCounsellor.map((counselor) => (
+          <Counsellor
+            name={counselor.name}
+            qualification={counselor.qualification}
+            languages={counselor.languages}
+          />
+        ))}
+      </div>
+      <div className={styles.dots}>
+        <div className={styles.dot}></div>
+        <div className={styles.dot}></div>
+        <div className={styles.dot}></div>
       </div>
       <div className={styles.sessionWrapper}>
         <p className={styles.sessionTitle}>Wellbeing is just a click away</p>
