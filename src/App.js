@@ -33,7 +33,7 @@ function App() {
             <Route path="/profile">
               <Profile />
             </Route>
-            <Route path="/questions">
+            <Route path="/questions/:testname">
               <Questions />
             </Route>
             <Route path="/result/:testname/:score/:tips">

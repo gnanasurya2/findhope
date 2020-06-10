@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProgressBar from "../components/ProgressBar";
 import Option from "../components/Option";
 import styles from "../styles/Questions.module.css";
-import { Redirect } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
+import questionsData from "../helpers/questions.json";
 
-var questions = [
-  "Little interest or pleasure in doing things in the past two weeks",
-  "Feeling down depressed or hopeless in the past two weeks",
-  "Trouble falling or staying asleep or sleeping too much in the past two weeks",
-  "Feeling tired or having little energy in the past two weeks",
-  "Poor appetite or overeating in the past two weeks",
-  "Feeling bad about yourself or that you are a failure or have let yourself or your family down in the past two weeks",
-  "Trouble concentrating on things, such as studying or watching movies in the past two weeks",
-  "Moving or speaking so slowly or behaving restlesslythan usual in the past two weeks",
-  "Thoughts that you would be better off dead,or of hurting yourself in the past two weeks",
-];
 const Questions = (props) => {
+  const [questions, setQuestions] = useState([]);
+  const { testname } = useParams();
   const jump = 100 / questions.length;
   const [question, setQuestion] = useState(0);
   const [progress, setProgress] = useState(jump);
@@ -23,7 +15,15 @@ const Questions = (props) => {
   const [redirect, setRedirect] = useState(false);
   const [data, setData] = useState([]);
   const [tips, setTips] = useState(0);
-
+  useEffect(() => {
+    if (testname === "Depression") {
+      setQuestions(questionsData.depression);
+    } else if (testname === "Stress") {
+      setQuestions(questionsData.stress);
+    } else if (testname === "Anxiety") {
+      setQuestions(questionsData.anxiety);
+    }
+  }, [setQuestions, testname]);
   const clickHandler = (id) => {
     if (question < questions.length - 1) {
       setProgress((state) => state + jump);

@@ -44,7 +44,12 @@ const YouthAdvocates = (props) => {
           title="Self-Help"
           content="Just like physical first aid, Mental Health self help has the potential to save a lot of pain by leveraging the advantage of early intervention. Mental Health leaders learn and proliferate basic mental health self-help like Mindfulness,Relaxation,Constructive Problem Solving etc."
         />
-        <Card image={StigmaImage} alt="Stigma" title="Overcoming Stigma" />
+        <Card
+          image={StigmaImage}
+          alt="Stigma"
+          title="Overcoming Stigma"
+          content="People suffer alone because they suffer more when they open up and get affected by stigma. Mental Health Leaders openly talk about their issues and proactively bust stigma using resources from our program."
+        />
       </div>
       <div className={styles.scheduleWrapper}>
         <h1 className={styles.scheduleTitle}>

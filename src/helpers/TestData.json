@@ -1,0 +1,23 @@
+{
+  "depression": {
+    "name": "Depression",
+    "title": "Depression Test",
+    "titleContent": "Wondering if it's just a phase or something more? Take our short online test to find out if you're living with depression.",
+    "stat": "Over 15 %",
+    "content": "Depression is the leading cause of disability worldwide and one of the most common mental health conditions globally. That’s right: depression can be a serious illness and knows no borders. While we all know what it’s like to feel sad, persistent depression can become severe and can lead to a range of other emotional and physical health issues."
+  },
+  "anxiety": {
+    "name": "Anxiety",
+    "title": "Anxiety Test",
+    "titleContent": "Take our short online test, and learn whether you may be living with anxiety",
+    "stat": "Over 45.7 million",
+    "content": "Anxiety is the most common mental health condition, affecting over 45 million adults in India and 275 million worldwide. While most people experience some degree of anxiety in everyday life, those with more severe anxiety often feel trapped in a vicious cycle of rumination, inaction and self-doubt"
+  },
+  "stress": {
+    "name": "Stress",
+    "title": "Stress Test",
+    "titleContent": "Take our short online test, and learn how well are you coping up with stress.",
+    "stat": "Over 45.8%",
+    "content": "Stress is the most common mental health condition, affecting over 45% of adults in India. While most people experience some degree of stress in everyday life, those with more severe stress often feel trapped in a vicious cycle of rumination,inaction and self-doubt"
+  }
+}
