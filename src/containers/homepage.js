@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/homepage.module.css";
 
 import Illustration from "../components/Illustration";
-import FirstIllustration from "../asset/first_circle_illustration.svg";
+import FirstIllustration from "../asset/AlternateIllustration.svg";
 import SecondIllustration from "../asset/second_circle_illustration.svg";
 import FlyingIllustration from "../asset/FlyingIllustration.svg";
 import BackgroundContainer from "../components/BackgroundContainer";

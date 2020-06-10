@@ -149,7 +149,46 @@
   ],
   "anxiety": [
     {
-      "title": ""
+      "title": "",
+      "solutionsTitle": "",
+      "solutions": [
+        {
+          "title": "Follow the 3-3-3 rule.",
+          "content": "Look around you and name three things you see. Then, name three sounds you hear. Finally, move three parts of your body -- your ankle, fingers, or arm. Whenever you feel your brain going 100 miles per hour, this mental trick can help center your mind, bringing you back to the present moment."
+        },
+        {
+          "title": "Stay away from sugar.",
+          "content": "It may be tempting to reach for something sweet when you’re stressed, but that chocolate bar can do more harm than good, as research shows that eating too much sugar can worsen anxious feelings. Instead of reaching into the candy bowl, drink a glass of water or eat protein"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "solutionsTitle": "",
+      "solutions": [
+        {
+          "title": "Stay in your time zone.",
+          "content": "Anxiety is a future-oriented state of mind. So instead of worrying about what’s going to happen, “reel yourself back to the present,” says Tamar Chansky, Ph.D., a psychologist and author of Freeing Yourself from Anxiety. Ask yourself: What’s happening right now? Am I safe? Is there something I need to do right now?"
+        },
+        {
+          "title": "Ask for a second opinion.",
+          "content": "Call or text a friend or family member and run through your worries with them, Chansky says. “Saying them aloud to someone else can help you see them clearly for what they are.” It can also help to write your fears on paper. "
+        }
+      ]
+    },
+    {
+      "title": "",
+      "solutionsTitle": "",
+      "solutions": [
+        {
+          "title": "Stand up straight.",
+          "content": "“When we are anxious, we protect our upper body -- where our heart and lungs are located -- by hunching over,” For an immediate physical antidote to this natural reaction, pull your shoulders back, stand or sit with your feet apart, and open your chest. This helps your body start to sense that it’s back in control, she says. "
+        },
+        {
+          "title": "Just do something.",
+          "content": "Stand up, take a walk, throw away a piece of trash from your desk -- any action that interrupts your train of thought helps you regain a sense of control."
+        }
+      ]
     }
   ]
 }

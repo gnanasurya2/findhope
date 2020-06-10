@@ -8,13 +8,19 @@ import questionsData from "../helpers/questions.json";
 const Questions = (props) => {
   const [questions, setQuestions] = useState([]);
   const { testname } = useParams();
-  const jump = 100 / questions.length;
+  const [jump, setJump] = useState(0);
   const [question, setQuestion] = useState(0);
-  const [progress, setProgress] = useState(jump);
+  const [progress, setProgress] = useState(0);
   const [points, setPoints] = useState(0);
   const [redirect, setRedirect] = useState(false);
   const [data, setData] = useState([]);
   const [tips, setTips] = useState(0);
+
+  useEffect(() => {
+    let initial = 100 / questions.length;
+    setJump(100 / questions.length);
+    setProgress(initial);
+  }, [questions]);
   useEffect(() => {
     if (testname === "Depression") {
       setQuestions(questionsData.depression);
@@ -26,6 +32,7 @@ const Questions = (props) => {
   }, [setQuestions, testname]);
   const clickHandler = (id) => {
     if (question < questions.length - 1) {
+      console.log(jump, progress);
       setProgress((state) => state + jump);
       setQuestion((state) => state + 1);
       setPoints((state) => state + id);
@@ -45,7 +52,7 @@ const Questions = (props) => {
   return (
     <div>
       {redirect ? (
-        <Redirect to={`result/depression/${points}/${tips}`} />
+        <Redirect push to={`/result/${testname}/${points}/${tips}`} />
       ) : null}
       <div className={styles.wrapper}>
         <ProgressBar progress={progress} />
