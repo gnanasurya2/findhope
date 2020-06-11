@@ -22,7 +22,6 @@
   transform: rotateZ(45deg);
   top: -5%;
   left: -50%;
-  background-color: #73b5ec;
 }
 
 .square2 {
@@ -33,7 +32,6 @@
   border-radius: 40px;
   top: 45%;
   right: -40%;
-  background-color: #73b5ec;
 }
 
 .mainTitleContentContainer {
