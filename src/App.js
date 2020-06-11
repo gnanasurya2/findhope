@@ -11,6 +11,7 @@ import PeerCounsellor from "./containers/PeerCounsellor";
 import Profile from "./containers/Profile";
 import Questions from "./containers/Questions";
 import Result from "./containers/Result";
+import FreeCounseling from "./containers/FreeCounseling";
 
 function App() {
   return (
@@ -24,13 +25,16 @@ function App() {
             <Route path="/test">
               <Testpage />
             </Route>
+            <Route path="/freecounseling">
+              <FreeCounseling />
+            </Route>
             <Route path="/youthAdvocates">
               <YouthAdvocates />
             </Route>
             <Route path="/peercounsellor">
               <PeerCounsellor />
             </Route>
-            <Route path="/profile">
+            <Route path="/profile/:id">
               <Profile />
             </Route>
             <Route path="/questions/:testname">

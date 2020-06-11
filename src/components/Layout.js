@@ -40,7 +40,7 @@ const Layout = (props) => {
                   className={styles.link}
                   onClick={openMenuHandler}
                 >
-                  Youth Advocates
+                  Advocate Program
                 </Link>
               </div>
               <div>
@@ -49,7 +49,7 @@ const Layout = (props) => {
                   className={styles.link}
                   onClick={openMenuHandler}
                 >
-                  Test
+                  Self Assessments
                 </Link>
               </div>
               <div>

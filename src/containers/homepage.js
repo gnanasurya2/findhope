@@ -37,6 +37,7 @@ const colorsData = [
   ["#63a9dc", "#5ea0d2", "#e1dac5"],
   ["#f68891", "#ff8f9b", "#6a6369"],
 ];
+const linkData = ["", "/test", "/peercounsellor", "/peercounsellor"];
 const Homepage = (props) => {
   const [wrapperstyles, setWrapperStyles] = useState({ marginTop: "0vh" });
   const [position, setPosition] = useState(false);
@@ -45,6 +46,7 @@ const Homepage = (props) => {
   );
   const [content, setContent] = useState("");
   const [buttonText, setButtonText] = useState("");
+  const [link, setLink] = useState("");
   const [colors, setColors] = useState(["#73c4be", "#79cec7", "#556a78"]);
   const [animatableNumber, setAnimatableNumber] = useState([0, 0]);
   const ref = useRef();
@@ -55,6 +57,7 @@ const Homepage = (props) => {
     setContent(contentData[id]);
     setButtonText(buttonTextData[id]);
     setColors(colorsData[id]);
+    setLink(linkData[id]);
   };
 
   const scrollHandler = (totalHeight) => {
@@ -116,7 +119,9 @@ const Homepage = (props) => {
             No matter what's troubling you, get the support you need, right
             here, right now.
           </h3>
-          <PrimaryButton title="Start for free" />
+          <Link to="peercounsellor">
+            <PrimaryButton title="Start for free" />
+          </Link>
           <BackSvg />
         </div>
         <div className={styles.illustrationWrapper}>
@@ -141,6 +146,7 @@ const Homepage = (props) => {
           content={content}
           position={position}
           buttonText={buttonText}
+          linkText={link}
         />
         <Testimonial />
         <div className={styles.textContainer}>

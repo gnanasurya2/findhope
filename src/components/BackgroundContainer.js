@@ -62,7 +62,7 @@ const BackgroundContainer = (props) => {
         <Title color={props.color}>{props.title}</Title>
         <SubContent color={props.color}>{props.content}</SubContent>
         {props.buttonText ? (
-          <Link to="/test">
+          <Link to={props.linkText}>
             <Button text={props.buttonText} color={props.color} />
           </Link>
         ) : null}

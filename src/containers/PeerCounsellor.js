@@ -12,6 +12,7 @@ import Data from "../helpers/PeerCounsellor.json";
 
 const PeerCounsellor = (props) => {
   const scrollRef = useRef();
+
   useEffect(() => {
     console.log(scrollRef.current.scroll);
   });
@@ -26,6 +27,11 @@ const PeerCounsellor = (props) => {
           We all need someone to talk to, someone who listen, someone who
           understands.
         </p>
+        <div className={styles.buttonWrapper}>
+          <Link to="/freecounseling">
+            <PrimaryButton title="Free counseling" />
+          </Link>
+        </div>
         <img
           src={CounsellingHero}
           alt="counseling hero"
@@ -43,11 +49,13 @@ const PeerCounsellor = (props) => {
         className={styles.image}
       />
       <div className={styles.counsellorWrapper} ref={scrollRef}>
-        {Data.peerCounsellor.map((counselor) => (
+        {Data.peerCounsellor.map((counselor, index) => (
           <Counsellor
             name={counselor.name}
             qualification={counselor.qualification}
             languages={counselor.languages}
+            src={require(`../asset/${counselor.photo}`)}
+            id={index}
           />
         ))}
       </div>

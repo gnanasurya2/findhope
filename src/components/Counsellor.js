@@ -19,8 +19,8 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin-left: 30px;
   margin-top: 20px;
@@ -39,22 +39,16 @@ const Name = styled.h1`
   maring-bottom: 20px;
 `;
 const Counsellor = (props) => {
-  const [image, setImage] = useState({});
-
-  const imageLoader = async () => {
-    const img = import("../asset/Swetha Desiraju.jpeg").then((imag) => imag);
-    console.log(img);
-    return <Image src={img} />;
-  };
   return (
     <Wrapper>
+      <Image src={props.src} />
       <ContentWrapper>
         <Name>{props.name}</Name>
         <p>{props.qualification}</p>
         <p>{props.languages}</p>
         <p>100% (36votes)</p>
         <p>23356 conversations</p>
-        <Link to="/profile">
+        <Link to={`/profile/${props.id}`}>
           <PrimaryButton title="Know more" style={{ fontSize: "22px" }} />
         </Link>
       </ContentWrapper>
