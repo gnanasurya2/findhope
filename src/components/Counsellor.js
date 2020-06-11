@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
-import DefaultImage from "../asset/fbmale.png";
 import PrimaryButton from "./PrimaryButton";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 90%;
   margin: 32px 0px;
   padding: 40px 0px;
-  margin-left: 2.5%;
   display: flex;
-
-  align-items: flex-start;
+  align-items: center;
   background-color: white;
+  flex-direction: column;
   border-radius: 12px;
   box-shadow: 0px 1px 5px grey;
+  @media screen and (min-width: 700px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+  }
 `;
 
 const Image = styled.img`
@@ -26,32 +30,43 @@ const Image = styled.img`
   margin-top: 20px;
 `;
 
+const AnotherWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 56px;
-  padding-right: 76px;
+  padding-right: 30px;
   width: 180px;
 `;
+
 const Name = styled.h1`
   font-size: 24px;
   color: indigo;
   maring-bottom: 20px;
 `;
+
 const Counsellor = (props) => {
   return (
     <Wrapper>
-      <Image src={props.src} />
-      <ContentWrapper>
-        <Name>{props.name}</Name>
-        <p>{props.qualification}</p>
-        <p>{props.languages}</p>
-        <p>100% (36votes)</p>
-        <p>23356 conversations</p>
-        <Link to={`/profile/${props.id}`}>
-          <PrimaryButton title="Know more" style={{ fontSize: "22px" }} />
-        </Link>
-      </ContentWrapper>
+      <AnotherWrapper>
+        <Image src={props.src} />
+        <ContentWrapper>
+          <Name>{props.name}</Name>
+          <p>{props.qualification}</p>
+          <p>{props.languages}</p>
+          <p>100% (36votes)</p>
+          <p>23356 conversations</p>
+        </ContentWrapper>
+      </AnotherWrapper>
+      <Link to={`/profile/${props.id}`}>
+        <PrimaryButton title="View profile" style={{ fontSize: "22px" }} />
+      </Link>
     </Wrapper>
   );
 };

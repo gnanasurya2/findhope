@@ -7,16 +7,16 @@
       "languages": "Hindi, English",
       "linkedin": "https://www.linkedin.com/in/paraardha-goel-45947319a/",
       "email": "paraardhagoel@gmail.com",
-      "photo": "Paraardha Goel.jpeg"
+      "photo": "Paraardha Goel.png"
     },
     {
-      "name": "Sahithi Mannar Tirumala Bukkapatnam",
+      "name": "Sahithi Mannar",
       "qualification": "MA clinical psychology",
       "about": "I feel Mental health should be a topic that can be spoke on a coffee with friends and over a dinner with family .I'm a dancing psychologist who believes that the best message I can give to the world is my story. ",
       "languages": "Telugu , Hindi , English",
       "linkedin": "https://www.linkedin.com/in/sahithi-mannar-tirumala-bukkapatnam-09a705153/",
       "email": "sahithimannartb@gmail.com",
-      "photo": "Sahithi Mannar.jpg"
+      "photo": "Sahithi Mannar.png"
     },
     {
       "name": "Swetha Desiraju",
@@ -25,7 +25,16 @@
       "languages": "English, Telugu, Hindi ",
       "linkedin": "",
       "email": "swethadesiraju@gmail.com",
-      "photo": "Swetha Desiraju.jpeg"
+      "photo": "Swetha Desiraju.png"
+    },
+    {
+      "name": "Riya Aggarwal",
+      "qualification": "B.A.(H) Applied Psychology",
+      "about": "An optimistic ambivert person with qualities like empathy and communication skills",
+      "languages": "English and Hindi",
+      "linkedin": "",
+      "email": "riyaqms@gmail.com",
+      "photo": "Riya aggarwal.png"
     }
   ]
 }

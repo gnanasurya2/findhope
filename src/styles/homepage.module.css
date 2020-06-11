@@ -16,7 +16,7 @@
 .mainTitle {
   width: 90%;
   text-align: center;
-  color: black;
+  color: #413D45;
   font-size: 48px;
   font-weight: 600;
   margin-top: 15vh;
@@ -25,9 +25,11 @@
 .subTitle {
   text-align: center;
   margin-top: 40px;
-  font-size: 32px;
+  font-size: 28px;
+  line-height: 110%;
   font-weight: 500;
   width: 80%;
+  color: #413D45;
 }
 
 .illustrationWrapper {

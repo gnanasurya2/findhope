@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/PeerCounsellor.module.css";
 
 import CounsellingHero from "../asset/couneslling Hero Illustration.svg";
@@ -9,16 +9,23 @@ import Testimonial from "../components/Testimonial";
 import Faq from "../components/Faq";
 import { Link } from "react-router-dom";
 import Data from "../helpers/PeerCounsellor.json";
+import Arrow from "../asset/arrow.svg";
 
 const PeerCounsellor = (props) => {
-  const scrollRef = useRef();
-
-  useEffect(() => {
-    console.log(scrollRef.current.scroll);
-  });
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
+  const changeCounsellor = (direction) => {
+    const length = Data.peerCounsellor.length - 1;
+    if (index === 0 && direction === -1) {
+      setIndex(length);
+    } else if (index === length && direction === 1) {
+      setIndex(0);
+    } else {
+      setIndex((state) => state + direction);
+    }
+  };
   return (
     <div>
       <div className={styles.wrapper}>
@@ -39,30 +46,33 @@ const PeerCounsellor = (props) => {
         />
       </div>
       <h1 className={styles.counsellingTitle}>
-        Our Peer counselor are empathetic, non-judgmental friends with extensive
-        psychology background who will help you deal with whatever is troubling
-        you
+        Our Peer counselors are empathetic, non-judgmental friends with
+        extensive psychology background who will help you deal with whatever is
+        troubling you
       </h1>
       <img
         src={PeerCounselling}
         alt="peer counsellor"
         className={styles.image}
       />
-      <div className={styles.counsellorWrapper} ref={scrollRef}>
-        {Data.peerCounsellor.map((counselor, index) => (
-          <Counsellor
-            name={counselor.name}
-            qualification={counselor.qualification}
-            languages={counselor.languages}
-            src={require(`../asset/${counselor.photo}`)}
-            id={index}
+      <div className={styles.counsellorWrapper}>
+        <div className={styles.controls} onClick={() => changeCounsellor(-1)}>
+          <img src={Arrow} alt="left arrow" />
+        </div>
+        <Counsellor
+          name={Data.peerCounsellor[index].name}
+          qualification={Data.peerCounsellor[index].qualification}
+          languages={Data.peerCounsellor[index].languages}
+          src={require(`../asset/${Data.peerCounsellor[index].photo}`)}
+          id={index}
+        />
+        <div className={styles.controls} onClick={() => changeCounsellor(1)}>
+          <img
+            src={Arrow}
+            alt="right arrow"
+            style={{ transform: "rotateZ(180deg)" }}
           />
-        ))}
-      </div>
-      <div className={styles.dots}>
-        <div className={styles.dot}></div>
-        <div className={styles.dot}></div>
-        <div className={styles.dot}></div>
+        </div>
       </div>
       <div className={styles.sessionWrapper}>
         <p className={styles.sessionTitle}>Wellbeing is just a click away</p>
@@ -110,3 +120,13 @@ const PeerCounsellor = (props) => {
 };
 
 export default PeerCounsellor;
+
+// {Data.peerCounsellor.map((counselor, index) => (
+//   <Counsellor
+//     name={counselor.name}
+//     qualification={counselor.qualification}
+//     languages={counselor.languages}
+//     src={require(`../asset/${counselor.photo}`)}
+//     id={index}
+//   />
+// ))}

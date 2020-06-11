@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "../styles/Profile.module.css";
-import PrimaryButton from "../components/PrimaryButton";
 import Details from "../components/Details";
 import Data from "../helpers/PeerCounsellor.json";
 import { useParams } from "react-router-dom";
@@ -11,7 +10,9 @@ import mail from "../asset/mail.svg";
 const Profile = (props) => {
   const { id } = useParams();
   const [data, setData] = useState(Data.peerCounsellor[id]);
-
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  });
   return (
     <div className={styles.wrapper}>
       <img
@@ -19,14 +20,6 @@ const Profile = (props) => {
         alt="profile"
         className={styles.profilePhoto}
       />
-      <h1 className={styles.name}>{data.name}</h1>
-      <p className={styles.qualification}>{data.qualification}</p>
-      <PrimaryButton
-        title="Book now"
-        style={{ backgroundColor: "#4C90C7", width: "80%" }}
-      />
-      <Details title="About" content={data.about} />
-      <Details title="Known Languages" content={data.languages} />
       <div className={styles.media}>
         {data.linkedin ? (
           <a href={data.linkedin}>
@@ -39,6 +32,10 @@ const Profile = (props) => {
           onClick={() => navigator.clipboard.writeText(data.email)}
         />
       </div>
+      <h1 className={styles.name}>{data.name}</h1>
+      <p className={styles.qualification}>{data.qualification}</p>
+      <Details title="About" content={data.about} />
+      <Details title="Known Languages" content={data.languages} />
     </div>
   );
 };
