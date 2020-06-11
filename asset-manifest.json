@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/findhope/static/css/main.80191099.chunk.css",
-    "main.js": "/findhope/static/js/main.fa323e1f.chunk.js",
-    "main.js.map": "/findhope/static/js/main.fa323e1f.chunk.js.map",
+    "main.css": "/findhope/static/css/main.126c2fb1.chunk.css",
+    "main.js": "/findhope/static/js/main.28e0bcf5.chunk.js",
+    "main.js.map": "/findhope/static/js/main.28e0bcf5.chunk.js.map",
     "runtime-main.js": "/findhope/static/js/runtime-main.37044e22.js",
     "runtime-main.js.map": "/findhope/static/js/runtime-main.37044e22.js.map",
     "static/js/2.d4715d24.chunk.js": "/findhope/static/js/2.d4715d24.chunk.js",
@@ -10,9 +10,9 @@
     "static/js/3.3a6e1cf6.chunk.js": "/findhope/static/js/3.3a6e1cf6.chunk.js",
     "static/js/3.3a6e1cf6.chunk.js.map": "/findhope/static/js/3.3a6e1cf6.chunk.js.map",
     "index.html": "/findhope/index.html",
-    "precache-manifest.97da4791e89a00114fac8738cd46f3ec.js": "/findhope/precache-manifest.97da4791e89a00114fac8738cd46f3ec.js",
+    "precache-manifest.13ee4126f6e09ee471566301dd0219a8.js": "/findhope/precache-manifest.13ee4126f6e09ee471566301dd0219a8.js",
     "service-worker.js": "/findhope/service-worker.js",
-    "static/css/main.80191099.chunk.css.map": "/findhope/static/css/main.80191099.chunk.css.map",
+    "static/css/main.126c2fb1.chunk.css.map": "/findhope/static/css/main.126c2fb1.chunk.css.map",
     "static/js/2.d4715d24.chunk.js.LICENSE.txt": "/findhope/static/js/2.d4715d24.chunk.js.LICENSE.txt",
     "static/media/AlternateIllustration.svg": "/findhope/static/media/AlternateIllustration.1d791448.svg",
     "static/media/index.css": "/findhope/static/media/ApercuLight.64a8711f.otf",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.37044e22.js",
     "static/js/2.d4715d24.chunk.js",
-    "static/css/main.80191099.chunk.css",
-    "static/js/main.fa323e1f.chunk.js"
+    "static/css/main.126c2fb1.chunk.css",
+    "static/js/main.28e0bcf5.chunk.js"
   ]
 }
