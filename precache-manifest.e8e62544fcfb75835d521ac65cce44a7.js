@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17211fee238b54f8bff7356488b8488b",
+    "revision": "d7db32a1c4b6366cd22ace367681d06e",
     "url": "/findhope/index.html"
   },
   {
-    "revision": "a3bc435cb18c8c0b92a0",
-    "url": "/findhope/static/css/main.e9ecfebf.chunk.css"
+    "revision": "6bd1bf46bd64b3fc9ad5",
+    "url": "/findhope/static/css/main.c745f98d.chunk.css"
   },
   {
-    "revision": "3bc0476d1d34fa9fa9ff",
-    "url": "/findhope/static/js/2.d43b6b43.chunk.js"
+    "revision": "9ab31bd241123e821f81",
+    "url": "/findhope/static/js/2.9ed30750.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/findhope/static/js/2.d43b6b43.chunk.js.LICENSE.txt"
+    "url": "/findhope/static/js/2.9ed30750.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3bc435cb18c8c0b92a0",
-    "url": "/findhope/static/js/main.752b8bcb.chunk.js"
+    "revision": "6bd1bf46bd64b3fc9ad5",
+    "url": "/findhope/static/js/main.d714ba92.chunk.js"
   },
   {
     "revision": "7a6ea221958ad584b345",
@@ -52,16 +52,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/findhope/static/media/HomePageLastIllustration.9568d098.svg"
   },
   {
-    "revision": "eba60a547397e188b8384b2514d81336",
-    "url": "/findhope/static/media/Paraardha Goel.eba60a54.jpeg"
+    "revision": "71ca3459c62eaa42b70659a81666eb46",
+    "url": "/findhope/static/media/Paraardha Goel.71ca3459.png"
   },
   {
-    "revision": "91bb5772d4be683e7518bfbc68a9f2ff",
-    "url": "/findhope/static/media/Sahithi Mannar.91bb5772.jpg"
+    "revision": "238f9e6d6efcc91adf6dc6e6d00ed27b",
+    "url": "/findhope/static/media/Riya aggarwal.238f9e6d.png"
   },
   {
-    "revision": "3afb3d3ae38e730ee42099963a2584ed",
-    "url": "/findhope/static/media/Swetha Desiraju.3afb3d3a.jpeg"
+    "revision": "7094eaa511f75c63b03e9d9ce4118426",
+    "url": "/findhope/static/media/Sahithi Mannar.7094eaa5.png"
+  },
+  {
+    "revision": "9eeae4258e6faab014b27fe7838e7cd7",
+    "url": "/findhope/static/media/Swetha Desiraju.9eeae425.png"
+  },
+  {
+    "revision": "290174b6259ea557de7fde682836d3c6",
+    "url": "/findhope/static/media/arrow.290174b6.svg"
   },
   {
     "revision": "0c744c525f1a73dd850d034eec752768",

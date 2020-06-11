@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/findhope/static/css/main.e9ecfebf.chunk.css",
-    "main.js": "/findhope/static/js/main.752b8bcb.chunk.js",
-    "main.js.map": "/findhope/static/js/main.752b8bcb.chunk.js.map",
+    "main.css": "/findhope/static/css/main.c745f98d.chunk.css",
+    "main.js": "/findhope/static/js/main.d714ba92.chunk.js",
+    "main.js.map": "/findhope/static/js/main.d714ba92.chunk.js.map",
     "runtime-main.js": "/findhope/static/js/runtime-main.1cbb8e34.js",
     "runtime-main.js.map": "/findhope/static/js/runtime-main.1cbb8e34.js.map",
-    "static/js/2.d43b6b43.chunk.js": "/findhope/static/js/2.d43b6b43.chunk.js",
-    "static/js/2.d43b6b43.chunk.js.map": "/findhope/static/js/2.d43b6b43.chunk.js.map",
+    "static/js/2.9ed30750.chunk.js": "/findhope/static/js/2.9ed30750.chunk.js",
+    "static/js/2.9ed30750.chunk.js.map": "/findhope/static/js/2.9ed30750.chunk.js.map",
     "index.html": "/findhope/index.html",
-    "precache-manifest.7e95d2529003a3abbed6d318cfa58194.js": "/findhope/precache-manifest.7e95d2529003a3abbed6d318cfa58194.js",
+    "precache-manifest.e8e62544fcfb75835d521ac65cce44a7.js": "/findhope/precache-manifest.e8e62544fcfb75835d521ac65cce44a7.js",
     "service-worker.js": "/findhope/service-worker.js",
-    "static/css/main.e9ecfebf.chunk.css.map": "/findhope/static/css/main.e9ecfebf.chunk.css.map",
-    "static/js/2.d43b6b43.chunk.js.LICENSE.txt": "/findhope/static/js/2.d43b6b43.chunk.js.LICENSE.txt",
+    "static/css/main.c745f98d.chunk.css.map": "/findhope/static/css/main.c745f98d.chunk.css.map",
+    "static/js/2.9ed30750.chunk.js.LICENSE.txt": "/findhope/static/js/2.9ed30750.chunk.js.LICENSE.txt",
     "static/media/AlternateIllustration.svg": "/findhope/static/media/AlternateIllustration.1d791448.svg",
     "static/media/Apercu Bold.otf": "/findhope/static/media/Apercu Bold.359120e3.otf",
     "static/media/ApercuLight.otf": "/findhope/static/media/ApercuLight.64a8711f.otf",
@@ -19,9 +19,11 @@
     "static/media/FlyingIllustration.svg": "/findhope/static/media/FlyingIllustration.30cdec98.svg",
     "static/media/HeroPageIllustration.svg": "/findhope/static/media/HeroPageIllustration.bc64e4d1.svg",
     "static/media/HomePageLastIllustration.svg": "/findhope/static/media/HomePageLastIllustration.9568d098.svg",
-    "static/media/Paraardha Goel.jpeg": "/findhope/static/media/Paraardha Goel.eba60a54.jpeg",
-    "static/media/Sahithi Mannar.jpg": "/findhope/static/media/Sahithi Mannar.91bb5772.jpg",
-    "static/media/Swetha Desiraju.jpeg": "/findhope/static/media/Swetha Desiraju.3afb3d3a.jpeg",
+    "static/media/Paraardha Goel.png": "/findhope/static/media/Paraardha Goel.71ca3459.png",
+    "static/media/Riya aggarwal.png": "/findhope/static/media/Riya aggarwal.238f9e6d.png",
+    "static/media/Sahithi Mannar.png": "/findhope/static/media/Sahithi Mannar.7094eaa5.png",
+    "static/media/Swetha Desiraju.png": "/findhope/static/media/Swetha Desiraju.9eeae425.png",
+    "static/media/arrow.svg": "/findhope/static/media/arrow.290174b6.svg",
     "static/media/back.svg": "/findhope/static/media/back.0c744c52.svg",
     "static/media/certified (2).svg": "/findhope/static/media/certified (2).01399f7b.svg",
     "static/media/certified.svg": "/findhope/static/media/certified.0a738ca1.svg",
@@ -45,8 +47,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1cbb8e34.js",
-    "static/js/2.d43b6b43.chunk.js",
-    "static/css/main.e9ecfebf.chunk.css",
-    "static/js/main.752b8bcb.chunk.js"
+    "static/js/2.9ed30750.chunk.js",
+    "static/css/main.c745f98d.chunk.css",
+    "static/js/main.d714ba92.chunk.js"
   ]
 }
