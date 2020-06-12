@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/findhope/static/css/main.1885a259.chunk.css",
-    "main.js": "/findhope/static/js/main.a8f429d4.chunk.js",
-    "main.js.map": "/findhope/static/js/main.a8f429d4.chunk.js.map",
+    "main.js": "/findhope/static/js/main.217c73bd.chunk.js",
+    "main.js.map": "/findhope/static/js/main.217c73bd.chunk.js.map",
     "runtime-main.js": "/findhope/static/js/runtime-main.1cbb8e34.js",
     "runtime-main.js.map": "/findhope/static/js/runtime-main.1cbb8e34.js.map",
     "static/js/2.40256f21.chunk.js": "/findhope/static/js/2.40256f21.chunk.js",
     "static/js/2.40256f21.chunk.js.map": "/findhope/static/js/2.40256f21.chunk.js.map",
     "index.html": "/findhope/index.html",
-    "precache-manifest.8b61720784366014b0c9ee848ef573bf.js": "/findhope/precache-manifest.8b61720784366014b0c9ee848ef573bf.js",
+    "precache-manifest.f7575026853177d1dffad825a9cf6094.js": "/findhope/precache-manifest.f7575026853177d1dffad825a9cf6094.js",
     "service-worker.js": "/findhope/service-worker.js",
     "static/css/main.1885a259.chunk.css.map": "/findhope/static/css/main.1885a259.chunk.css.map",
     "static/js/2.40256f21.chunk.js.LICENSE.txt": "/findhope/static/js/2.40256f21.chunk.js.LICENSE.txt",
@@ -28,6 +28,7 @@
     "static/media/certified (2).svg": "/findhope/static/media/certified (2).01399f7b.svg",
     "static/media/certified.svg": "/findhope/static/media/certified.0a738ca1.svg",
     "static/media/couneslling Hero Illustration.svg": "/findhope/static/media/couneslling Hero Illustration.b76785b3.svg",
+    "static/media/counselling Second Illustration (1).svg": "/findhope/static/media/counselling Second Illustration (1).d5dcb605.svg",
     "static/media/counselling Second Illustration.svg": "/findhope/static/media/counselling Second Illustration.613a2c8d.svg",
     "static/media/depression_hero.svg": "/findhope/static/media/depression_hero.0543c2e2.svg",
     "static/media/drive the change.svg": "/findhope/static/media/drive the change.7513c803.svg",
@@ -49,6 +50,6 @@
     "static/js/runtime-main.1cbb8e34.js",
     "static/js/2.40256f21.chunk.js",
     "static/css/main.1885a259.chunk.css",
-    "static/js/main.a8f429d4.chunk.js"
+    "static/js/main.217c73bd.chunk.js"
   ]
 }

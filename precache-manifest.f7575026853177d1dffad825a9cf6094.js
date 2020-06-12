@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee5b0804dbd66537d1f221ef946533be",
+    "revision": "0dc7c86e2ed17e6321f69699f4881f2d",
     "url": "/findhope/index.html"
   },
   {
-    "revision": "cdbd9dcd97e41fb72056",
+    "revision": "94b0c57dcade93c0a545",
     "url": "/findhope/static/css/main.1885a259.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/findhope/static/js/2.40256f21.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cdbd9dcd97e41fb72056",
-    "url": "/findhope/static/js/main.a8f429d4.chunk.js"
+    "revision": "94b0c57dcade93c0a545",
+    "url": "/findhope/static/js/main.217c73bd.chunk.js"
   },
   {
     "revision": "7a6ea221958ad584b345",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b76785b3030b0387b6031772022bbf3e",
     "url": "/findhope/static/media/couneslling Hero Illustration.b76785b3.svg"
+  },
+  {
+    "revision": "d5dcb605f3dec20e690ad487fd6054d1",
+    "url": "/findhope/static/media/counselling Second Illustration (1).d5dcb605.svg"
   },
   {
     "revision": "613a2c8df994fd41f71b0baac049b5cc",
