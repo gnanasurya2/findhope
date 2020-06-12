@@ -9,7 +9,7 @@ import mail from "../asset/mail.svg";
 
 const Profile = (props) => {
   const { id } = useParams();
-  const [data, setData] = useState(Data.peerCounsellor[id]);
+  const [data] = useState(Data.peerCounsellor[id]);
   useEffect(() => {
     window.scroll({ top: 0 });
   });

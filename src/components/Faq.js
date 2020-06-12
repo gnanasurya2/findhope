@@ -42,7 +42,7 @@ const Content = styled.p`
 `;
 const Faq = (props) => {
   const [visible, setVisible] = useState(true);
-  const [value, set, stop] = useSpring(() => ({
+  const [value, set] = useSpring(() => ({
     angle: 135,
   }));
   const clickHandler = () => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
 const Svg = styled.svg`

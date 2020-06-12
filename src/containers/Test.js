@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../styles/Test.module.css";
 import InfoBox from "../components/InfoBox";
-import PrimaryButton from "../components/PrimaryButton";
 import Tree from "../asset/feelbetter.svg";
 import { Link, Redirect } from "react-router-dom";
 import TestData from "../helpers/TestData.json";

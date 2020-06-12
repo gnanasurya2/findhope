@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 
@@ -19,7 +19,7 @@ const Hamburger = (props) => {
   const [value, set] = useSpring(() => ({ opacity: 1, angle: 0 }));
   useEffect(() => {
     set(props.toggle ? { opacity: 1, angle: 0 } : { opacity: 0, angle: 45 });
-  }, [props.toggle]);
+  }, [props.toggle, set]);
   return (
     <Wrapper onClick={props.onClick}>
       <Bar

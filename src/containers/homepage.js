@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import styles from "../styles/homepage.module.css";
 
 import Illustration from "../components/Illustration";
@@ -39,7 +39,6 @@ const colorsData = [
 ];
 const linkData = ["", "/test", "/peercounsellor", "/peercounsellor"];
 const Homepage = (props) => {
-  const [wrapperstyles, setWrapperStyles] = useState({ marginTop: "0vh" });
   const [position, setPosition] = useState(false);
   const [title, setTitle] = useState(
     "Reaching out for help doesnt mean you are weak"
@@ -59,8 +58,7 @@ const Homepage = (props) => {
     setColors(colorsData[id]);
     setLink(linkData[id]);
   };
-
-  const scrollHandler = (totalHeight) => {
+  const scrollHandler = useCallback((totalHeight) => {
     let screenPosition = (window.scrollY / window.innerHeight) * 100;
     const element =
       (movg.current.getBoundingClientRect().top / window.innerHeight) * 100;
@@ -92,8 +90,8 @@ const Homepage = (props) => {
     } else {
       setPosition(false);
     }
-    setWrapperStyles({ marginTop: screenPosition + "vh" });
-  };
+  }, []);
+
   useEffect(() => {
     let func;
     console.log("created");
@@ -107,11 +105,10 @@ const Homepage = (props) => {
     return () => {
       window.removeEventListener("scroll", func);
     };
-  }, []);
+  }, [scrollHandler]);
 
   return (
     <div className={styles.wrapper}>
-      {/*<div className={styles.marker} style={wrapperstyles}></div>*/}
       <div ref={ref}>
         <div className={styles.container}>
           <h1 className={styles.mainTitle}>Mental health made accessible</h1>
@@ -119,7 +116,7 @@ const Homepage = (props) => {
             No matter what's troubling you, get the support you need, right
             here, right now.
           </h3>
-          <Link to="peercounsellor">
+          <Link to="/peercounsellor">
             <PrimaryButton title="Start for free" />
           </Link>
           <BackSvg />

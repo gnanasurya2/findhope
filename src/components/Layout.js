@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "../styles/Layout.module.css";
-import Logo from "../asset/logo.jpeg";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 import Hamburger from "./Hamburger";
@@ -8,7 +7,7 @@ import Hamburger from "./Hamburger";
 const Layout = (props) => {
   const [opacity, setOpacity] = useState({ opacity: 0, display: "none" });
   const [toggle, setToggle] = useState(true);
-  const [value, set, stop] = useSpring(() => ({
+  const [value, set] = useSpring(() => ({
     width: 0,
   }));
 

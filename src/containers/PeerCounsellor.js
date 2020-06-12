@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/PeerCounsellor.module.css";
 
 import CounsellingHero from "../asset/couneslling Hero Illustration.svg";
-import PeerCounselling from "../asset/counselling Second Illustration.svg";
+import PeerCounselling from "../asset/counselling Second Illustration (1).svg";
 import Counsellor from "../components/Counsellor";
 import PrimaryButton from "../components/PrimaryButton";
 import Testimonial from "../components/Testimonial";
@@ -10,9 +10,14 @@ import Faq from "../components/Faq";
 import { Link } from "react-router-dom";
 import Data from "../helpers/PeerCounsellor.json";
 import Arrow from "../asset/arrow.svg";
+import FirstImage from "../asset/Paraardha Goel.png";
+import SecondImage from "../asset/Sahithi Mannar.png";
+import ThirdImage from "../asset/Swetha Desiraju.png";
+import FourthImage from "../asset/Riya aggarwal.png";
 
 const PeerCounsellor = (props) => {
   const [index, setIndex] = useState(0);
+  const [images] = useState([FirstImage, SecondImage, ThirdImage, FourthImage]);
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -63,7 +68,7 @@ const PeerCounsellor = (props) => {
           name={Data.peerCounsellor[index].name}
           qualification={Data.peerCounsellor[index].qualification}
           languages={Data.peerCounsellor[index].languages}
-          src={require(`../asset/${Data.peerCounsellor[index].photo}`)}
+          src={images[index]}
           id={index}
         />
         <div className={styles.controls} onClick={() => changeCounsellor(1)}>
@@ -120,13 +125,3 @@ const PeerCounsellor = (props) => {
 };
 
 export default PeerCounsellor;
-
-// {Data.peerCounsellor.map((counselor, index) => (
-//   <Counsellor
-//     name={counselor.name}
-//     qualification={counselor.qualification}
-//     languages={counselor.languages}
-//     src={require(`../asset/${counselor.photo}`)}
-//     id={index}
-//   />
-// ))}

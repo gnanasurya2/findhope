@@ -16,7 +16,7 @@ import FreeCounseling from "./containers/FreeCounseling";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Layout>
           <Switch>
             <Route path="/test/:testName">
@@ -25,14 +25,14 @@ function App() {
             <Route path="/test">
               <Testpage />
             </Route>
+            <Route path="/peercounsellor/">
+              <PeerCounsellor />
+            </Route>
             <Route path="/freecounseling">
               <FreeCounseling />
             </Route>
             <Route path="/youthAdvocates">
               <YouthAdvocates />
-            </Route>
-            <Route path="/peercounsellor">
-              <PeerCounsellor />
             </Route>
             <Route path="/profile/:id">
               <Profile />

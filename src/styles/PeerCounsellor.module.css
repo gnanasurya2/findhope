@@ -2,7 +2,7 @@
   width: 100%;
   height: 90vh;
   background-color: #f5e6d8;
-  padding: 48px 0;
+  padding: 60px 0;
   padding-top: 160px;
   display: flex;
   flex-direction: column;
@@ -94,9 +94,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: calc(100% -20px);
   height: 100%;
-  padding: 0 10px;
 }
 
 .controls {
@@ -109,6 +107,9 @@
 }
 
 
+.controls img {
+  width: 100%;
+}
 
 @media screen and (min-width:1200px) {
   .title {

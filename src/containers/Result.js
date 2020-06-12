@@ -73,7 +73,7 @@ const Result = (props) => {
     }
 
     setTitle(str);
-  }, []);
+  }, [params.score, params.testname, params.tips]);
 
   const clickHandler = (id) => {
     const toggle = [true, true, true];
