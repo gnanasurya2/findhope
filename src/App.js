@@ -34,7 +34,7 @@ function App() {
             <Route path="/youthAdvocates">
               <YouthAdvocates />
             </Route>
-            <Route path="/profile/:id">
+            <Route path="/profile/:name">
               <Profile />
             </Route>
             <Route path="/questions/:testname">

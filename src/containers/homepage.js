@@ -94,7 +94,6 @@ const Homepage = (props) => {
 
   useEffect(() => {
     let func;
-    console.log("created");
     window.addEventListener(
       "scroll",
       (func = () =>

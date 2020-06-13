@@ -48,7 +48,6 @@ const Questions = (props) => {
       setProgress((state) => state + jump);
       setQuestion((state) => state + 1);
       setPoints((state) => state + id);
-      console.log(points, question);
       setData(data.concat(id));
     }
     if (question === questions.length - 1) {

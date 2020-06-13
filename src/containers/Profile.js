@@ -8,15 +8,16 @@ import linkedin from "../asset/linkedin.svg";
 import mail from "../asset/mail.svg";
 
 const Profile = (props) => {
-  const { id } = useParams();
-  const [data] = useState(Data.peerCounsellor[id]);
+  const { name } = useParams();
+  const [data, setData] = useState(Data.peerCounsellor[0]);
   useEffect(() => {
     window.scroll({ top: 0 });
-  });
+    setData(Data.peerCounsellor.filter((ele) => ele.url === name)[0]);
+  }, [setData, name]);
   return (
     <div className={styles.wrapper}>
       <img
-        src={require(`../asset/${data.photo}`)}
+        src={process.env.PUBLIC_URL + `/assest/${data.photo}`}
         alt="profile"
         className={styles.profilePhoto}
       />

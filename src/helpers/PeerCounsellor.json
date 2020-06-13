@@ -7,7 +7,8 @@
       "languages": "Hindi, English",
       "linkedin": "https://www.linkedin.com/in/paraardha-goel-45947319a/",
       "email": "paraardhagoel@gmail.com",
-      "photo": "Paraardha Goel.png"
+      "photo": "Paraardha Goel.png",
+      "url": "paraardha"
     },
     {
       "name": "Sahithi Mannar",
@@ -16,7 +17,8 @@
       "languages": "Telugu , Hindi , English",
       "linkedin": "https://www.linkedin.com/in/sahithi-mannar-tirumala-bukkapatnam-09a705153/",
       "email": "sahithimannartb@gmail.com",
-      "photo": "Sahithi Mannar.png"
+      "photo": "Sahithi Mannar.png",
+      "url": "sahithi"
     },
     {
       "name": "Swetha Desiraju",
@@ -25,7 +27,8 @@
       "languages": "English, Telugu, Hindi ",
       "linkedin": "",
       "email": "swethadesiraju@gmail.com",
-      "photo": "Swetha Desiraju.png"
+      "photo": "Swetha Desiraju.png",
+      "url": "swetha"
     },
     {
       "name": "Riya Aggarwal",
@@ -34,7 +37,8 @@
       "languages": "English and Hindi",
       "linkedin": "",
       "email": "riyaqms@gmail.com",
-      "photo": "Riya aggarwal.png"
+      "photo": "Riya aggarwal.png",
+      "url": "riya"
     }
   ]
 }

@@ -5,10 +5,6 @@ import Testimonial from "../components/Testimonial";
 import { NavLink } from "react-router-dom";
 
 const TestPage = (props) => {
-  const testClickHandler = () => {
-    console.log(props.route);
-  };
-
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -36,7 +32,6 @@ const TestPage = (props) => {
             title="Am I sad or Depressed ?"
             background="#4dabde"
             color="#dcf0f7"
-            clicked={testClickHandler}
           />
         </NavLink>
         <NavLink to="/test/stress" style={{ textDecoration: "none" }}>

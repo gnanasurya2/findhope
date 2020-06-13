@@ -24,7 +24,6 @@ const Test = (props) => {
   const { testName } = useParams();
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    console.log("asfaosf");
     if (testName === "depression") {
       setData(TestData.depression);
     } else if (testName === "stress") {
@@ -46,11 +45,6 @@ const Test = (props) => {
     }
   }, [testName]);
   const googleLoginHandler = (response) => {
-    let body = {
-      "entry.1539871518": response.profileObj.name.split(" ").join(""),
-      "entry.1418110594": response.profileObj.email,
-    };
-    console.log(body);
     fetch(
       `https://cors-anywhere.herokuapp.com/${formLink}?${entryValues[0]}=${response.profileObj.name}&${entryValues[1]}=${response.profileObj.email}`,
       {
@@ -58,10 +52,8 @@ const Test = (props) => {
         headers: { Content: "xml" },
       }
     )
-      .then(() => console.log("success"))
+      .then(() => setRedirect(true))
       .catch((err) => console.log(err));
-    console.log(response.profileObj.name);
-    setRedirect(true);
   };
   return (
     <div>

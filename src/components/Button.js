@@ -12,11 +12,7 @@ const StyledButton = styled.button`
   color: ${(props) => props.color};
 `;
 const Button = (props) => {
-  return (
-    <StyledButton onClick={() => console.log("clicked")} color={props.color}>
-      {props.text}
-    </StyledButton>
-  );
+  return <StyledButton color={props.color}>{props.text}</StyledButton>;
 };
 
 export default Button;

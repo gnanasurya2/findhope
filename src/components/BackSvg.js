@@ -1,10 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 const BackSvg = (props) => {
-  const ref = useRef();
-  useEffect(() => {
-    console.log(ref.current.getBBox());
-  }, []);
   return (
     <svg
       version="1.1"
@@ -14,7 +10,6 @@ const BackSvg = (props) => {
       y="0px"
       viewBox="346 375 381 550"
       style={{ zIndex: 2, height: "30vh", marginTop: "30px" }}
-      ref={ref}
     >
       <g>
         <defs>

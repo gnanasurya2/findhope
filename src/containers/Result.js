@@ -31,7 +31,6 @@ const Result = (props) => {
       while (tips > 0) {
         Arr.push(tips % 10);
         tips = Math.trunc(tips / 10);
-        console.log(tips);
       }
       setSolutions(Arr);
       setActive(Arr[0]);

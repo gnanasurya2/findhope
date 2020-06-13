@@ -10,14 +10,9 @@ import Faq from "../components/Faq";
 import { Link } from "react-router-dom";
 import Data from "../helpers/PeerCounsellor.json";
 import Arrow from "../asset/arrow.svg";
-import FirstImage from "../asset/Paraardha Goel.png";
-import SecondImage from "../asset/Sahithi Mannar.png";
-import ThirdImage from "../asset/Swetha Desiraju.png";
-import FourthImage from "../asset/Riya aggarwal.png";
 
 const PeerCounsellor = (props) => {
   const [index, setIndex] = useState(0);
-  const [images] = useState([FirstImage, SecondImage, ThirdImage, FourthImage]);
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -68,8 +63,11 @@ const PeerCounsellor = (props) => {
           name={Data.peerCounsellor[index].name}
           qualification={Data.peerCounsellor[index].qualification}
           languages={Data.peerCounsellor[index].languages}
-          src={images[index]}
-          id={index}
+          src={
+            process.env.PUBLIC_URL +
+            `/assest/${Data.peerCounsellor[index].photo}`
+          }
+          id={Data.peerCounsellor[index].url}
         />
         <div className={styles.controls} onClick={() => changeCounsellor(1)}>
           <img
