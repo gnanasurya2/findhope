@@ -75,13 +75,11 @@ const YouthAdvocates = (props) => {
         />
       </div>
       <div className={styles.signUpWrapper}>
-        <h1 className={styles.signUpContent}>
-          You are at the right place if
-          <br />
-          <br />
+        <h1 className={styles.signUpContent}>You are at the right place if</h1>
+        <p className={styles.contentSub}>
           You may have faced Mental Health struggle (or maybe not), but if don't
           want your community to suffer alone.
-        </h1>
+        </p>
         <img src={DriveImage} alt="sign up" className={styles.image} />
         <PrimaryButton
           title="Sign Up"

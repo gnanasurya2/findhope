@@ -52,7 +52,7 @@ const Faq = (props) => {
   return (
     <Wrapper>
       <InnerWrapper>
-        <h1 style={{ fontSize: "32px", width: "100%" }}>{props.title}</h1>
+        <h1 style={{ fontSize: "24px", width: "100%" }}>{props.title}</h1>
         <Circle onClick={clickHandler}>
           <Arrow
             style={{

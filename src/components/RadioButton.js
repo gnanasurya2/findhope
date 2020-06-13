@@ -21,9 +21,9 @@ const Radio = styled.div`
 `;
 
 const Selected = styled.div`
-  width: 50%;
-  height: 50%;
-  background-color: blue;
+  width: 60%;
+  height: 60%;
+  background-color: #167efb;
   border-radius: 50%;
   position: relative;
   top: 50%;

@@ -45,16 +45,20 @@ const PeerCounsellor = (props) => {
           className={styles.image}
         />
       </div>
-      <h1 className={styles.counsellingTitle}>
-        Our Peer counselors are empathetic, non-judgmental friends with
-        extensive psychology background who will help you deal with whatever is
-        troubling you
-      </h1>
       <img
         src={PeerCounselling}
         alt="peer counsellor"
         className={styles.image}
       />
+      <h1 style={{ textAlign: "center", marginTop: "30px" }}>
+        You are in safe hands
+      </h1>
+      <p className={styles.counsellingTitle}>
+        Our Peer counselors are empathetic, non-judgmental friends with
+        extensive psychology background who will help you deal with whatever is
+        troubling you
+      </p>
+
       <div className={styles.counsellorWrapper}>
         <div className={styles.controls} onClick={() => changeCounsellor(-1)}>
           <img src={Arrow} alt="left arrow" />
@@ -62,7 +66,6 @@ const PeerCounsellor = (props) => {
         <Counsellor
           name={Data.peerCounsellor[index].name}
           qualification={Data.peerCounsellor[index].qualification}
-          languages={Data.peerCounsellor[index].languages}
           src={
             process.env.PUBLIC_URL +
             `/assest/${Data.peerCounsellor[index].photo}`
@@ -79,7 +82,7 @@ const PeerCounsellor = (props) => {
       </div>
       <div className={styles.sessionWrapper}>
         <p className={styles.sessionTitle}>Wellbeing is just a click away</p>
-        <PrimaryButton title="Peer Session" />
+        <PrimaryButton title="Free Counseling" />
       </div>
       <h1 className={styles.title}>Hear from Hundreds of Happy Users</h1>
       <Testimonial />

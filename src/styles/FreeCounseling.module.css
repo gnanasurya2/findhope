@@ -27,3 +27,27 @@
     width: 95%;
     margin: 2.5%;
 }
+
+.radioWrapper {
+    width: 95%;
+}
+
+@media screen and (min-width:1200px) {
+    .radioWrapper {
+        width: 40%;
+    }
+
+    .buttonWrapper {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .radioWrapper {
+        width: 60%;
+    }
+
+    .buttonWrapper {
+        width: 40%;
+    }
+}

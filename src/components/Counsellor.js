@@ -5,7 +5,8 @@ import PrimaryButton from "./PrimaryButton";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  width: 90%;
+  width: 80%;
+  height: 400px;
   margin: 32px 0px;
   padding: 40px 0px;
   display: flex;
@@ -40,7 +41,7 @@ const AnotherWrapper = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 56px;
+  padding-left: 26px;
   padding-right: 30px;
   width: 180px;
 `;
@@ -59,7 +60,6 @@ const Counsellor = (props) => {
         <ContentWrapper>
           <Name>{props.name}</Name>
           <p>{props.qualification}</p>
-          <p>{props.languages}</p>
           <p>100% (36votes)</p>
           <p>23356 conversations</p>
         </ContentWrapper>

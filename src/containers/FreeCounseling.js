@@ -61,14 +61,16 @@ const FreeCounseling = (props) => {
         value={description}
         onChangeText={(event) => setDescription(event.target.value)}
       />
-      <p className={styles.title}>Preferred language</p>
-      {languages.map((ele, index) => (
-        <RadioButton
-          text={ele}
-          selected={selected[index]}
-          clickHandler={() => radioHandler(index)}
-        />
-      ))}
+      <div className={styles.radioWrapper}>
+        <p className={styles.title}>Preferred language</p>
+        {languages.map((ele, index) => (
+          <RadioButton
+            text={ele}
+            selected={selected[index]}
+            clickHandler={() => radioHandler(index)}
+          />
+        ))}
+      </div>
       <div className={styles.buttonWrapper} onClick={submitHandler}>
         <p>SEND</p>
       </div>

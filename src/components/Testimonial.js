@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Photo from "../asset/fbmale.png";
+import Data from "../helpers/Testimonial.json";
+import { useState } from "react";
 
 const Wrapper = styled.div`
   width: 95%;
-  min-height:400px;
+  min-height:500px;
   margin: 32px 2.5%;
   display: flex;
   flex-direction: column;
@@ -51,21 +53,28 @@ const Content = styled.h2`
   width: 95%;
 `;
 const Testimonial = (props) => {
+  const [index, setIndex] = useState(0);
+
+  const changeContentHandler = (dir) => {
+    const length = Data.testimonial.length - 1;
+    if (dir === -1 && index === 0) {
+      setIndex(length);
+    } else if (dir === 1 && index === length) {
+      setIndex(0);
+    } else {
+      setIndex((state) => state + dir);
+    }
+  };
   return (
     <Wrapper>
       <ImageWrapper>
-        <Arrow left />
+        <Arrow left onClick={() => changeContentHandler(-1)} />
         <Image src={Photo} />
-        <Arrow />
+        <Arrow onClick={() => changeContentHandler(1)} />
       </ImageWrapper>
-      <Content>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-        repudiandae culpa? Error, dignissimos laborum tenetur qui voluptas
-        sapiente vero libero dolor! Sit eveniet illo nisi magnam at, minima
-        corrupti inventore.
-      </Content>
+      <Content>{Data.testimonial[index].content}</Content>
       <h3 style={{ fontSize: "24px", marginTop: "24px", marginBottom: "24px" }}>
-        Gnanasurya
+        {Data.testimonial[index].name}
       </h3>
     </Wrapper>
   );

@@ -6,6 +6,7 @@ import Tree from "../asset/feelbetter.svg";
 import { Link, Redirect } from "react-router-dom";
 import TestData from "../helpers/TestData.json";
 import GoogleLogin from "react-google-login";
+import PrimaryButton from "../components/PrimaryButton";
 
 const Test = (props) => {
   const [data, setData] = useState({});
@@ -84,6 +85,21 @@ const Test = (props) => {
         >
           <h1 className={styles.mainTitle}>{data.title}</h1>
           <p className={styles.mainContent}>{data.titleContent}</p>
+          <GoogleLogin
+            clientId="355243087266-ejcdhnmpjthed1jli8dtv2grq3gtoua7.apps.googleusercontent.com"
+            render={(props) => (
+              <PrimaryButton
+                title="Start test"
+                style={{ width: "50%", margin: "0px 25%" }}
+                onClick={props.onClick}
+                disabled={props.disabled}
+              />
+            )}
+            onSuccess={googleLoginHandler}
+            cookiePolicy={"single_host_origin"}
+            buttonText="Sign in with google to continue"
+            theme="dark"
+          />
         </div>
       </div>
       <InfoBox background={backgroundcolor[0]} color={backgroundcolor[1]}>

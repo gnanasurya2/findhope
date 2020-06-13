@@ -98,6 +98,11 @@
   margin: 32px 0px;
 }
 
+.contentSub {
+  font-size: 20px;
+  text-align: center;
+}
+
 @media screen and (min-width: 700px) {
   .wrapper {
     height: 60vh;
@@ -117,8 +122,14 @@
     font-size: 40px;
     line-height: 50px;
   }
+
   .image {
     width: 60%;
+  }
+
+  .contentSub {
+    font-size: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -126,9 +137,11 @@
   .signUpContent {
     width: 70%;
   }
+
   .image {
     width: 30%;
   }
+
   .title {
     font-size: 56px;
   }
