@@ -142,4 +142,8 @@
     font-size: 48px;
     margin: 50px 0;
   }
+
+  .controls {
+    width: 3%;
+  }
 }

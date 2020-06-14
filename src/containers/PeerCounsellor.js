@@ -10,6 +10,7 @@ import Faq from "../components/Faq";
 import { Link } from "react-router-dom";
 import Data from "../helpers/PeerCounsellor.json";
 import Arrow from "../asset/arrow.svg";
+import TestimonialData from "../helpers/PeerTestimonial.json";
 
 const PeerCounsellor = (props) => {
   const [index, setIndex] = useState(0);
@@ -85,7 +86,7 @@ const PeerCounsellor = (props) => {
         <PrimaryButton title="Free Counseling" />
       </div>
       <h1 className={styles.title}>Hear from Hundreds of Happy Users</h1>
-      <Testimonial />
+      <Testimonial data={TestimonialData} />
       <div className={styles.assessmentWrapper}>
         <h1 className={styles.assessmentTitle}>
           Not Sure if you need counseling

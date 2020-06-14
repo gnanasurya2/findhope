@@ -67,7 +67,7 @@ const Layout = (props) => {
           style={{ marginLeft: "40px", zIndex: 200 }}
           onClick={openMenuHandler}
         >
-          <Hamburger color="white" toggle={toggle} />
+          <Hamburger color="black" toggle={toggle} />
         </div>
       </header>
       {props.children}

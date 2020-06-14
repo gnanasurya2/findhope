@@ -3,6 +3,7 @@ import styles from "../styles/Testpage.module.css";
 import TestContainer from "../components/TestContainer";
 import Testimonial from "../components/Testimonial";
 import { NavLink } from "react-router-dom";
+import Data from "../helpers/TestTestimonal.json";
 
 const TestPage = (props) => {
   useEffect(() => {
@@ -49,7 +50,7 @@ const TestPage = (props) => {
           />
         </NavLink>
       </div>
-      <Testimonial />
+      <Testimonial data={Data} />
     </div>
   );
 };

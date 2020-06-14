@@ -1,22 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import Photo from "../asset/fbmale.png";
-import Data from "../helpers/Testimonial.json";
 import { useState } from "react";
 
 const Wrapper = styled.div`
   width: 95%;
-  min-height:500px;
+  min-height: 530px;
   margin: 32px 2.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border solid 3px orange;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 40%;
-    margin-left:30%;
-    padding:100px 0px;
+    margin-left: 30%;
+    padding: 60px 0px;
   }
 `;
 const ImageWrapper = styled.div`
@@ -45,6 +43,7 @@ const Image = styled.img`
   height: 120px;
   margin: 16px 24px;
   border-radius: 50%;
+  visibility: hidden;
 `;
 
 const Content = styled.h2`
@@ -53,6 +52,7 @@ const Content = styled.h2`
   width: 95%;
 `;
 const Testimonial = (props) => {
+  const [Data] = useState(props.data);
   const [index, setIndex] = useState(0);
 
   const changeContentHandler = (dir) => {
@@ -67,15 +67,22 @@ const Testimonial = (props) => {
   };
   return (
     <Wrapper>
+      <Content>{Data.testimonial[index].content}</Content>
       <ImageWrapper>
         <Arrow left onClick={() => changeContentHandler(-1)} />
-        <Image src={Photo} />
+        <h3
+          style={{
+            fontSize: "24px",
+            marginTop: "24px",
+            marginBottom: "24px",
+            marginLeft: "10px",
+            marginRight: "10px",
+          }}
+        >
+          {Data.testimonial[index].name}
+        </h3>
         <Arrow onClick={() => changeContentHandler(1)} />
       </ImageWrapper>
-      <Content>{Data.testimonial[index].content}</Content>
-      <h3 style={{ fontSize: "24px", marginTop: "24px", marginBottom: "24px" }}>
-        {Data.testimonial[index].name}
-      </h3>
     </Wrapper>
   );
 };

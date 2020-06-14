@@ -12,6 +12,7 @@ import Testimonial from "../components/Testimonial";
 import LastIllustration from "../asset/HomePageLastIllustration.svg";
 import Stat from "../components/Stat";
 import { Link } from "react-router-dom";
+import Data from "../helpers/Testimonial.json";
 
 const titleData = [
   "Reaching out for help doesnt mean you are weak",
@@ -144,7 +145,7 @@ const Homepage = (props) => {
           buttonText={buttonText}
           linkText={link}
         />
-        <Testimonial />
+        <Testimonial data={Data} />
         <div className={styles.textContainer}>
           <h1 className={styles.messageText}>
             Introducing Our Leadership Program
