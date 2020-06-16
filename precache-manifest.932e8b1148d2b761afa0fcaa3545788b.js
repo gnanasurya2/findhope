@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ae2a0b033d77f8a81845bb1a6243928",
+    "revision": "ef1fdc9f3f4d4cfb849f2b414f4aff5f",
     "url": "/index.html"
   },
   {
-    "revision": "4d4e78c2ca036e3acc4a",
+    "revision": "1ccab28e7714aac55c85",
     "url": "/static/css/main.db2be2ba.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ba05c66f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d4e78c2ca036e3acc4a",
-    "url": "/static/js/main.d781512c.chunk.js"
+    "revision": "1ccab28e7714aac55c85",
+    "url": "/static/js/main.8e2242a2.chunk.js"
   },
   {
     "revision": "5e3c1eadddbea7054d75",
