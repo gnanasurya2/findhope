@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9658bdf0.chunk.css",
-    "main.js": "/static/js/main.eb287b34.chunk.js",
-    "main.js.map": "/static/js/main.eb287b34.chunk.js.map",
+    "main.css": "/static/css/main.9fc3d796.chunk.css",
+    "main.js": "/static/js/main.8b3c5179.chunk.js",
+    "main.js.map": "/static/js/main.8b3c5179.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.de77be61.js",
     "runtime-main.js.map": "/static/js/runtime-main.de77be61.js.map",
-    "static/js/2.b89db014.chunk.js": "/static/js/2.b89db014.chunk.js",
-    "static/js/2.b89db014.chunk.js.map": "/static/js/2.b89db014.chunk.js.map",
+    "static/js/2.f317f5c2.chunk.js": "/static/js/2.f317f5c2.chunk.js",
+    "static/js/2.f317f5c2.chunk.js.map": "/static/js/2.f317f5c2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ac604653fae06f548d9b26b73621bec7.js": "/precache-manifest.ac604653fae06f548d9b26b73621bec7.js",
+    "precache-manifest.8d79edfecdfb0cc1ee29c3b61c20a1c4.js": "/precache-manifest.8d79edfecdfb0cc1ee29c3b61c20a1c4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9658bdf0.chunk.css.map": "/static/css/main.9658bdf0.chunk.css.map",
-    "static/js/2.b89db014.chunk.js.LICENSE.txt": "/static/js/2.b89db014.chunk.js.LICENSE.txt",
+    "static/css/main.9fc3d796.chunk.css.map": "/static/css/main.9fc3d796.chunk.css.map",
+    "static/js/2.f317f5c2.chunk.js.LICENSE.txt": "/static/js/2.f317f5c2.chunk.js.LICENSE.txt",
     "static/media/AlternateIllustration.svg": "/static/media/AlternateIllustration.1d791448.svg",
     "static/media/index.css": "/static/media/ApercuLight.64a8711f.otf",
     "static/media/FlyingIllustration.svg": "/static/media/FlyingIllustration.30cdec98.svg",
@@ -27,7 +27,7 @@
     "static/media/iconmonstr-quote-7.svg": "/static/media/iconmonstr-quote-7.adad3167.svg",
     "static/media/icons8-checked.svg": "/static/media/icons8-checked.f23dbf67.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.61524034.svg",
-    "static/media/mail.svg": "/static/media/mail.5f4d2e5a.svg",
+    "static/media/mail.svg": "/static/media/mail.fe89273f.svg",
     "static/media/recognising.svg": "/static/media/recognising.218ea7f9.svg",
     "static/media/second_circle_illustration.svg": "/static/media/second_circle_illustration.18a63887.svg",
     "static/media/stigma.svg": "/static/media/stigma.d403b1e7.svg",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.de77be61.js",
-    "static/js/2.b89db014.chunk.js",
-    "static/css/main.9658bdf0.chunk.css",
-    "static/js/main.eb287b34.chunk.js"
+    "static/js/2.f317f5c2.chunk.js",
+    "static/css/main.9fc3d796.chunk.css",
+    "static/js/main.8b3c5179.chunk.js"
   ]
 }
