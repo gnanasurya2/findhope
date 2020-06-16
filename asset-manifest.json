@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.0800b490.chunk.css",
-    "main.js": "/static/js/main.b4261588.chunk.js",
-    "main.js.map": "/static/js/main.b4261588.chunk.js.map",
+    "main.css": "/static/css/main.e86aae6e.chunk.css",
+    "main.js": "/static/js/main.2c1a92d1.chunk.js",
+    "main.js.map": "/static/js/main.2c1a92d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.de77be61.js",
     "runtime-main.js.map": "/static/js/runtime-main.de77be61.js.map",
-    "static/js/2.ba05c66f.chunk.js": "/static/js/2.ba05c66f.chunk.js",
-    "static/js/2.ba05c66f.chunk.js.map": "/static/js/2.ba05c66f.chunk.js.map",
+    "static/js/2.b89db014.chunk.js": "/static/js/2.b89db014.chunk.js",
+    "static/js/2.b89db014.chunk.js.map": "/static/js/2.b89db014.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.79b2a131caa4675f806706c3d670e286.js": "/precache-manifest.79b2a131caa4675f806706c3d670e286.js",
+    "precache-manifest.583231cc3299fcc116413a5a595ee1ee.js": "/precache-manifest.583231cc3299fcc116413a5a595ee1ee.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0800b490.chunk.css.map": "/static/css/main.0800b490.chunk.css.map",
-    "static/js/2.ba05c66f.chunk.js.LICENSE.txt": "/static/js/2.ba05c66f.chunk.js.LICENSE.txt",
+    "static/css/main.e86aae6e.chunk.css.map": "/static/css/main.e86aae6e.chunk.css.map",
+    "static/js/2.b89db014.chunk.js.LICENSE.txt": "/static/js/2.b89db014.chunk.js.LICENSE.txt",
     "static/media/AlternateIllustration.svg": "/static/media/AlternateIllustration.1d791448.svg",
     "static/media/index.css": "/static/media/ApercuLight.64a8711f.otf",
     "static/media/FlyingIllustration.svg": "/static/media/FlyingIllustration.30cdec98.svg",
     "static/media/HomePageLastIllustration.svg": "/static/media/HomePageLastIllustration.9568d098.svg",
+    "static/media/Hope Logo.svg": "/static/media/Hope Logo.7346ceaa.svg",
     "static/media/arrow.svg": "/static/media/arrow.1b539efa.svg",
     "static/media/certified.svg": "/static/media/certified.0a738ca1.svg",
     "static/media/couneslling Hero Illustration.svg": "/static/media/couneslling Hero Illustration.b76785b3.svg",
@@ -34,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.de77be61.js",
-    "static/js/2.ba05c66f.chunk.js",
-    "static/css/main.0800b490.chunk.css",
-    "static/js/main.b4261588.chunk.js"
+    "static/js/2.b89db014.chunk.js",
+    "static/css/main.e86aae6e.chunk.css",
+    "static/js/main.2c1a92d1.chunk.js"
   ]
 }
