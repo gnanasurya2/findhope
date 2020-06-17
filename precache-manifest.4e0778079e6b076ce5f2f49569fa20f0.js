@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eec53401e0da06b393277d8a028d623f",
+    "revision": "80b6ecd71175d88ed47122971ede7900",
     "url": "/index.html"
   },
   {
-    "revision": "f3d245a090ea1095c3f6",
-    "url": "/static/css/main.9fc3d796.chunk.css"
+    "revision": "30e8f201690e81e51572",
+    "url": "/static/css/main.e542ea94.chunk.css"
   },
   {
     "revision": "cbb1d37c64b76aab8f5c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f317f5c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f3d245a090ea1095c3f6",
-    "url": "/static/js/main.8b3c5179.chunk.js"
+    "revision": "30e8f201690e81e51572",
+    "url": "/static/js/main.b1429516.chunk.js"
   },
   {
     "revision": "5e3c1eadddbea7054d75",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/HomePageLastIllustration.9568d098.svg"
   },
   {
-    "revision": "04e0573cc0f4384b0161b987c8ac632b",
-    "url": "/static/media/Hope Logo.04e0573c.svg"
+    "revision": "95fb760596a64d7440a59c777d0ac8b5",
+    "url": "/static/media/Hope Logo.95fb7605.svg"
   },
   {
     "revision": "1b539efa85862813d574744dfcc65074",
