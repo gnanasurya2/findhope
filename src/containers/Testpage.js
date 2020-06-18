@@ -20,7 +20,7 @@ const TestPage = (props) => {
           <h1 className={styles.mainTitle}>Assessments</h1>
           <p className={styles.mainContent}>
             Simple questionnaires on various topics to help you understand
-            youserlf better.
+            yourself better.
             <br />
             <br />
             Choose the ones that comes closest to describing your problem.

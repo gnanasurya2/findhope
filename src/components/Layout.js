@@ -3,7 +3,8 @@ import styles from "../styles/Layout.module.css";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 import Hamburger from "./Hamburger";
-// <img src={Logo} alt="Findhope" className={styles.logoImage} />
+import Logo from "../asset/Hope Logo.svg";
+
 const Layout = (props) => {
   const [opacity, setOpacity] = useState({ opacity: 0, display: "none" });
   const [toggle, setToggle] = useState(true);
@@ -21,7 +22,11 @@ const Layout = (props) => {
   return (
     <>
       <header className={styles.head}>
-        <div className={styles.logo}></div>
+        <div className={styles.logo}>
+          <Link to="/">
+            <img src={Logo} alt="Findhope" className={styles.logoImage} />
+          </Link>
+        </div>
         <animated.nav
           className={styles.navbar}
           style={{ width: value.width.interpolate((x) => x + "vw") }}
@@ -39,7 +44,7 @@ const Layout = (props) => {
                   className={styles.link}
                   onClick={openMenuHandler}
                 >
-                  Advocate Program
+                  Wellbeing Program
                 </Link>
               </div>
               <div>
@@ -53,11 +58,11 @@ const Layout = (props) => {
               </div>
               <div>
                 <Link
-                  to="/peercounsellor"
+                  to="/freecounseling"
                   className={styles.link}
                   onClick={openMenuHandler}
                 >
-                  Free Counseling
+                  Free Support
                 </Link>
               </div>
             </span>
@@ -67,7 +72,7 @@ const Layout = (props) => {
           style={{ marginLeft: "40px", zIndex: 200 }}
           onClick={openMenuHandler}
         >
-          <Hamburger color="black" toggle={toggle} />
+          <Hamburger color="white" toggle={toggle} />
         </div>
       </header>
       {props.children}

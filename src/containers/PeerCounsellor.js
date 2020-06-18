@@ -36,8 +36,8 @@ const PeerCounsellor = (props) => {
           understands.
         </p>
         <div className={styles.buttonWrapper}>
-          <Link to="/freecounseling">
-            <PrimaryButton title="Free counseling" />
+          <Link to="/freecounselingform" style={{ textDecoration: "none" }}>
+            <PrimaryButton title="Free Support" />
           </Link>
         </div>
         <img
@@ -83,7 +83,9 @@ const PeerCounsellor = (props) => {
       </div>
       <div className={styles.sessionWrapper}>
         <p className={styles.sessionTitle}>Wellbeing is just a click away</p>
-        <PrimaryButton title="Free Counseling" />
+        <Link to="/freecounselingform" style={{ textDecoration: "none" }}>
+          <PrimaryButton title="Free Counseling" />
+        </Link>
       </div>
       <h1 className={styles.title}>Hear from Hundreds of Happy Users</h1>
       <Testimonial data={TestimonialData} />
@@ -91,7 +93,7 @@ const PeerCounsellor = (props) => {
         <h1 className={styles.assessmentTitle}>
           Not Sure if you need counseling
         </h1>
-        <Link to="/test">
+        <Link to="/test" style={{ textDecoration: "none" }}>
           <PrimaryButton title="Free Assessment" />
         </Link>
       </div>
@@ -119,7 +121,7 @@ const PeerCounsellor = (props) => {
         />
         <Faq
           title="How can I be a peer Counselor ?"
-          content="Anyone can be a Peer Counselors given that they are passionate about Counselling , while not expecting a fee and can go through a training session."
+          content="BA/MA/MSC - psychology, counseling/clinical psychology, organizational psycho, developmental psycho, human development, life span development, therapy, psychiatry, mental health (diploma course) / CBT (diploma course) can become a peer counselor."
         />
       </div>
     </div>

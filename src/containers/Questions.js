@@ -23,9 +23,7 @@ const Questions = (props) => {
   const [tips, setTips] = useState(0);
 
   useEffect(() => {
-    let initial = 100 / questions.length;
     setJump(100 / questions.length);
-    setProgress(initial);
   }, [questions]);
   useEffect(() => {
     if (testname === "Depression") {
@@ -47,7 +45,11 @@ const Questions = (props) => {
     if (question < questions.length) {
       setProgress((state) => state + jump);
       setQuestion((state) => state + 1);
-      setPoints((state) => state + id);
+      if (testname === "Stress" && (question === 3 || 4 || 6 || 7)) {
+        setPoints((state) => state + (4 - id));
+      } else {
+        setPoints((state) => state + id);
+      }
       setData(data.concat(id));
     }
     if (question === questions.length - 1) {

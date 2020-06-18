@@ -64,7 +64,7 @@ const Counsellor = (props) => {
           <p>23356 conversations</p>
         </ContentWrapper>
       </AnotherWrapper>
-      <Link to={`/profile/${props.id}`}>
+      <Link to={`/profile/${props.id}`} style={{ textDecoration: "none" }}>
         <PrimaryButton title="View profile" style={{ fontSize: "22px" }} />
       </Link>
     </Wrapper>

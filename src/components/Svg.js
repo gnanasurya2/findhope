@@ -1,11 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import styles from "../styles/Svg.module.css";
 
 const Svg = (props) => {
   const ref = useRef();
-  useEffect(() => {
-    console.log(ref.current.getBBox());
-  }, []);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +10,6 @@ const Svg = (props) => {
       height="475vh"
       width="100%"
       preserveAspectRatio="none"
-      xmlnsV="https://vecta.io/nano"
       ref={ref}
       style={{
         ...props.styles,

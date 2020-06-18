@@ -12,11 +12,12 @@ import Profile from "./containers/Profile";
 import Questions from "./containers/Questions";
 import Result from "./containers/Result";
 import FreeCounseling from "./containers/FreeCounseling";
+import Advocates from "./containers/Advocates";
 
 function App() {
   return (
     <div className="App">
-      <Router basename="/">
+      <Router>
         <Layout>
           <Switch>
             <Route path="/test/:testName">
@@ -25,10 +26,10 @@ function App() {
             <Route path="/test">
               <Testpage />
             </Route>
-            <Route path="/peercounsellor/">
+            <Route path="/freecounseling">
               <PeerCounsellor />
             </Route>
-            <Route path="/freecounseling">
+            <Route path="/freecounselingform">
               <FreeCounseling />
             </Route>
             <Route path="/youthAdvocates">
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route path="/result/:testname/:score/:tips">
               <Result />
+            </Route>
+            <Route path="/youthadvocate/:name">
+              <Advocates />
             </Route>
             <Route path="/">
               <Homepage />
