@@ -5,7 +5,7 @@ import Details from "../components/Details";
 import Data from "../helpers/PeerCounsellor.json";
 import { useParams } from "react-router-dom";
 import linkedin from "../asset/linkedin.svg";
-import mail from "../asset/mail.svg";
+import Capsule from "../components/Capsule";
 
 const Profile = (props) => {
   const { name } = useParams();
@@ -27,16 +27,20 @@ const Profile = (props) => {
             <img src={linkedin} alt="linkedin" />
           </a>
         ) : null}
-        <img
-          src={mail}
-          alt="mail"
-          onClick={() => navigator.clipboard.writeText(data.email)}
-        />
       </div>
       <h1 className={styles.name}>{data.name}</h1>
       <p className={styles.qualification}>{data.qualification}</p>
       <Details title="About" content={data.about} />
       <Details title="Known Languages" content={data.languages} />
+      {data.interest.length ? (
+        <Details title="Interests">
+          <div className={styles.capsuleWrapper}>
+            {data.interest.map((ele) => (
+              <Capsule>{ele}</Capsule>
+            ))}
+          </div>
+        </Details>
+      ) : null}
     </div>
   );
 };

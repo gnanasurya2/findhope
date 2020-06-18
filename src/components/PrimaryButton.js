@@ -10,6 +10,9 @@ const Button = styled.button`
   margin-top: 24px;
   color: white;
   box-shadow: 0px 3px 5px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   &:hover {
     background-color: #005ee5;
@@ -26,6 +29,7 @@ const PrimaryButton = (props) => {
       onClick={props.onClick}
       disabled={props.disabled}
     >
+      {props.children}
       {props.title}
     </Button>
   );

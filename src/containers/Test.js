@@ -7,6 +7,7 @@ import { Link, Redirect } from "react-router-dom";
 import TestData from "../helpers/TestData.json";
 import GoogleLogin from "react-google-login";
 import PrimaryButton from "../components/PrimaryButton";
+import Loader from "../components/Loader";
 
 const Test = (props) => {
   const [data, setData] = useState({});
@@ -22,6 +23,7 @@ const Test = (props) => {
     "entry.1758988128",
     "entry.1916594965",
   ]);
+  const [loading, setLoading] = useState(false);
   const { testName } = useParams();
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -46,11 +48,18 @@ const Test = (props) => {
     }
   }, [testName]);
   const googleLoginHandler = (response) => {
+    setLoading(true);
     fetch(
-      `https://cors-anywhere.herokuapp.com/${formLink}?${entryValues[0]}=${response.profileObj.name}&${entryValues[1]}=${response.profileObj.email}`,
+      `https://cors-anywhere.herokuapp.com/${formLink}?${
+        entryValues[0]
+      }=${response.profileObj.name.split(" ").join("")}&${entryValues[1]}=${
+        response.profileObj.email
+      }`,
       {
         method: "POST",
-        headers: { Content: "xml" },
+        headers: {
+          "Content-Type": "xml",
+        },
       }
     )
       .then(() => setRedirect(true))
@@ -85,15 +94,18 @@ const Test = (props) => {
         >
           <h1 className={styles.mainTitle}>{data.title}</h1>
           <p className={styles.mainContent}>{data.titleContent}</p>
+
           <GoogleLogin
             clientId="355243087266-ejcdhnmpjthed1jli8dtv2grq3gtoua7.apps.googleusercontent.com"
             render={(props) => (
               <PrimaryButton
-                title="Start test"
+                title={loading ? "" : "Start Here"}
                 style={{ width: "50%", margin: "0px 25%" }}
                 onClick={props.onClick}
                 disabled={props.disabled}
-              />
+              >
+                {loading ? <Loader /> : null}
+              </PrimaryButton>
             )}
             onSuccess={googleLoginHandler}
             cookiePolicy={"single_host_origin"}

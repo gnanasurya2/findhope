@@ -23,6 +23,7 @@ const Details = (props) => {
     <Wrapper>
       <Title>{props.title}</Title>
       <Content>{props.content}</Content>
+      {props.children}
     </Wrapper>
   );
 };

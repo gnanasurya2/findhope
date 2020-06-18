@@ -2,6 +2,7 @@
   "name": "findhope",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://findhope.in/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "cname-webpack-plugin": "^2.0.1",
     "gh-pages": "^2.2.0"
   }
 }

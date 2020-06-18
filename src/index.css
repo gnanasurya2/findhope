@@ -1,12 +1,14 @@
 @font-face {
   font-family: Apercu;
   src: url("./asset/ApercuLight.otf") format('opentype');
+  font-display: swap;
 
 }
 
 @font-face {
   font-family: ApercuBold;
   src: url("./asset/Apercu\ Bold.otf");
+  font-display: swap;
 }
 
 html,

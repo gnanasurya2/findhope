@@ -23,7 +23,7 @@ const YouthAdvocates = (props) => {
           <div className={styles.bar2}></div>
           <div className={styles.circle}></div>
         </div>
-        <h1 className={styles.title}>The Mental Health Leaders Program</h1>
+        <h1 className={styles.title}>The Mental Health Wellbeing Program</h1>
         <p className={styles.content}>
           If you have experienced a mental health struggle then you know that
           the road to recovery has 3 pitfalls. Recognising what you are dealing
@@ -36,7 +36,7 @@ const YouthAdvocates = (props) => {
           image={ProblemImage}
           alt="Problem Thinking"
           title="Recognising problem"
-          content="What do we do when we have a cut ? reach out for a Band Aid right, It's per se because we understand that we are bleeding. Isn't it obvius with mental health too. But how many of us know the signs of common disorders like Depression ? As a Mental heath leader you will learn and empower others to take action in recognising disorders"
+          content="What do we do when we have a cut ? reach out for a Band Aid right. Isn't it obvius with mental health too. But how many of us know the signs of common disorders like Depression ? As a Mental heath leader you will learn and empower others to take action in recognising disorders"
         />
         <Card
           image={SelfHelpImage}
@@ -81,10 +81,16 @@ const YouthAdvocates = (props) => {
           want your community to suffer alone.
         </p>
         <img src={DriveImage} alt="sign up" className={styles.image} />
-        <PrimaryButton
-          title="Sign Up"
-          style={{ width: "50%", backgroundColor: "grey" }}
-        />
+
+        <PrimaryButton style={{ width: "50%", backgroundColor: "grey" }}>
+          <a
+            href="https://forms.gle/Sud6PfLkMkH9VTYf9"
+            target="__blank"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Sign up
+          </a>
+        </PrimaryButton>
       </div>
     </div>
   );

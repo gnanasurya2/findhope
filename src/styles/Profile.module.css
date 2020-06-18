@@ -1,35 +1,41 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
 }
 
 .profilePhoto {
-    border-radius: 50%;
-    margin: 48px 0px;
-    width: 200px;
+  border-radius: 50%;
+  margin: 48px 0px;
+  width: 200px;
 }
 
 .name {
-    color: indigo;
+  color: indigo;
 }
 
 .qualification {
-    margin: 32px 10px;
-    font-size: 20px;
-    text-align: center;
+  margin: 32px 10px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .media {
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: 30%;
-    padding: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 30%;
+  justify-content: space-evenly;
+  padding: 30px 0px;
 }
 
 .media img {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.capsuleWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }

@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import Data from "../helpers/Testimonial.json";
 
 const titleData = [
-  "Reaching out for help doesnt mean you are weak",
+  "Reaching out for help doesn't mean you are weak",
   "Understand yourself better",
   "Worry less live more",
   "Boost Happiness",
@@ -38,11 +38,11 @@ const colorsData = [
   ["#63a9dc", "#5ea0d2", "#e1dac5"],
   ["#f68891", "#ff8f9b", "#6a6369"],
 ];
-const linkData = ["", "/test", "/peercounsellor", "/peercounsellor"];
+const linkData = ["", "/test", "/freecounseling", "/freecounseling"];
 const Homepage = (props) => {
   const [position, setPosition] = useState(false);
   const [title, setTitle] = useState(
-    "Reaching out for help doesnt mean you are weak"
+    "Reaching out for help doesn't mean you are weak"
   );
   const [content, setContent] = useState("");
   const [buttonText, setButtonText] = useState("");
@@ -116,8 +116,8 @@ const Homepage = (props) => {
             No matter what's troubling you, get the support you need, right
             here, right now.
           </h3>
-          <Link to="/peercounsellor">
-            <PrimaryButton title="Start for free" />
+          <Link to="/freecounseling" style={{ textDecoration: "none" }}>
+            <PrimaryButton title="Support for free" />
           </Link>
           <BackSvg />
         </div>
@@ -130,7 +130,7 @@ const Homepage = (props) => {
           <Illustration
             svg={SecondIllustration}
             title="The help you need, right in your pocket"
-            content="Free virtual counseling for a healthier, happier life"
+            content="Free virtual support for a healthier, happier life"
           />
         </div>
       </div>
@@ -148,14 +148,15 @@ const Homepage = (props) => {
         <Testimonial data={Data} />
         <div className={styles.textContainer}>
           <h1 className={styles.messageText}>
-            Introducing Our Leadership Program
+            Introducing Our Wellbeing Program
           </h1>
         </div>
         <div className={styles.youthAdvocateContainer}>
           <p className={styles.youthAdvocateTitle}>
             Learn mental health basics that are essential for your wellbeing and
             parallely leverage your social media to spread this knowledge for
-            your community's wellbeing.
+            your community's wellbeing. Spreading Wellbeing is a superpower too
+            !
           </p>
 
           <img
@@ -184,20 +185,20 @@ const Homepage = (props) => {
             </h1>
             <Stat
               number={animatableNumber[0]}
-              content="Of program participants reported higher levels of happiness and
-          stress free life after the program end"
+              content="Of  participants reported higher levels of happiness and
+          stress free life "
             />
             <Stat
               number={animatableNumber[1]}
-              content="Of community around participants reported easy recognition of their problems and found relief"
+              content="Of community around participants reported easy recognition of their problems & found relief"
             />
           </div>
         </div>
         <div className={styles.advocatesJoinContainer}>
           <h1 className={styles.advocatesJoinTitle}>
-            You can be a Mental Health Leader too
+            You can spread wellbeing too
           </h1>
-          <Link to="youthadvocates">
+          <Link to="youthadvocates" style={{ textDecoration: "none" }}>
             <PrimaryButton title="Get Started" />
           </Link>
         </div>

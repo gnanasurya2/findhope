@@ -2,13 +2,20 @@
   "peerCounsellor": [
     {
       "name": "Paraardha Goel",
-      "qualification": "Pursuing Msc in Counselling and family therapy",
+      "qualification": "Pursuing MSc in Counselling and family therapy",
       "about": "I am a final year masters student of counselling and family therapy as well as early childhood education. I aspire to become an educational reforminist in coming years and also develop an intervention for improved mother-child stimulation for people in need. ",
       "languages": "Hindi, English",
       "linkedin": "https://www.linkedin.com/in/paraardha-goel-45947319a/",
       "email": "paraardhagoel@gmail.com",
       "photo": "paraardha_goel.jpg",
-      "url": "paraardha"
+      "url": "paraardha",
+      "interest": [
+        "Trauma",
+        "Childhood disabilities",
+        "Parent child relation",
+        "Nutrition and psychology",
+        "Mental health and well-being"
+      ]
     },
     {
       "name": "Sahithi Mannar",
@@ -18,7 +25,8 @@
       "linkedin": "https://www.linkedin.com/in/sahithi-mannar-tirumala-bukkapatnam-09a705153/",
       "email": "sahithimannartb@gmail.com",
       "photo": "sahithi_mannar.jpg",
-      "url": "sahithi"
+      "url": "sahithi",
+      "interest": []
     },
     {
       "name": "Swetha Desiraju",
@@ -28,7 +36,8 @@
       "linkedin": "",
       "email": "swethadesiraju@gmail.com",
       "photo": "swetha_desiraju.jpg",
-      "url": "swetha"
+      "url": "swetha",
+      "interest": []
     },
     {
       "name": "Riya Aggarwal",
@@ -38,7 +47,8 @@
       "linkedin": "",
       "email": "riyaqms@gmail.com",
       "photo": "riya_aggarwal.jpg",
-      "url": "riya"
+      "url": "riya",
+      "interest": []
     }
   ]
 }
