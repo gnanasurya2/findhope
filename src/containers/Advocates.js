@@ -9,6 +9,7 @@ const Advocates = (props) => {
   const [redirect, setRedirect] = useState(false);
   const { name } = useParams();
   useEffect(() => {
+    window.scrollTo({ top: 0 });
     const pro = Data.youthadvocate.filter((el) => el.short === name);
     console.log(pro);
     if (!pro.length) {

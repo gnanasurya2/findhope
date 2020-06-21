@@ -63,7 +63,7 @@ const Test = (props) => {
       }
     )
       .then(() => setRedirect(true))
-      .catch((err) => console.log(err));
+      .catch((err) => alert(err.message));
   };
   return (
     <div>

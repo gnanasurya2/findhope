@@ -49,6 +49,44 @@
       "photo": "riya_aggarwal.jpg",
       "url": "riya",
       "interest": []
+    },
+    {
+      "name": "Jahnvi Kumar",
+      "qualification": " Currently pursuing BA+ MA Clinical Psychology",
+      "about": "A mental health enthusiast who believes in the power of words and their magical exchange, the free release and the absorption. Listening more, everyday. ",
+      "languages": "English, Hindi",
+      "linkedin": "",
+      "email": "",
+      "photo": "Jahnvi_Kumar.png",
+      "url": "jahnvi",
+      "interest": ["Trauma", "Childhood disabilities", "Parent child relation"]
+    },
+    {
+      "name": "Mokshita batra",
+      "qualification": "Pursuing Ba applied psychology honors ",
+      "about": "I'm a mental health enthusiast  . An empathetic person with the zeal to help people recover from their mental health issues.  I have interned in a hospital and juvenile de-addiction centre.  I have been trained in giving  emotional aid and QPR gatekeeping. ",
+      "languages": "Hindi , english ",
+      "linkedin": "",
+      "email": "",
+      "photo": "mokshita_Batra.png",
+      "url": "mokshita",
+      "interest": [
+        "Nutrition and psychology",
+        "Mental health and well-being",
+        "Anxiety",
+        "Depression"
+      ]
+    },
+    {
+      "name": "Prerona Chakraborty",
+      "qualification": "Ba hons applied psychology",
+      "about": "I am a student of applied psychology with an empathetic and prosocial attitude. Interested in providing aid to those going through stress,trauma, depression, adjustment issues,anxiety, relationship problems etc. Ability to analyse signature as well.",
+      "languages": "English, Bengali, Hindi",
+      "linkedin": "",
+      "email": "",
+      "photo": "Prerona_Chakraborty.png",
+      "url": "prerona",
+      "interest": []
     }
   ]
 }

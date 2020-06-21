@@ -36,6 +36,7 @@ const Content = styled.p`
   margin: 25px 2.5%;
   font-size: 20px;
   display: ${(props) => (props.clicked ? "none" : "flex")};
+  flex-direction: column;
   @media screen and (min-width: 700px) {
     font-size: 32px;
   }
@@ -45,6 +46,7 @@ const Faq = (props) => {
   const [value, set] = useSpring(() => ({
     angle: 135,
   }));
+
   const clickHandler = () => {
     setVisible((state) => !state);
     set({ angle: visible ? -45 : 135 });
@@ -61,7 +63,23 @@ const Faq = (props) => {
           />
         </Circle>
       </InnerWrapper>
-      <Content clicked={visible}>{props.content}</Content>
+      {props.special ? (
+        <Content clicked={visible}>
+          {props.content.map((el) => (
+            <p
+              style={{
+                textAlign: "left",
+                marginBottom: "0px;",
+                marginTop: "10px",
+              }}
+            >
+              {el}
+            </p>
+          ))}
+        </Content>
+      ) : (
+        <Content clicked={visible}>{props.content}</Content>
+      )}
     </Wrapper>
   );
 };

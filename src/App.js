@@ -13,6 +13,7 @@ import Questions from "./containers/Questions";
 import Result from "./containers/Result";
 import FreeCounseling from "./containers/FreeCounseling";
 import Advocates from "./containers/Advocates";
+import College from "./containers/College";
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
             </Route>
             <Route path="/youthadvocate/:name">
               <Advocates />
+            </Route>
+            <Route path="/:name">
+              <College />
             </Route>
             <Route path="/">
               <Homepage />

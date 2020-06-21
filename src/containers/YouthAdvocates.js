@@ -10,6 +10,9 @@ import TimeImage from "../asset/time.svg";
 import MoneyImage from "../asset/certified.svg";
 import CertifiedImage from "../asset/icons8-checked.svg";
 import DriveImage from "../asset/drive the change.svg";
+import Youthprofile from "../components/Youthprofile";
+import Data from "../helpers/youthAdvocate.json";
+import { Link } from "react-router-dom";
 
 const YouthAdvocates = (props) => {
   useEffect(() => {
@@ -81,7 +84,14 @@ const YouthAdvocates = (props) => {
           want your community to suffer alone.
         </p>
         <img src={DriveImage} alt="sign up" className={styles.image} />
-
+        {Data.youthadvocate.map((ele) => (
+          <Link
+            to={`/youthadvocate/${ele.short}`}
+            style={{ width: "100%", textDecoration: "none" }}
+          >
+            <Youthprofile name={ele.name} place={ele.region} />
+          </Link>
+        ))}
         <PrimaryButton style={{ width: "50%", backgroundColor: "grey" }}>
           <a
             href="https://forms.gle/Sud6PfLkMkH9VTYf9"

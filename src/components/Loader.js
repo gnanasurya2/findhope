@@ -15,6 +15,6 @@ const Load = styled.div`
   animation: ${Spin} 2s linear infinite;
 `;
 
-const Loader = (props) => <Load />;
+const Loader = (props) => <Load style={props.style} />;
 
 export default Loader;

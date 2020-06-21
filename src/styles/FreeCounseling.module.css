@@ -1,53 +1,85 @@
 .wrapper {
-    padding-top: 160px;
-    min-height: calc(100vh - 60px);
-    width: 100%;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  padding-top: 160px;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .buttonWrapper {
-    width: 80%;
-    background-color: black;
-    cursor: pointer;
-    margin: 30px 0px;
+  width: 80%;
+  background-color: black;
+  cursor: pointer;
+  margin: 30px 0px;
 }
 
 .buttonWrapper p {
-    color: white;
-    text-align: center;
-    font-size: 20px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }
 
 .title {
-    font-size: 22px;
-    width: 95%;
-    margin: 2.5%;
+  font-size: 22px;
+  width: 95%;
+  margin: 2.5%;
 }
 
 .radioWrapper {
-    width: 95%;
+  width: 95%;
 }
 
-@media screen and (min-width:1200px) {
-    .radioWrapper {
-        width: 40%;
-    }
-
-    .buttonWrapper {
-        width: 30%;
-    }
+.checkboxDiv {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-@media screen and (min-width:700px) {
-    .radioWrapper {
-        width: 60%;
-    }
+.checkboxDiv input {
+  transform: scale(1.4);
+  margin-right: 15px;
+}
 
-    .buttonWrapper {
-        width: 40%;
-    }
+.checkboxDiv label {
+  margin-top: 0;
+  padding-top: 0px;
+  line-height: 110%;
+  font-size: 20px;
+}
+
+.finalTitle {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .radioWrapper {
+    width: 60%;
+  }
+
+  .buttonWrapper {
+    width: 40%;
+  }
+  .checkboxDiv {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .radioWrapper {
+    width: 40%;
+  }
+
+  .buttonWrapper {
+    width: 40%;
+  }
+  .checkboxDiv {
+    width: 40%;
+  }
 }

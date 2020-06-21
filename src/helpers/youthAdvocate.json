@@ -12,7 +12,8 @@
         "Check out my page on Instagram",
         "@themehulagarwal",
         "I have really good content."
-      ]
+      ],
+      "region": "Kolkata"
     },
     {
       "short": "parleen",
@@ -25,7 +26,8 @@
         "It's high time we took mental health of our own, our near and dear ones and other residents of this country too, seriously.",
         "I love reading, writing, studying psychology and singing.",
         "I'm an army brat, so don't belong to a single place."
-      ]
+      ],
+      "region": "Chennai"
     },
     {
       "short": "priyashree",
@@ -34,7 +36,50 @@
       "content": [
         "I am Priyashree Acharya from bhopal I have just given board exams of 12th standard from Sagar Public School and now I'm looking for college. I have had a serious mental illness from past 3 years still haven't recovered yet but now I'm on medication and soon will be alright. I want to be a psychologist to give therapy to people in need. I will be opting ba psychology honours for my career. In future I want to help people who are going through difficult times.",
         "Furthermore I'm an artist ,you can check my art on my IG handle @priyashrree"
-      ]
+      ],
+      "region": "Bhopal"
+    },
+    {
+      "short": "kranthi",
+      "name": "Kranthi Sai",
+      "url": "Kranthi_Sai.png",
+      "content": [""],
+      "region": ""
+    },
+    {
+      "short": "devasheesh",
+      "name": "Devasheesh Sharma",
+      "url": "Devasheesh_Sharma.jpg",
+      "content": [""],
+      "region": ""
+    },
+    {
+      "short": "karishma",
+      "name": "Karishma Miglani",
+      "url": "karishma_miglani.jpg",
+      "content": [""],
+      "region": ""
+    },
+    {
+      "short": "sowmya",
+      "name": "Sowmya verma",
+      "url": "sowmya_verma.jpg",
+      "content": [""],
+      "region": ""
+    },
+    {
+      "short": "sahaj",
+      "name": "Sahaj Gokhroo",
+      "url": "mystogan.jpg",
+      "content": [""],
+      "region": ""
+    },
+    {
+      "short": "annjali",
+      "name": "Annjali Rathi",
+      "url": "annjali_rathi.jpg",
+      "content": [""],
+      "region": ""
     }
   ]
 }

@@ -60,8 +60,6 @@ const Counsellor = (props) => {
         <ContentWrapper>
           <Name>{props.name}</Name>
           <p>{props.qualification}</p>
-          <p>100% (36votes)</p>
-          <p>23356 conversations</p>
         </ContentWrapper>
       </AnotherWrapper>
       <Link to={`/profile/${props.id}`} style={{ textDecoration: "none" }}>
