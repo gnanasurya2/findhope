@@ -57,7 +57,10 @@
       "short": "karishma",
       "name": "Karishma Miglani",
       "url": "karishma_miglani.jpg",
-      "content": [""],
+      "content": [
+        "I am Karishma miglani, pursuing Master’s in Clinical Psychology from Amity University, Noida. I am from Delhi and have done Bachelors in Psychology from University of Delhi. I am from commerce background, when I was in 11th class I have no idea what’s psychology is all about. One of the subjects I had was psychology. Slowly I got to know what exactly psychology is. I have started applying principles of psychology in my daily life. I have learned about how important our mental health is.",
+        "I really wanted to break the stigma and spread mental health awareness. I want to help and heal people who have mental illness. I want to make people aware that there is a difference between mental health and mental illness. It is not necessary that if a person is suffering from mental illness, he/she is not mentally healthy or vice versa. Mental illness is a community failure not a personal failure."
+      ],
       "region": ""
     },
     {
@@ -85,7 +88,18 @@
       "short": "zainab",
       "name": "Zainab Minhaj",
       "url": "fbfemale.jpg",
-      "content": [""],
+      "content": [
+        "I am a 20 year old who suffered from major anxiety issues and was on the verge of slipping into depression . I realised that my fears shouldnt be thr reason for throwing away my life which would be a lot better if i just overcame them . I can't say i am a perfectly fine now but i have begun my journey and i wanted to help others to do the same . I want to become a mental health advocate to help those who are afraid to even think about the journey of life they could have if they could let go off their fears and embrace their ownself."
+      ],
+      "region": ""
+    },
+    {
+      "short": "anushka",
+      "name": "Anushka Goyal",
+      "url": "Anushka_Goyal.jpg",
+      "content": [
+        "I am a third year student from Amity University, pursuing clinical psychology. Mental health is a very serious issue and I'd like to diminish the stigma around it and make it more accessible to people all around. My aim is to be a therapist, and I'd like to start making efforts early on."
+      ],
       "region": ""
     }
   ]
