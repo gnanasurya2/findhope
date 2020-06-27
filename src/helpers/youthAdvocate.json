@@ -67,7 +67,13 @@
       "short": "sowmya",
       "name": "Sowmya verma",
       "url": "sowmya_verma.jpg",
-      "content": [""],
+      "content": [
+        "This is sowmya Verma from amity university, noida. I'm a 3rd year student studying clinical psychology.",
+        "Mental health is something that people don't want to talk about and there is a lot of lack of knowledge in this area and I'm glad we are we are working on that.",
+        "There is a lot of stigma and its time that we work on that and try to normalise it.",
+        "Let's be empathetic but also responsible.",
+        "I like politics, reading books and learning new things."
+      ],
       "region": ""
     },
     {
@@ -101,6 +107,91 @@
         "I am a third year student from Amity University, pursuing clinical psychology. Mental health is a very serious issue and I'd like to diminish the stigma around it and make it more accessible to people all around. My aim is to be a therapist, and I'd like to start making efforts early on."
       ],
       "region": ""
+    },
+    {
+      "short": "arpita",
+      "name": "Arpita Manjoka",
+      "url": "Arpita_Manjoka.png",
+      "content": [
+        "I am arpita Manjoka, 20 years old. I am currently pursuing BA psychology honours from Delhi University. I am my own kind.",
+        "I have a mental illness and I don’t have any guilt of saying this! I am extremely proud of myself and my being!",
+        "Apart from all that, I love to express myself through writing poems, blogs, sketches, and dancing!",
+        "Because of my Illness, I was not able to be like I was but now I have started loving myself more and proving my worth to the world!",
+        "I will be the artist I was and a great psychologist in future!",
+        "I admire myself!"
+      ],
+      "region": "North delhi"
+    },
+    {
+      "short": "ellora",
+      "name": "Ellora Pandey",
+      "url": "Ellora_Pandey.jpg",
+      "content": [
+        "Hello, I'm Ellora Pandey. I've recently completed my graduation from banasthali university, Jaipur. I've done BA programming with Psychology as my major subject followed by English and physical education.",
+        "I haven't had any history of mental illness but knowing about it and spreading the knowledge across the world is the best thing  and I think HOPE is doing an excellent job. ",
+        "I've always been a calm and polite person and I honestly want more of love in the world than hatred which isn't difficult if everyone starts with just being kind, and guess what? Then there would be less problem and things will look more beautiful ! Have a good day :)"
+      ],
+      "region": "Faridabad"
+    },
+    {
+      "short": "subhrajyoti",
+      "name": "Subhrajyoti guha",
+      "url": "Subhrajyoti_guha.png",
+      "content": [
+        "Hi , I am subhrajyoti.m pursuing my M.B.B.S  from kdmc,mathura and I hv observed  that our society is full of stigma...n one of the most underrated topic is of MENTAL HEALTH",
+        "It is the very basic of human well being",
+        "So I am here to support any one going through hardships with my knowledge from mbbs line",
+        "Do follow me on Instagram",
+        "@subhrajyoti26"
+      ],
+      "region": "Mathura"
+    },
+    {
+      "short": "tanha",
+      "name": "Tanha Gowande",
+      "url": "Tanha_Gowande.jpg",
+      "content": [
+        "My name is Tanha Gowande.",
+        "I have working experience of 3 years .",
+        " I deal with range of Mental Health issues like Depression/Anxiety/PTSD/ Gender Identify confusion/ LGBTQ acceptance issues / OCD/ Stress/ Suicidal Thoughts/ Borderline Personality Disorder/ Psychotic Disorders / Sexual Disorders, Trauma related issues/ ADHD/ Autism Spectrum Disorders in children etc.",
+        "I have expertise in Psychometric Assessment & Testing for Diagnostic purpose.",
+        "•On post of Clinical Psychologist in State Government Hospital. ( Sir J.J hospital , Byculla, Mumbai) ",
+        "• Partner Therapist on Curefit Platform.",
+        "• Private Practice as Psychotherapist (Founder:- Enthral Soul: Psychological & Well-being services)",
+        "As a passionate Psychologist it's my duty & pride to spread awareness about Mental Health & Psychological well- being. "
+      ],
+      "region": "Thane"
+    },
+    {
+      "short": "arunima",
+      "name": "Arunima Palit",
+      "url": "Arunima_Palit.jpg",
+      "content": [
+        "I am Arunima Palit, 19 years old aspiring psychologist. I am currently in my second year pursuing BA honours psychology from Delhi university. I took up this subject to know myself and the people better. To get an insight about human mind.  I have a keen interest in spreading awareness about mental health and want to end the stigma attached to it.",
+        "Apart from this, I am a singer and a poet.  I am a piece of art myself! A very weird, unique, interesting  and my very own kind!",
+        "Do follow my Instagram for amazing content- @_its_arunima_ and @arunima_soulful",
+        "You can also subscribe to my music channel named : soulful music!",
+        "Paving the path of life! "
+      ],
+      "region": "New Delhi"
+    },
+    {
+      "short": "prapurna",
+      "name": "Sri Prapurna",
+      "url": "Sri_Prapurna_Maddipudi.jpg",
+      "content": [
+        "I'm  mentally strong enough. But to deal with self emotions I'm here. "
+      ],
+      "region": "vijayawada"
+    },
+    {
+      "short": "pratyusha",
+      "name": "Pratyusha Yandra",
+      "url": "Pratyusha_Yandra.jpg",
+      "content": [
+        "I am a student so I feel it's my responsibility to health the people in need"
+      ],
+      "region": "Visakhapatnam"
     }
   ]
 }

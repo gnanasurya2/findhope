@@ -84,15 +84,13 @@ const YouthAdvocates = (props) => {
           want your community to suffer alone.
         </p>
         <img src={DriveImage} alt="sign up" className={styles.image} />
-        {Data.youthadvocate.map((ele) => (
-          <Link
-            to={`/youthadvocate/${ele.short}`}
-            style={{ width: "100%", textDecoration: "none" }}
-          >
-            <Youthprofile name={ele.name} place={ele.region} />
-          </Link>
-        ))}
-        <PrimaryButton style={{ width: "50%", backgroundColor: "grey" }}>
+        <PrimaryButton
+          style={{
+            width: "50%",
+            backgroundColor: "grey",
+            marginBottom: "40px",
+          }}
+        >
           <a
             href="https://forms.gle/Sud6PfLkMkH9VTYf9"
             target="__blank"
@@ -101,6 +99,14 @@ const YouthAdvocates = (props) => {
             Sign up
           </a>
         </PrimaryButton>
+        {Data.youthadvocate.map((ele) => (
+          <Link
+            to={`/youthadvocate/${ele.short}`}
+            style={{ width: "100%", textDecoration: "none" }}
+          >
+            <Youthprofile name={ele.name} place={ele.region} />
+          </Link>
+        ))}
       </div>
     </div>
   );
