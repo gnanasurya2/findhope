@@ -14,6 +14,8 @@ import Result from "./containers/Result";
 import FreeCounseling from "./containers/FreeCounseling";
 import Advocates from "./containers/Advocates";
 import College from "./containers/College";
+import Blogs from "./containers/Blogs";
+import Blog from "./containers/Blog";
 
 function App() {
   return (
@@ -47,6 +49,12 @@ function App() {
             </Route>
             <Route path="/youthadvocate/:name">
               <Advocates />
+            </Route>
+            <Route path="/blogs">
+              <Blogs />
+            </Route>
+            <Route path="/blog/:name">
+              <Blog />
             </Route>
             <Route path="/:name">
               <College />

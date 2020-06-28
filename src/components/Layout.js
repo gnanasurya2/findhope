@@ -65,6 +65,15 @@ const Layout = (props) => {
                   Free Support
                 </Link>
               </div>
+              <div>
+                <Link
+                  to="/blogs"
+                  className={styles.link}
+                  onClick={openMenuHandler}
+                >
+                  Blog
+                </Link>
+              </div>
             </span>
           </div>
         </animated.nav>

@@ -3,6 +3,7 @@ import styles from "../styles/Advocates.module.css";
 import Accordion from "../components/Accordion";
 import Data from "../helpers/youthAdvocate.json";
 import { useParams, Redirect } from "react-router-dom";
+import PrimaryButton from "../components/PrimaryButton";
 
 const Advocates = (props) => {
   const [profile, setProfile] = useState(Data.youthadvocate[0]);
@@ -47,6 +48,22 @@ const Advocates = (props) => {
         title="Self help"
         content="Just like Health Literacy , mental health literacy refers to recognition, management and prevention of mh disorders by learning self help techniques and understanding when to seek professional help."
       />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          padding: "2.5%",
+        }}
+      >
+        <h1>
+          You can become a mental health advocate by enrolling in our wellbeing
+          program.
+        </h1>
+        <PrimaryButton title="Click here to know more" />
+      </div>
     </div>
   );
 };

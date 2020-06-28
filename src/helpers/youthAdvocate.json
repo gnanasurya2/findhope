@@ -111,14 +111,14 @@
     {
       "short": "arpita",
       "name": "Arpita Manjoka",
-      "url": "Arpita_Manjoka.png",
+      "url": "saloni.png",
       "content": [
         "I am arpita Manjoka, 20 years old. I am currently pursuing BA psychology honours from Delhi University. I am my own kind.",
         "I have a mental illness and I don’t have any guilt of saying this! I am extremely proud of myself and my being!",
         "Apart from all that, I love to express myself through writing poems, blogs, sketches, and dancing!",
         "Because of my Illness, I was not able to be like I was but now I have started loving myself more and proving my worth to the world!",
         "I will be the artist I was and a great psychologist in future!",
-        "I admire myself!"
+        "I will be learning and empowering others on."
       ],
       "region": "North delhi"
     },
@@ -192,6 +192,24 @@
         "I am a student so I feel it's my responsibility to health the people in need"
       ],
       "region": "Visakhapatnam"
+    },
+    {
+      "short": "saloni",
+      "name": "Saloni",
+      "url": "Saloni.jpg",
+      "content": [
+        "I'm saloni . Pursuing  BA psychology honors from MDU , Rohtak . I heartily aspire to become a clinical psychologist. I like helping people ,those who have issues related to mental health , I like sharing their pain and help them overcome the situation ."
+      ],
+      "region": "Delhi"
+    },
+    {
+      "short": "divya",
+      "name": "Divya Chadha",
+      "url": "Divya Chadha.jpg",
+      "content": [
+        "I’m an ordinary girl dealing with life extraordinarily and I’m here to normalise concept of mental health and give it equal importance as physical health. Currently Final year MBBS student. It’s the need of the hour to remove the stigma around mental issues and start accepting it as any other ailment."
+      ],
+      "region": "Mathura"
     }
   ]
 }
