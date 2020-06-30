@@ -1,8 +1,6 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 import styles from "../styles/Blog.module.css";
-import { useEffect } from "react";
-import { useState } from "react";
 
 const Blog = () => {
   const { name } = useParams();
@@ -26,7 +24,9 @@ const Blog = () => {
         <div className={styles.wrapper}>
           <div className={styles.header}>
             <h1 className={styles.title}>{data.title}</h1>
-            <h3 className={styles.author}>Written by {data.author}</h3>
+            <Link to={`/blogger/${data.url}`}>
+              <h3 className={styles.author}>Written by {data.author}</h3>
+            </Link>
           </div>
           {createContent(data.content)}
         </div>

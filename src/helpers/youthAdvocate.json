@@ -205,11 +205,20 @@
     {
       "short": "divya",
       "name": "Divya Chadha",
-      "url": "Divya Chadha.jpg",
+      "url": "Divya Chadha.png",
       "content": [
         "I’m an ordinary girl dealing with life extraordinarily and I’m here to normalise concept of mental health and give it equal importance as physical health. Currently Final year MBBS student. It’s the need of the hour to remove the stigma around mental issues and start accepting it as any other ailment."
       ],
       "region": "Mathura"
+    },
+    {
+      "short": "anushkakrishna",
+      "name": "Anushka Krishna",
+      "url": "Anushka Krishna.png",
+      "content": [
+        "I am 19 years old and currently pursuing psychology honours from university of Delhi, it’s not surprising to know that people from my educational background have a keen interest in mental health advocacy and I encourage the same. But before I move on to calling myself a mental health advocate I wish to equip myself with all the necessary knowledge it takes to really become a mental health advocate and for me it starts with finding peace within yourself before I help others. This program is an opportunity for me to do the very same and will give me an insight in being a leader, a change maker and most of all enable me to act as a helping hand for someone who might just require my resources and skills for their betterment."
+      ],
+      "region": "Pune"
     }
   ]
 }
