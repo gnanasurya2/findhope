@@ -84,7 +84,7 @@ const PeerCounsellor = (props) => {
       <div className={styles.sessionWrapper}>
         <p className={styles.sessionTitle}>Wellbeing is just a click away</p>
         <Link to="/freecounselingform" style={{ textDecoration: "none" }}>
-          <PrimaryButton title="Free Counseling" />
+          <PrimaryButton title="Free Support" />
         </Link>
       </div>
       <h1 className={styles.title}>Hear from Hundreds of Happy Users</h1>

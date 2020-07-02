@@ -16,7 +16,7 @@ const FreeCounseling = (props) => {
   const [redirect, setRedirect] = useState(false);
   const [checkboxes, setCheckboxes] = useState([false, false, false]);
   const [visible, setVisible] = useState([true, false, false]);
-
+  const [age, setAge] = useState();
   const changeVisible = (index) => {
     const vis = [false, false, false];
     vis[index] = true;
@@ -100,6 +100,12 @@ const FreeCounseling = (props) => {
             onChangeText={(event) => setEmail(event.target.value)}
           />
           <Input
+            title="Age"
+            placeholder="Age"
+            value={age}
+            onChangeText={(event) => setAge(event.target.value)}
+          />
+          <Input
             title="Whatsapp Number*"
             content="(Therapy is done over whatsapp and your number is perfectly safe)"
             placeholder="Phone"
@@ -144,7 +150,7 @@ const FreeCounseling = (props) => {
             <label htmlFor="third">
               findhope does not provide any kind of professional aid, This is a
               safe space for people irrespective of gender, caste, ethnicity etc
-              to vent out and get advice.
+              to vent out and get help.
             </label>
           </div>
         </React.Fragment>
