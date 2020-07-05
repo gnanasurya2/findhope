@@ -32,7 +32,7 @@ const PeerCounsellor = (props) => {
       <div className={styles.wrapper}>
         <h1 className={styles.title}>Relax, We've Got You</h1>
         <p className={styles.content}>
-          We all need someone to talk to, someone who listen, someone who
+          We all need someone to talk to, someone who listens, someone who
           understands.
         </p>
         <div className={styles.buttonWrapper}>
