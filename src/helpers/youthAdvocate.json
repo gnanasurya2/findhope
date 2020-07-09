@@ -87,7 +87,9 @@
       "short": "annjali",
       "name": "Annjali Rathi",
       "url": "annjali_rathi.jpg",
-      "content": [""],
+      "content": [
+        "I am Annjali Rathi. It took me 15 months to realize and accept that I need help because of lack of awareness and stigma around the mental health and therapy.  I have taken the first step to seek help and reach out and one day I will get through it. I want to be mental health advocate because I want to normalize the concept of mental health and its issues. I want to tell everyone who are finding it hard that ' Its okay to be not okay at times'. I really appreciate and thank HOPE for being an eye opener to me and I hope people get inspired to talk about their issues and seek help."
+      ],
       "region": ""
     },
     {
@@ -111,7 +113,7 @@
     {
       "short": "arpita",
       "name": "Arpita Manjoka",
-      "url": "saloni.png",
+      "url": "Arpita_Manjoka.png",
       "content": [
         "I am arpita Manjoka, 20 years old. I am currently pursuing BA psychology honours from Delhi University. I am my own kind.",
         "I have a mental illness and I don’t have any guilt of saying this! I am extremely proud of myself and my being!",
@@ -265,6 +267,51 @@
         "I want to be a mental health advocate because I remember not having the resources to reach out for help myself when I needed it. I remember not being aware of what was happening with me, to me. And it was the worst feeling in the world. I would hate to see that happen to anyone knowing I had a chance to help them. I want people to help each other and know what to help out with and how. "
       ],
       "region": "Bangalore"
+    },
+    {
+      "short": "ria",
+      "name": "Ria Kharabanda",
+      "url": "Ria Kharabanda.jpg",
+      "content": [
+        "My name is Ria Kharabanda. I am 19 years old, currently residing in Delhi but pursuing  my Psychology Honors degree from Symbiosis College of Arts and Commerce, Pune. I want to be a mental health advocate because I wish to reduce the stigma that comes with it and let people know that it is okay to talk about it openly and that it is as important as our physical health. I want to normalise seeking help, being vulnerable and just not being okay and that these are not signs of a person's weakness. This program is an opportunity for me to equip myself with the knowledge and skills that are required in order to be a mental health advocate and using the same skills to help the people who may be going through a tough time."
+      ],
+      "region": "Delhi/Pune"
+    },
+    {
+      "short": "anannya",
+      "name": "Anannya Tayal",
+      "url": "Anannya Tayal.jpg",
+      "content": [
+        "I'm a school going student, and I've always been keen about mental health and Psychology, because I've seen people around me suffer a lot because of the same, and I want to be more helpful to myself as well as others around me!"
+      ],
+      "region": "Gurugram"
+    },
+    {
+      "short": "juweria",
+      "name": "Juweria Baig",
+      "url": "Juweria Baig.jpg",
+      "content": [
+        "Psychology undergraduate with a passion to promote awareness about mental health among people and to help everyone in every way possible"
+      ],
+      "region": "Delhi"
+    },
+    {
+      "short": "anam",
+      "name": "Anam Shakeel Shah",
+      "url": "Anam Shakeel Shah.jpg",
+      "content": [
+        "My name is Anam, and I am a Psychology student. The reason why I’m passionate about mental health advocacy is  because we as a society still never fail to underestimate mental health. Neglecting mental health issues can have serious consequences for an individual. It is important for people to understand how to be sensitive towards people with such issues, how to help them, and how important it is for people suffering in silence to seek the necessary help. Mental health is just as important as physical health is. I’m really honoured to contribute to this platform by advocating for mental health."
+      ],
+      "region": "New Delhi"
+    },
+    {
+      "short": "areeba",
+      "name": "Areeba Khan",
+      "url": "Areeba Khan.jpg",
+      "content": [
+        "I am a final year psychology student. Throughout my years of studying psychology, I have seen that we have a lot of theoretical knowledge with very little practical exposure. I want to use this platform to create awareness and to show the world that mental health is something relevant, something important, and not a tabboo."
+      ],
+      "region": "New Delhi"
     }
   ]
 }
