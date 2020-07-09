@@ -7,7 +7,17 @@ import Wrapper from "../components/Wrapper";
 import ToggleButton from "../components/ToggleButton";
 import Solutions from "../components/Solutions";
 import DepressionData from "../helpers/Depression.json";
+import styled from "styled-components";
 
+const UL = styled.ul`
+  list-style: none;
+  margin-top: 40px;
+`;
+const LI = styled.li`
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+`;
 const Result = (props) => {
   const [tips, setTips] = useState([false, true, true]);
   const [title, setTitle] = useState("");
@@ -95,11 +105,11 @@ const Result = (props) => {
           {data[solutions[0]].title !== "" ? (
             <Wrapper>
               <h1>What is affecting you:</h1>
-              <ul>
-                <li>{data[solutions[0]].title}</li>
-                <li>{data[solutions[1]].title}</li>
-                <li>{data[solutions[2]].title}</li>
-              </ul>
+              <UL>
+                <LI>{data[solutions[0]].title}</LI>
+                <LI>{data[solutions[1]].title}</LI>
+                <LI>{data[solutions[2]].title}</LI>
+              </UL>
             </Wrapper>
           ) : null}
 
