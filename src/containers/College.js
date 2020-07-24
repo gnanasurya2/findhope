@@ -27,7 +27,11 @@ const College = (props) => {
           <div className={styles.wrapper}>
             <h1 className={styles.collegeName}>{data.name}</h1>
           </div>
-          <Photo photo={data.founder.photo} />
+          <Photo
+            photo={data.founder.photo}
+            name={data.founder.name}
+            title="Founder"
+          />
           <p className={styles.founderContent}>
             Mental health is highly ignored and neglected, In fact its
             stigmatised and seen as a negative stereotype. With findhope{" "}

@@ -19,6 +19,8 @@ const Image = styled.img`
 const Name = styled.h1`
   font-size: 32px;
   margin: 5px 0px;
+  color: white;
+  text-align: center;
 `;
 const Photo = (props) => {
   return (

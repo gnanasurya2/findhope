@@ -13,7 +13,7 @@ import Questions from "./containers/Questions";
 import Result from "./containers/Result";
 import FreeCounseling from "./containers/FreeCounseling";
 import Advocates from "./containers/Advocates";
-import College from "./containers/College";
+import College from "./containers/college";
 import Blogs from "./containers/Blogs";
 import Blog from "./containers/Blog";
 import Blogger from "./containers/Blogger";
