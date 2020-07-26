@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[8],{98:function(a){a.exports=JSON.parse('{"url":"nits","name":"National Institute of technology Srinagar","founder":{"name":"loshitha","photo":"Loshitha.jpeg"},"members":[{"name":"Bhavyateja Yedida","photo":"BhavyatejaYedida.jpg"}]}')}}]);
-//# sourceMappingURL=8.a26f44f7.chunk.js.map
