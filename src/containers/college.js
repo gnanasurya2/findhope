@@ -47,19 +47,21 @@ const College = (props) => {
           <img src={Image1} alt="svg" className={styles.svg} />
           <div className={styles.orangeBox}>
             <p className={styles.orangeText}>
-              Happpiness is really contagious. All you have to do, quite
-              literally, is build a safe space to make it go viral whatsApp us
-              at 8730067160 to build a safe space.
+              As students we face a lot of challenges for the very first time in
+              our lives. From Acadamic stress to relationships Issues, anything
+              that stops you from being at your full potential, can be dealt
+              easily by maintaing a positive mental health. Join our safe space
+              and learn emotional first aid to keep a positive mental health.
             </p>
           </div>
           <h1 className={styles.whiteText}>
-            The safe way of promoting wellbeing
+            The easiest way to maintain a positive mindset
           </h1>
           <img src={Image2} alt="svg" className={styles.svg} />
           <h1 className={styles.whiteText}>
-            Spend 10 minutes everyday for 11 days straight to learn about
-            emotional first aid and get better at dealing with acadamic stress
-            to relationship issues.
+            Spend just 10 minutes a day for 11 days in a row to learn emotional
+            first aid and get better at dealing with common problems in life (
+            from acadamic stress to relationships etc)
           </h1>
           <div className={styles.founderContent}>
             <PrimaryButton title="Learn more" />
