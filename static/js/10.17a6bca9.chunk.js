@@ -1,0 +1,2 @@
+(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[10],{100:function(a){a.exports=JSON.parse('{"url":"scac","name":"Symbiosis College Of Arts and Commerce, Pune","founder":{"name":"Ria Kharabanda","photo":"Ria Kharabanda.jpg"},"cofounder":{"name":"Bhavika Kochhar","photo":"Bhavika Kochhar.jpg"},"members":[]}')}}]);
+//# sourceMappingURL=10.17a6bca9.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[11],{101:function(e){e.exports=JSON.parse('{"url":"srm","name":"SRM, chennai","founder":{"name":"Parleen Kaur Oberoi","photo":"Parleen_Kaur_Oberoi.png"},"members":[]}')}}]);
+//# sourceMappingURL=11.c55d9441.chunk.js.map
