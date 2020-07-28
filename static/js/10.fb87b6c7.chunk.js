@@ -1,0 +1,2 @@
+(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[10],{100:function(a){a.exports=JSON.parse('{"url":"sahmc","name":"Saraswati ayurved hospital and medical college","founder":{"name":"Akshaptika sharma","photo":"akshaptika sharma.jpg"},"members":[]}')}}]);
+//# sourceMappingURL=10.fb87b6c7.chunk.js.map
