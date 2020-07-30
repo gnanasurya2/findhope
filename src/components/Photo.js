@@ -19,7 +19,7 @@ const Image = styled.img`
 const Name = styled.h1`
   font-size: 32px;
   margin: 5px 0px;
-  color: white;
+  color: ${(props) => props.color};
   text-align: center;
 `;
 const Photo = (props) => {
@@ -29,7 +29,7 @@ const Photo = (props) => {
         src={process.env.PUBLIC_URL + `/assest/${props.photo}`}
         alt="find hope member"
       />
-      <Name>{props.name}</Name>
+      <Name color={props.color}>{props.name}</Name>
       <h2>{props.title}</h2>
     </Wrapper>
   );

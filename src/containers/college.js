@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "../styles/college.module.css";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import Svg from "../asset/recognising.svg";
 import PrimaryButton from "../components/PrimaryButton";
 import Photo from "../components/Photo";
 import Image1 from "../asset/humaaans1.png";
@@ -30,19 +29,39 @@ const College = (props) => {
             </p>
           </div>
           <div className={styles.founderContent}>
-            <img
-              src={process.env.PUBLIC_URL + `/assest/${data.founder.photo}`}
-              alt={data.founder.name}
-              className={styles.photo}
-            />
-            <h1 className={styles.collegeName}>Message from the founder</h1>
+            {data.cofounder ? (
+              <>
+                <Photo
+                  name={data.founder.name}
+                  photo={data.founder.photo}
+                  title="Founder"
+                  color="black"
+                />
+                <Photo
+                  name={data.cofounder.name}
+                  photo={data.cofounder.photo}
+                  title="Founder"
+                  color="black"
+                />
+              </>
+            ) : (
+              <img
+                src={process.env.PUBLIC_URL + `/assest/${data.founder.photo}`}
+                alt={data.founder.name}
+                className={styles.photo}
+              />
+            )}
+
+            <h1 className={styles.collegeName}>
+              Message from the {data.cofounder ? "founders" : "founder"}
+            </h1>
             <p className={styles.subContent}>
               It's not everyday that you have an opportunity to make the world a
               happier place. With safe place {data.url} we are going to
               completely transform the way people around us percieve and deal
               with mental health issues
             </p>
-            <h2>{data.founder.name}</h2>
+            {data.cofounder ? null : <h2>{data.founder.name}</h2>}
           </div>
           <img src={Image1} alt="svg" className={styles.svg} />
           <div className={styles.orangeBox}>
@@ -72,7 +91,7 @@ const College = (props) => {
                 Members
               </h1>
               {data.members.map((member) => (
-                <Photo name={member.name} photo={member.url} />
+                <Photo name={member.name} photo={member.url} color="white" />
               ))}
             </div>
           ) : null}

@@ -325,7 +325,7 @@
     {
       "short": "aastha",
       "name": "Aastha Tyagi",
-      "url": "Aastha Tyagi.jpg",
+      "url": "Aastha Tyagi.png",
       "content": [
         "I’m Aastha, Entrepreneur currently a final year MBBS student, an artist who is interested in Writing,Classical Music, AI. I am passionate to lead the way in  a more Patient manner, Anything related to Psychiatry and Human Mind attracts me, I feel Intuitions are nothing more and nothing less than recognition, I follow my Heart with Passion, Hoping to help others as well!"
       ],
@@ -355,6 +355,26 @@
         "Thus , I'd love to help make a difference and improve the lives of people living with a mental illness by using my voice to fight stigma, raise awareness, support and empower others."
       ],
       "region": "Mumbai"
+    },
+    {
+      "short": "lucy",
+      "name": "Lucy Gomes",
+      "url": "Lucy Gomes.png",
+      "content": [
+        "This is Lucy Gomes, an ambivert personality with a keen interest in psychology and literature. Born and brought up in New Delhi. I like reading specifically memoirs, psychological drama and thrillers.",
+        "I want to be a mental health advocate because I know the importance of spreading mental awareness especially in this day and age and want to become someone who can be of help to anyone and everyone in dire situations. I strive to remove the stigma around mental health and make the society believe it's okay to ask for help and mental illness is not something to look down upon.",
+        "I would spare no effort to help my community to make this a better place to live in."
+      ],
+      "region": "New Delhi"
+    },
+    {
+      "short": "vibhuti",
+      "name": "Vibhuti Gupta",
+      "url": "Vibhuti Gupta.png",
+      "content": [
+        "I am Vibhuti Gupta, 22, I am a medicine student and keenly interested in subjects of psychiatry and psychology. I have had my own journey of mental health and well-being- battling with stress and anxiety. Overcoming those situations and dealing with them taught me a lot about myself and about well-being in general. It taught me the importance of hope and happiness even in the most dire situations of life.   In our society today, you cannot find one single person who is not under some amount of stress or anxiety or both. The intensities are different for different people and so are the coping mechanisms. This program is an opportunity for me to learn more about the right forms of coping mechanisms to be able to help myself as well as others further... I hope to be able to contribute my share towards making our world a better place to live in.  "
+      ],
+      "region": "Noida"
     }
   ]
 }
