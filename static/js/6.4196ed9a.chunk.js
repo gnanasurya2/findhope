@@ -1,0 +1,2 @@
+(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[6],{97:function(e){e.exports=JSON.parse('{"url":"cms","name":"Center for Management Studies","founder":{"name":"Mehul Agarwal","photo":"Mehul_Agarwal.png"},"members":[]}')}}]);
+//# sourceMappingURL=6.4196ed9a.chunk.js.map
