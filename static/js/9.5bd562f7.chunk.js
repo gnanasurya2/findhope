@@ -1,0 +1,2 @@
+(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[9],{103:function(a){a.exports=JSON.parse('{"url":"delhi","name":"Delhi","founder":{"name":"Prerona Chakraborty","photo":"Prerona_Chakraborty.png"},"cofounder":[{"name":"Ishika Bhardwaj","photo":"Ishika Bhardwaj.jpg"},{"name":"Riya Aggarwal","photo":"riya_aggarwal.jpg"}],"members":[]}')}}]);
+//# sourceMappingURL=9.5bd562f7.chunk.js.map

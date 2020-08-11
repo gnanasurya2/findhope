@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[11],{102:function(a){a.exports=JSON.parse('{"url":"nita","name":"National Institute of technology Agartala","founder":{"name":"Jesse","photo":"jesse.jpeg"},"members":[{"name":"poulami","url":"poulami.jpg"},{"name":"Samadrit Sarkar","url":"Samadrit Sarkar.jpg"}]}')}}]);
-//# sourceMappingURL=11.d4f088a8.chunk.js.map
