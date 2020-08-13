@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[28],{130:function(n){!function(){var n=new Error("Cannot find module './day4.json'");throw n.code="MODULE_NOT_FOUND",n}()}}]);
-//# sourceMappingURL=28.200f346b.chunk.js.map
