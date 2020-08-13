@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[19],{133:function(a){a.exports=JSON.parse('{"url":"noida","name":"Noida","founder":{"name":"Sakshi Sharma","photo":"Sakshi Sharma.jpeg"},"members":[]}')}}]);
-//# sourceMappingURL=19.7914b86d.chunk.js.map
