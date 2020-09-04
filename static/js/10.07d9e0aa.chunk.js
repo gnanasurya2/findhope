@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[10],{106:function(a){a.exports=JSON.parse('{"url":"gargi","name":"Gargi college New Delhi","founder":{"name":"Sanya Rana","photo":"Sanya Rana.png"},"members":[]}')}}]);
-//# sourceMappingURL=10.07d9e0aa.chunk.js.map
