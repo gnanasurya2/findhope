@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[24],{109:function(a){a.exports=JSON.parse('{"url":"hcca","name":"Holy Cross College, Agartala","founder":{"name":"Debjani Bardhan Roy","photo":"Debjani Bardhan Roy.jpg"},"members":[]}')}}]);
-//# sourceMappingURL=24.fdd798ff.chunk.js.map
