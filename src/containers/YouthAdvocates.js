@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../styles/YouthAdvocates.module.css";
 import Card from "../components/Card";
 import PrimaryButton from "../components/PrimaryButton";
@@ -13,11 +13,11 @@ import DriveImage from "../asset/drive the change.svg";
 import Youthprofile from "../components/Youthprofile";
 import Data from "../helpers/youthAdvocate.json";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga";
 
 const YouthAdvocates = (props) => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+  const formRef = useRef(null);
+
   return (
     <div>
       <div className={styles.wrapper}>
@@ -26,7 +26,7 @@ const YouthAdvocates = (props) => {
           <div className={styles.bar2}></div>
           <div className={styles.circle}></div>
         </div>
-        <h1 className={styles.title}>The Mental Health Wellbeing Program</h1>
+        <h1 className={styles.title}>The Mental Health Advocate Program</h1>
         <p className={styles.content}>
           If you have experienced a mental health struggle then you know that
           the road to recovery has 3 pitfalls. Recognising what you are dealing
@@ -84,21 +84,15 @@ const YouthAdvocates = (props) => {
           want your community to suffer alone.
         </p>
         <img src={DriveImage} alt="sign up" className={styles.image} />
-        <PrimaryButton
-          style={{
-            width: "50%",
-            backgroundColor: "grey",
-            marginBottom: "40px",
-          }}
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScfLKk4OvdjBv78c9yua18qNK8wDI2hbmq1qktFg__tIJipPg/viewform"
+          target="__blank"
+          style={{ textDecoration: "none", marginBottom: "30px" }}
         >
-          <a
-            href="https://forms.gle/Sud6PfLkMkH9VTYf9"
-            target="__blank"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            Sign up
-          </a>
-        </PrimaryButton>
+          <PrimaryButton title="Signup" />
+        </a>
+
+        <form ref={formRef}></form>
         {Data.youthadvocate.map((ele) => (
           <Link
             to={`/youthadvocate/${ele.short}`}
@@ -113,3 +107,14 @@ const YouthAdvocates = (props) => {
 };
 
 export default YouthAdvocates;
+
+// useEffect(() => {
+//   window.scrollTo({ top: 0 });
+//   if (formRef) {
+//     const script = document.createElement("script");
+//     script.src = "https://cdn.razorpay.com/static/widget/payment-button.js";
+//     script.async = true;
+//     script.setAttribute("data-payment_button_id", "pl_FYxfJBUvRF7XRb");
+//     formRef.current.appendChild(script);
+//   }
+// }, [formRef]);

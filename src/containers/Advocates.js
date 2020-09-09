@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/Advocates.module.css";
 import Accordion from "../components/Accordion";
 import Data from "../helpers/youthAdvocate.json";
-import { useParams, Redirect } from "react-router-dom";
+import { useParams, Redirect, Link } from "react-router-dom";
 import PrimaryButton from "../components/PrimaryButton";
 
 const Advocates = (props) => {
@@ -62,7 +62,9 @@ const Advocates = (props) => {
           You can become a mental health advocate by enrolling in our wellbeing
           program.
         </h1>
-        <PrimaryButton title="Click here to know more" />
+        <Link to="/youthAdvocates" style={{ textDecoration: "none" }}>
+          <PrimaryButton title="Click here to know more" />
+        </Link>
       </div>
     </div>
   );

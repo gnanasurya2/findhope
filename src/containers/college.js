@@ -23,9 +23,13 @@ const College = (props) => {
             <div className={styles.circle}></div>
           </div>
           <div className={styles.content}>
-            <h1 className={styles.collegeName}>{data.name}</h1>
+            <h1 className={styles.collegeName}>
+              {data.url === "pune" ? "Pune" : data.name}
+            </h1>
             <p className={styles.subContent}>
-              Safe space built by students of {data.name}
+              {data.url === "pune"
+                ? "Safe space is a empathetic and non-judgemental space built for pune's youth to vent out and get help."
+                : `Safe space built by students of ${data.name}`}
             </p>
           </div>
           <div className={styles.founderContent}>
@@ -37,12 +41,14 @@ const College = (props) => {
                   title="Founder"
                   color="black"
                 />
-                <Photo
-                  name={data.cofounder.name}
-                  photo={data.cofounder.photo}
-                  title="Founder"
-                  color="black"
-                />
+                {data.cofounder.map((profile) => (
+                  <Photo
+                    name={profile.name}
+                    photo={profile.photo}
+                    title="Founder"
+                    color="black"
+                  />
+                ))}
               </>
             ) : (
               <img
@@ -57,7 +63,7 @@ const College = (props) => {
             </h1>
             <p className={styles.subContent}>
               It's not everyday that you have an opportunity to make the world a
-              happier place. With safe place {data.url} we are going to
+              happier place. With Safe space {data.url} we are going to
               completely transform the way people around us percieve and deal
               with mental health issues
             </p>
@@ -82,9 +88,6 @@ const College = (props) => {
             first aid and get better at dealing with common problems in life (
             from acadamic stress to relationships etc)
           </h1>
-          <div className={styles.founderContent}>
-            <PrimaryButton title="Learn more" />
-          </div>
           {data.members.length ? (
             <div className={styles.orangeBox}>
               <h1 className={styles.orangeText} style={{ marginTop: "30px" }}>

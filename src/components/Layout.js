@@ -44,7 +44,7 @@ const Layout = (props) => {
                   className={styles.link}
                   onClick={openMenuHandler}
                 >
-                  Wellbeing Program
+                  Advocate Program
                 </Link>
               </div>
               <div>
