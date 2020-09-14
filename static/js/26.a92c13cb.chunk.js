@@ -1,0 +1,2 @@
+(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[26],{127:function(n){n.exports=JSON.parse('{"url":"ca","name":"Chandigarh university","founder":{"name":"Gunjan Paneri","photo":"Gunjan Paneri.png"},"members":[]}')}}]);
+//# sourceMappingURL=26.a92c13cb.chunk.js.map
