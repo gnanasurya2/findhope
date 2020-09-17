@@ -1,2 +1,0 @@
-(this.webpackJsonpfindhope=this.webpackJsonpfindhope||[]).push([[36],{136:function(e){e.exports=JSON.parse('{"url":"noida","name":"Noida","founder":{"name":"SURBHI CHANDNA","photo":"SURBHI CHANDNA.jpg"},"members":[]}')}}]);
-//# sourceMappingURL=36.ac13ef92.chunk.js.map
