@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [gh-pages]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  trigger-lighthouse-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Trigger Lighthouse Metrics
+        uses: lighthouse-metrics/github-action@master
+        with:
+          url: https://findhope.in/
+          token: eb5417be4cca2dd3e4073c955573e34c:115fc8bb17e9a4d6b82f588f733f6ae3890d291f
