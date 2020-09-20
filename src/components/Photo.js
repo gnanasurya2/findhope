@@ -26,7 +26,7 @@ const Photo = (props) => {
   return (
     <Wrapper>
       <Image
-        src={process.env.PUBLIC_URL + `/assest/${props.photo}`}
+        src={props.url || process.env.PUBLIC_URL + `/assest/${props.photo}`}
         alt="find hope member"
       />
       <Name color={props.color}>{props.name}</Name>

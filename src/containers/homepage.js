@@ -147,16 +147,12 @@ const Homepage = (props) => {
         />
         <Testimonial data={Data} />
         <div className={styles.textContainer}>
-          <h1 className={styles.messageText}>
-            Introducing Our Wellbeing Program
-          </h1>
+          <h1 className={styles.messageText}>Mental Health Advocate Program</h1>
         </div>
         <div className={styles.youthAdvocateContainer}>
           <p className={styles.youthAdvocateTitle}>
-            Learn mental health basics that are essential for your wellbeing and
-            parallely leverage your social media to spread this knowledge for
-            your community's wellbeing. Spreading Wellbeing is a superpower too
-            !
+            Learn to recognise and apply emotional first aid to get relief from
+            Stress, Anxiety and Depression.
           </p>
 
           <img

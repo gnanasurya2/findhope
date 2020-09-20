@@ -4,6 +4,8 @@ import Layout from "./components/Layout";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import withTracker from "./withTracker";
+import EnterName from "./containers/EnterName";
+
 const Homepage = lazy(() => import("./containers/homepage"));
 const Test = lazy(() => import("./containers/Test"));
 const Testpage = lazy(() => import("./containers/Testpage"));
@@ -20,6 +22,11 @@ const FreeCounseling = lazy(() => import("./containers/FreeCounseling"));
 const College = lazy(() => import("./containers/college"));
 const Chat = lazy(() => import("./containers/Chat"));
 const CreateProfile = lazy(() => import("./containers/CreateProfile"));
+const ProfileMaker = lazy(() => import("./containers/ProfileMaker"));
+const Login = lazy(() => import("./containers/Login"));
+const SafeSpace = lazy(() => import("./containers/SafeSpace"));
+const MemberProfile = lazy(() => import("./containers/Memberprofile"));
+
 function App() {
   return (
     <div className="App">
@@ -67,7 +74,20 @@ function App() {
               <Route path="/blogger/:name">
                 <Blogger />
               </Route>
+              <Route exact path="/login" component={Login} />
+              <Route
+                exact
+                path="/profilemaker/:title"
+                component={ProfileMaker}
+              />
+              <Route
+                exact
+                path="/memberprofile/:title"
+                component={MemberProfile}
+              />
               <Route exact path="/chat" component={withTracker(Chat)} />
+              <Route exact path="/safespace" component={SafeSpace} />
+              <Route exact path="/entername" component={EnterName} />
               <Route exact path="/:name" component={College} />
               <Route exact path="/" component={withTracker(Homepage)} />
             </Switch>

@@ -17,7 +17,16 @@ import ReactGA from "react-ga";
 
 const YouthAdvocates = (props) => {
   const formRef = useRef(null);
-
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    if (formRef) {
+      const script = document.createElement("script");
+      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+      script.async = true;
+      script.setAttribute("data-payment_button_id", "pl_FeVZV32yRCw9kG");
+      formRef.current.appendChild(script);
+    }
+  }, [formRef]);
   return (
     <div>
       <div className={styles.wrapper}>
@@ -107,14 +116,3 @@ const YouthAdvocates = (props) => {
 };
 
 export default YouthAdvocates;
-
-// useEffect(() => {
-//   window.scrollTo({ top: 0 });
-//   if (formRef) {
-//     const script = document.createElement("script");
-//     script.src = "https://cdn.razorpay.com/static/widget/payment-button.js";
-//     script.async = true;
-//     script.setAttribute("data-payment_button_id", "pl_FYxfJBUvRF7XRb");
-//     formRef.current.appendChild(script);
-//   }
-// }, [formRef]);
