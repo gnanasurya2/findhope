@@ -15,7 +15,8 @@
         "Parent child relation",
         "Nutrition and psychology",
         "Mental health and well-being"
-      ]
+      ],
+      "short": "Cooking is my Therapy"
     },
     {
       "name": "Sahithi Mannar",
@@ -26,7 +27,8 @@
       "email": "sahithimannartb@gmail.com",
       "photo": "sahithi_mannar.jpg",
       "url": "sahithi",
-      "interest": []
+      "interest": [],
+      "short": "Dancing is my Therapy"
     },
     {
       "name": "Swetha Desiraju",
@@ -37,7 +39,8 @@
       "email": "swethadesiraju@gmail.com",
       "photo": "swetha_desiraju.jpg",
       "url": "swetha",
-      "interest": []
+      "interest": [],
+      "short": "Tea is my Therapy"
     },
     {
       "name": "Riya Aggarwal",
@@ -48,7 +51,8 @@
       "email": "riyaqms@gmail.com",
       "photo": "riya_aggarwal.jpg",
       "url": "riya",
-      "interest": []
+      "interest": [],
+      "short": "Memes is my Therapy"
     },
     {
       "name": "Jahnvi Kumar",
@@ -59,7 +63,8 @@
       "email": "",
       "photo": "Jahnvi_Kumar.png",
       "url": "jahnvi",
-      "interest": ["Trauma", "Childhood disabilities", "Parent child relation"]
+      "interest": ["Trauma", "Childhood disabilities", "Parent child relation"],
+      "short": "Singing is my Therapy"
     },
     {
       "name": "Mokshita batra",
@@ -75,7 +80,8 @@
         "Mental health and well-being",
         "Anxiety",
         "Depression"
-      ]
+      ],
+      "short": "Cooking is my Therapy"
     },
     {
       "name": "Prerona Chakraborty",
@@ -86,7 +92,8 @@
       "email": "",
       "photo": "Prerona_Chakraborty.png",
       "url": "prerona",
-      "interest": []
+      "interest": [],
+      "short": "Gym is my Therapy"
     },
     {
       "name": "Prarthana Sagar",
@@ -103,7 +110,8 @@
         "Positive Psychology",
         "Holistic well-being",
         "Existentialism"
-      ]
+      ],
+      "short": "Gardening is my Therapy"
     },
     {
       "name": "Jhanvi Kundra",
@@ -115,7 +123,8 @@
       "about": [
         "I am a budding psychologist, hypnotherapist and art based therapist."
       ],
-      "interest": ["Trama", " anxiety", " mental health & wellbeing."]
+      "interest": ["Trama", " anxiety", " mental health & wellbeing."],
+      "short": "Painting is my Therapy"
     },
     {
       "name": "Kunjam Khurana",
@@ -133,7 +142,8 @@
         " mental health and wellbeing",
         " relationship counseling",
         " career counseling"
-      ]
+      ],
+      "short": "Cooking is my Therapy"
     },
     {
       "name": "Radhika Goel",
@@ -151,7 +161,8 @@
         " Depression",
         " Relationship issues",
         " Cognitive Behavioral Therapy"
-      ]
+      ],
+      "short": "Drawing is my Therapy"
     },
     {
       "name": "Ishika Bhardwaj",
@@ -165,7 +176,8 @@
         "Trauma",
         " childhood disabilities",
         " mental health and well-being"
-      ]
+      ],
+      "short": "Petting is my Therapy"
     },
     {
       "name": "Shivangi Singh",
@@ -183,7 +195,8 @@
         " depression",
         " self harm",
         " mental health and well being."
-      ]
+      ],
+      "short": "Cooking is my Therapy"
     },
     {
       "name": "Sakshi Jain",
@@ -202,7 +215,8 @@
         " mental health & well being",
         " stress",
         " Anxiety."
-      ]
+      ],
+      "short": "Painting is my Therapy"
     },
     {
       "name": "Prachi Pandey",
@@ -219,7 +233,8 @@
         " dancing",
         " writing ",
         " interacting with people."
-      ]
+      ],
+      "short": "Dancing is my Therapy"
     },
     {
       "name": "Mithra K",
@@ -238,7 +253,8 @@
         " Sexuality and Gender Dynamics",
         " Mental health and well being",
         " Relationships"
-      ]
+      ],
+      "short": "Travelling is my Therapy"
     },
     {
       "name": "SravyaNanda",
@@ -254,7 +270,8 @@
         "Trauma",
         " Relationship concerns",
         "Mental health concerns and well being"
-      ]
+      ],
+      "short": "Yoga is my Therapy"
     },
     {
       "name": "Shreeja jain",
@@ -272,7 +289,8 @@
         " parent child relations",
         " esteem",
         " mental health and well-being"
-      ]
+      ],
+      "short": "Playing Piano is my Therapy"
     },
     {
       "name": "Vasundhara Joshi",
@@ -291,7 +309,8 @@
         " Nutrition and Psychology",
         " Parent Child Relation",
         " Trauma."
-      ]
+      ],
+      "short": "Travelling is my Therapy"
     },
     {
       "name": "Sakshi Sharma",
@@ -307,7 +326,8 @@
       ],
       "interest": [
         "Mental health and well being\nChildhood disabilities\nParent child relation\n"
-      ]
+      ],
+      "short": "Music is my Therapy"
     },
     {
       "name": "Khushi Joshi",
@@ -326,7 +346,8 @@
         " depression",
         " anxiety",
         " body image and self-love."
-      ]
+      ],
+      "short": "Camping is my Therapy"
     },
     {
       "name": "SURBHI CHANDNA",
@@ -342,7 +363,8 @@
         "Adolescent psychology",
         " Child psychology",
         "mental health and well being & parent child relation."
-      ]
+      ],
+      "short": "Swimming is my Therapy"
     },
     {
       "name": "Tanvi Jajoria",
@@ -360,7 +382,8 @@
         " mental well-being",
         " academic distress",
         " stress management"
-      ]
+      ],
+      "short": "Playing with dogs is my Therapy"
     },
     {
       "name": "Simran Khurmi",
@@ -379,7 +402,8 @@
         " clinical psychology",
         "  psychological well being",
         " positive psychology"
-      ]
+      ],
+      "short": "Doodling is my Therapy"
     },
     {
       "name": "Upasna Dogra",
@@ -391,7 +415,8 @@
       "about": [
         "Well this is a tough one. I am a very empathetic and understanding person. I try to live in the present. You can always spot me petting a dog, even if it's 3 a.m. Besides that, drawing is like a therapy for me."
       ],
-      "interest": ["Mental health and well-being"]
+      "interest": ["Mental health and well-being"],
+      "short": "Comedy is my Therapy"
     }
   ]
 }

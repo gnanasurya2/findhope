@@ -3,7 +3,6 @@ import styles from "../styles/FreeCounseling.module.css";
 import Input from "../components/Input";
 import RadioButton from "../components/RadioButton";
 import { Redirect } from "react-router-dom";
-import { useEffect } from "react";
 
 const FreeCounseling = (props) => {
   const [name, setName] = useState("");
@@ -14,7 +13,6 @@ const FreeCounseling = (props) => {
   const [languages] = useState(["English", "Hindi", "Telugu"]);
   const [final, setFinal] = useState("English");
   const [redirect, setRedirect] = useState(false);
-  const [checkboxes, setCheckboxes] = useState([false, false, false]);
   const [visible, setVisible] = useState([true, false, false]);
   const [age, setAge] = useState();
   const changeVisible = (index) => {
@@ -73,11 +71,7 @@ const FreeCounseling = (props) => {
     setSelected(sel);
     setFinal(languages[index]);
   };
-  const checkboxHandler = (index) => {
-    const check = [...checkboxes];
-    check[index] = !check[index];
-    setCheckboxes(check);
-  };
+
   return (
     <div className={styles.wrapper}>
       {redirect ? <Redirect path="/freecounseling" /> : null}

@@ -13,7 +13,6 @@ import DriveImage from "../asset/drive the change.svg";
 import Youthprofile from "../components/Youthprofile";
 import Data from "../helpers/youthAdvocate.json";
 import { Link } from "react-router-dom";
-import ReactGA from "react-ga";
 
 const YouthAdvocates = (props) => {
   const formRef = useRef(null);

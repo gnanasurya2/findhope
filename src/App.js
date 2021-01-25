@@ -26,6 +26,7 @@ const ProfileMaker = lazy(() => import("./containers/ProfileMaker"));
 const Login = lazy(() => import("./containers/Login"));
 const SafeSpace = lazy(() => import("./containers/SafeSpace"));
 const MemberProfile = lazy(() => import("./containers/Memberprofile"));
+const NewTest = lazy(() => import("./containers/NewTest"));
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function App() {
                 path="/memberprofile/:title"
                 component={MemberProfile}
               />
+              <Route exact path="/mhscan" component={NewTest} />
               <Route exact path="/chat" component={withTracker(Chat)} />
               <Route exact path="/safespace" component={SafeSpace} />
               <Route exact path="/entername" component={EnterName} />

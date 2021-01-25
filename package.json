@@ -45,5 +45,6 @@
     "cname-webpack-plugin": "^2.0.1",
     "gh-pages": "^2.2.0"
   },
-  "proxy": "https://localhost:8000"
+  "proxy": "https://localhost:8000",
+  "secure": false
 }

@@ -49,6 +49,16 @@ const Test = (props) => {
   }, [testName]);
   const googleLoginHandler = (response) => {
     setLoading(true);
+    if (testName === "depression") {
+      console.log("inside", response.profileObj.email);
+      sessionStorage.setItem("email", response.profileObj.email);
+      sessionStorage.setItem(
+        "name",
+        response.profileObj.name.split(" ").join("")
+      );
+      setRedirect(true);
+      return;
+    }
     fetch(
       `https://cors-anywhere.herokuapp.com/${formLink}?${
         entryValues[0]

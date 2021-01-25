@@ -18,6 +18,20 @@ const LI = styled.li`
   text-align: center;
   font-weight: bold;
 `;
+
+const entryoptionsdep = [
+  "entry.1758988128",
+  "entry.1916594965",
+  "entry.1099754452",
+  "entry.1080084900",
+  "entry.1908846467",
+  "entry.432366185",
+  "entry.1335405081",
+  "entry.2124050225",
+  "entry.450037869",
+  "entry.1344163733",
+  "entry.1575855845",
+];
 const Result = (props) => {
   const [tips, setTips] = useState([false, true, true]);
   const [title, setTitle] = useState("");
@@ -26,7 +40,35 @@ const Result = (props) => {
   const [data, setData] = useState([]);
   const [percentile, setPercentile] = useState(1);
   const params = useParams();
-
+  useEffect(() => {
+    console.log(params.testname);
+    if (params.testname === "Depression") {
+      const values = [
+        "Not+at+all",
+        "Several+days",
+        "More+than+half+days",
+        "Nearly+everyday",
+      ];
+      const name = sessionStorage.getItem("name");
+      const email = sessionStorage.getItem("email");
+      const data = sessionStorage.getItem("data").split(",");
+      console.log(name, email, data.length);
+      let link = `https://docs.google.com/forms/d/e/1FAIpQLSdaUun4-lKr9hkPmjtLQsbl24SPO3-Gh5OS8_JzokqGH8eERA/formResponse?${entryoptionsdep[0]}=${name}&${entryoptionsdep[1]}=${email}`;
+      data.forEach((ele, index) => {
+        link += `&${entryoptionsdep[index + 2]}=${values[+ele]}`;
+        console.log(link.length);
+      });
+      console.log(link);
+      fetch(`https://cors-anywhere.herokuapp.com/${link}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "xml",
+        },
+      })
+        .then(() => console.log("uploaded"))
+        .catch((err) => alert(err.message));
+    }
+  }, []);
   useEffect(() => {
     let s = params.score;
     let str;

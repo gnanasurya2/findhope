@@ -74,6 +74,15 @@ const Layout = (props) => {
                   Blog
                 </Link>
               </div>
+              <div>
+                <Link
+                  to="/mhscan"
+                  className={styles.link}
+                  onClick={openMenuHandler}
+                >
+                  Mental Health Scan
+                </Link>
+              </div>
             </span>
           </div>
         </animated.nav>

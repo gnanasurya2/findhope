@@ -3,7 +3,7 @@ import styles from "../styles/CreateProfile.module.css";
 import Input from "../components/Input";
 import Button from "../components/PrimaryButton";
 import firebase from "../helpers/firebase";
-import { Redirect, useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import Loader from "../components/Loader";
 
 const CreateProfile = (props) => {
@@ -15,7 +15,6 @@ const CreateProfile = (props) => {
   const [redirect, setRedirect] = useState(false);
   const [loading, setLoading] = useState(false);
   const db = firebase.firestore();
-  const history = useHistory();
 
   const paymentHandler = () => {
     setLoading(true);

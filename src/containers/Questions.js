@@ -41,6 +41,21 @@ const Questions = (props) => {
       setQuestions(questionsData.anxiety);
     }
   }, [setQuestions, testname]);
+  useEffect(() => {
+    console.log(data.length, questions.length);
+    if (questions.length & (data.length === questions.length)) {
+      setRedirect(true);
+      console.log(data, "final");
+      sessionStorage.setItem("data", data.toString());
+      let final = data.map((ele, index) => [ele, index]);
+      final = final.sort((a, b) => b[0] - a[0]).splice(0, 3);
+      let value = 0;
+      for (let ele of final) {
+        value = value * 10 + ele[1];
+      }
+      setTips(value);
+    }
+  }, [data]);
   const clickHandler = (id) => {
     if (question < questions.length) {
       setProgress((state) => state + jump);
@@ -52,16 +67,7 @@ const Questions = (props) => {
       }
       setData(data.concat(id));
     }
-    if (question === questions.length - 1) {
-      setRedirect(true);
-      let final = data.map((ele, index) => [ele, index]);
-      final = final.sort((a, b) => b[0] - a[0]).splice(0, 3);
-      let value = 0;
-      for (let ele of final) {
-        value = value * 10 + ele[1];
-      }
-      setTips(value);
-    }
+    console.log(question - 1, questions.length, id);
   };
   return (
     <div>

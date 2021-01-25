@@ -9,7 +9,6 @@ import Input from "../components/Input";
 const MemberProfile = (props) => {
   const [loading, setLoading] = useState(false);
   const [paymentId, setPaymentId] = useState("");
-  const [data, setData] = useState();
   const db = firebase.firestore();
   const history = useHistory();
   const { title } = useParams();

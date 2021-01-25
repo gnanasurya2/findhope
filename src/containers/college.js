@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "../styles/college.module.css";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import PrimaryButton from "../components/PrimaryButton";
 import Photo from "../components/Photo";
 import Image1 from "../asset/humaaans1.png";
 import Image2 from "../asset/humaaans2.png";
@@ -24,7 +23,7 @@ const College = (props) => {
           console.log("doesn't exist");
         }
       });
-  }, []);
+  }, [db, name]);
   return (
     <div className={styles.outerWrapper}>
       {data ? (

@@ -27,7 +27,7 @@ const SafeSpace = (props) => {
           });
         }
       });
-  }, []);
+  }, [db]);
   return (
     <div className={styles.wrapper}>
       {data ? (

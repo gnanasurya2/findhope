@@ -66,7 +66,7 @@ const PeerCounsellor = (props) => {
         </div>
         <Counsellor
           name={Data.peerCounsellor[index].name}
-          qualification={Data.peerCounsellor[index].qualification}
+          qualification={Data.peerCounsellor[index].short}
           src={
             process.env.PUBLIC_URL +
             `/assest/${Data.peerCounsellor[index].photo}`
