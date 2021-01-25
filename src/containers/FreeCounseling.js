@@ -106,7 +106,7 @@ const FreeCounseling = (props) => {
           />
           <Input
             title="Whatsapp Number*"
-            content="(Therapy is done over whatsapp and your number is perfectly safe)"
+            content="(Free emotional support is done over whatsapp and your number is perfectly safe)"
             placeholder="Phone"
             value={number}
             onChangeText={(event) => setNumber(event.target.value)}
