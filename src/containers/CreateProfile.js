@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/CreateProfile.module.css";
 import Input from "../components/Input";
 import Button from "../components/PrimaryButton";
@@ -14,7 +14,18 @@ const CreateProfile = (props) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
   const [loading, setLoading] = useState(false);
+<<<<<<< HEAD
   const db = firebase.firestore();
+=======
+  const [Firebase, setFirebase] = useState(null);
+  const [db, setDb] = useState(null);
+  useEffect(() => {
+    firebase.then((firebase) => {
+      setDb(firebase.firestore());
+      setFirebase(firebase);
+    });
+  }, []);
+>>>>>>> ed107f6b349cb8c92e9e423984ee3d57f18f6eba
 
   const paymentHandler = () => {
     setLoading(true);
@@ -25,6 +36,7 @@ const CreateProfile = (props) => {
         if (querySnapshot.size) {
           querySnapshot.forEach((doc) => {
             alert("payment_id is already in use");
+            setLoading(false);
           });
         } else {
           fetch(
@@ -57,8 +69,7 @@ const CreateProfile = (props) => {
     } else if (password !== confirmPassword) {
       alert("passwords don't match");
     } else {
-      firebase
-        .auth()
+      Firebase.auth()
         .createUserWithEmailAndPassword(name, password)
         .then((data) => {
           db.collection("payments")

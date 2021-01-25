@@ -11,10 +11,12 @@ const ProfileMaker = (props) => {
   const [redirect, setRedirect] = useState(false);
   const [name, setName] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [db, setDb] = useState(null);
   const { title } = useParams();
-  const db = firebase.firestore();
   const history = useHistory();
-
+  useEffect(() => {
+    firebase.then((firebase) => setDb(firebase.firestore()));
+  }, []);
   const submitHandler = (path) => {
     if (!toggle) {
       if (!name.length) {

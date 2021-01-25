@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/CreateProfile.module.css";
 import Button from "../components/PrimaryButton";
 import Loader from "../components/Loader";
@@ -9,9 +9,10 @@ import Input from "../components/Input";
 const MemberProfile = (props) => {
   const [loading, setLoading] = useState(false);
   const [paymentId, setPaymentId] = useState("");
-  const db = firebase.firestore();
+  const [db, setDb] = useState(null);
   const history = useHistory();
   const { title } = useParams();
+  useEffect(() => firebase.then((firebase) => setDb(firebase.firestore())), []);
   const ClickHandler = () => {
     setLoading(true);
     db.collection("payments")

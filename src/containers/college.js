@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../styles/college.module.css";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
@@ -10,8 +10,26 @@ import firebase from "../helpers/firebase";
 const College = (props) => {
   const { name } = useParams();
   const [data, setData] = useState(null);
-  const db = firebase.firestore();
+  const [db, setDb] = useState(null);
+  const formRef = useRef(null);
+  useEffect(
+    () => console.log(firebase.then((firebase) => setDb(firebase.firestore()))),
+    []
+  );
   useEffect(() => {
+    window.scrollTo({ top: 0 });
+    console.log(formRef);
+    if (formRef.current && data) {
+      console.log(formRef);
+      const script = document.createElement("script");
+      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+      script.async = true;
+      script.setAttribute("data-payment_button_id", "pl_FeVZV32yRCw9kG");
+      formRef.current.appendChild(script);
+    }
+  }, [formRef, data]);
+  useEffect(() => {
+<<<<<<< HEAD
     db.collection("safespace")
       .doc(name)
       .get()
@@ -23,6 +41,20 @@ const College = (props) => {
           console.log("doesn't exist");
         }
       });
+=======
+    if (db) {
+      db.collection("safespace")
+        .doc(name)
+        .get()
+        .then((doc) => {
+          if (doc.exists) {
+            setData({ ...doc.data() });
+          } else {
+            console.log("doesn't exist");
+          }
+        });
+    }
+>>>>>>> ed107f6b349cb8c92e9e423984ee3d57f18f6eba
   }, [db, name]);
   return (
     <div className={styles.outerWrapper}>
@@ -90,6 +122,25 @@ const College = (props) => {
                 ))}
             </div>
           ) : null}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h1>To join a safespace</h1>
+            <form
+              ref={formRef}
+              style={{
+                width: "200px",
+                height: "50px",
+                marginTop: "30px",
+                marginBottom: "30px",
+              }}
+            ></form>
+          </div>
         </div>
       ) : null}
     </div>

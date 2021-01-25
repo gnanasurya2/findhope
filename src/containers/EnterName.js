@@ -7,7 +7,10 @@ import styles from "../styles/profileMaker.module.css";
 
 const EnterName = (props) => {
   const [name, setName] = useState();
-  const db = firebase.firestore();
+  const [db, setDb] = useState();
+  useEffect(() => {
+    firebase.then((firebase) => setDb(firebase.firestore()));
+  }, []);
   const history = useHistory();
 
   useEffect(() => {

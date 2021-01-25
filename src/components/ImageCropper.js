@@ -12,7 +12,10 @@ const ImageCropper = (props) => {
   const previewCanvasRef = useRef(null);
   const [crop, setCrop] = useState({ unit: "px", width: 100, aspect: 1 });
   const [completedCrop, setCompletedCrop] = useState(null);
-
+  const [Firebase, setFirebase] = useState(null);
+  useEffect(() => {
+    firebase.then((firebase) => setFirebase(firebase));
+  }, []);
   useEffect(() => {
     if (!completedCrop || !previewCanvasRef.current || !imgRef.current) {
       return;
@@ -81,8 +84,7 @@ const ImageCropper = (props) => {
     const canvas = getResizedCanvas(previewCanvas, crop.width, crop.height);
     canvas.toBlob(
       (blob) => {
-        const storageRef = firebase
-          .storage()
+        const storageRef = Firebase.storage()
           .ref()
           .child(props.name + ".png");
         storageRef.put(blob).then((snapshot) => {
