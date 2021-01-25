@@ -3,7 +3,6 @@ import styles from "../styles/FreeCounseling.module.css";
 import Input from "../components/Input";
 import RadioButton from "../components/RadioButton";
 import { Redirect } from "react-router-dom";
-import { useEffect } from "react";
 
 const FreeCounseling = (props) => {
   const [name, setName] = useState("");

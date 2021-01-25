@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import styles from "../styles/Blog.module.css";
-import styled from "styled-components";
 
 // const H2 = styled.h2`
 //   font-size: 40px;
@@ -57,7 +56,7 @@ const Blog = () => {
       console.log(data);
       setData(data);
     });
-  }, []);
+  }, [name]);
   const createContent = (content) => {
     const ReactContent = content.map((element) =>
       React.createElement(

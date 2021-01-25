@@ -9,7 +9,7 @@ const Blogger = (props) => {
   const [profile, setProfile] = useState(null);
   useEffect(() => {
     setProfile(data.blogger.filter((ele) => ele.url === name)[0]);
-  }, []);
+  }, [name]);
   return (
     <div>
       {profile ? (

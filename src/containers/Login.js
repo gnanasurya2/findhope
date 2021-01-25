@@ -11,21 +11,20 @@ const Login = (props) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
-
+  const [Firebase, setFirebase] = useState(null);
   const history = useHistory();
   useEffect(() => {
     sessionStorage.removeItem("token");
+    firebase.then((firebase) => setFirebase(firebase));
   }, []);
   const loginHandler = () => {
     setLoading(true);
     sessionStorage.setItem("email", email);
-    firebase
-      .auth()
+    Firebase.auth()
       .signInWithEmailAndPassword(email, password)
       .then((data) => {
         sessionStorage.setItem("token", data.user.refreshToken);
-        firebase
-          .firestore()
+        Firebase.firestore()
           .collection("safespace")
           .where("email", "==", email)
           .get()

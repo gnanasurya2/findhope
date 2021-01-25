@@ -6,28 +6,32 @@ import Photo from "../components/Photo";
 
 const SafeSpace = (props) => {
   const [data, setData] = useState(null);
-  const db = firebase.firestore();
-
+  const [db, setDb] = useState(null);
+  useEffect(() => {
+    firebase.then((firebase) => setDb(firebase.firestore()));
+  }, []);
   useEffect(() => {
     const email = sessionStorage.getItem("email");
-    db.collection("safespace")
-      .where("email", "==", email)
-      .get()
-      .then((querySnapshot) => {
-        if (!querySnapshot.size) {
-          alert("account not found");
-        } else {
-          querySnapshot.forEach((doc) => {
-            setData({ name: doc.id, ...doc.data() });
-            console.log(doc.data());
-            sessionStorage.setItem(
-              "data",
-              JSON.stringify({ name: doc.id, ...doc.data() })
-            );
-          });
-        }
-      });
-  }, []);
+    if (db) {
+      db.collection("safespace")
+        .where("email", "==", email)
+        .get()
+        .then((querySnapshot) => {
+          if (!querySnapshot.size) {
+            alert("account not found");
+          } else {
+            querySnapshot.forEach((doc) => {
+              setData({ name: doc.id, ...doc.data() });
+              console.log(doc.data());
+              sessionStorage.setItem(
+                "data",
+                JSON.stringify({ name: doc.id, ...doc.data() })
+              );
+            });
+          }
+        });
+    }
+  }, [db]);
   return (
     <div className={styles.wrapper}>
       {data ? (

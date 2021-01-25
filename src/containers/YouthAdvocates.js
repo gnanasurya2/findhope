@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styles from "../styles/YouthAdvocates.module.css";
 import Card from "../components/Card";
 import PrimaryButton from "../components/PrimaryButton";
@@ -13,20 +13,8 @@ import DriveImage from "../asset/drive the change.svg";
 import Youthprofile from "../components/Youthprofile";
 import Data from "../helpers/youthAdvocate.json";
 import { Link } from "react-router-dom";
-import ReactGA from "react-ga";
 
 const YouthAdvocates = (props) => {
-  const formRef = useRef(null);
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-    if (formRef) {
-      const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-      script.async = true;
-      script.setAttribute("data-payment_button_id", "pl_FeVZV32yRCw9kG");
-      formRef.current.appendChild(script);
-    }
-  }, [formRef]);
   return (
     <div>
       <div className={styles.wrapper}>
@@ -76,7 +64,7 @@ const YouthAdvocates = (props) => {
         <Card
           image={MoneyImage}
           alt="money"
-          title="Costs ₹ 150 only"
+          title="Costs ₹ 199 only"
           color="#f6d8a6"
         />
         <Card
@@ -101,7 +89,6 @@ const YouthAdvocates = (props) => {
           <PrimaryButton title="Signup" />
         </a>
 
-        <form ref={formRef}></form>
         {Data.youthadvocate.map((ele) => (
           <Link
             to={`/youthadvocate/${ele.short}`}

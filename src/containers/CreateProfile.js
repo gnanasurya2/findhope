@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/CreateProfile.module.css";
 import Input from "../components/Input";
 import Button from "../components/PrimaryButton";
 import firebase from "../helpers/firebase";
-import { Redirect, useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import Loader from "../components/Loader";
 
 const CreateProfile = (props) => {
@@ -14,8 +14,14 @@ const CreateProfile = (props) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
   const [loading, setLoading] = useState(false);
-  const db = firebase.firestore();
-  const history = useHistory();
+  const [Firebase, setFirebase] = useState(null);
+  const [db, setDb] = useState(null);
+  useEffect(() => {
+    firebase.then((firebase) => {
+      setDb(firebase.firestore());
+      setFirebase(firebase);
+    });
+  }, []);
 
   const paymentHandler = () => {
     setLoading(true);
@@ -26,6 +32,7 @@ const CreateProfile = (props) => {
         if (querySnapshot.size) {
           querySnapshot.forEach((doc) => {
             alert("payment_id is already in use");
+            setLoading(false);
           });
         } else {
           fetch(
@@ -58,8 +65,7 @@ const CreateProfile = (props) => {
     } else if (password !== confirmPassword) {
       alert("passwords don't match");
     } else {
-      firebase
-        .auth()
+      Firebase.auth()
         .createUserWithEmailAndPassword(name, password)
         .then((data) => {
           db.collection("payments")
