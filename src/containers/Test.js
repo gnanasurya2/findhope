@@ -50,8 +50,7 @@ const Test = (props) => {
   const googleLoginHandler = (response) => {
     setLoading(true);
     if (testName === "depression") {
-      console.log("inside", response.profileObj.email);
-      sessionStorage.setItem("email", response.profileObj.email);
+      sessionStorage.setItem("testemail", response.profileObj.email);
       sessionStorage.setItem(
         "name",
         response.profileObj.name.split(" ").join("")

@@ -29,19 +29,6 @@ const College = (props) => {
     }
   }, [formRef, data]);
   useEffect(() => {
-<<<<<<< HEAD
-    db.collection("safespace")
-      .doc(name)
-      .get()
-      .then((doc) => {
-        if (doc.exists) {
-          setData({ ...doc.data() });
-          console.log(doc.data(), doc.id);
-        } else {
-          console.log("doesn't exist");
-        }
-      });
-=======
     if (db) {
       db.collection("safespace")
         .doc(name)
@@ -54,7 +41,6 @@ const College = (props) => {
           }
         });
     }
->>>>>>> ed107f6b349cb8c92e9e423984ee3d57f18f6eba
   }, [db, name]);
   return (
     <div className={styles.outerWrapper}>

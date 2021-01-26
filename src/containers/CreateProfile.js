@@ -14,9 +14,6 @@ const CreateProfile = (props) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
   const [loading, setLoading] = useState(false);
-<<<<<<< HEAD
-  const db = firebase.firestore();
-=======
   const [Firebase, setFirebase] = useState(null);
   const [db, setDb] = useState(null);
   useEffect(() => {
@@ -25,7 +22,6 @@ const CreateProfile = (props) => {
       setFirebase(firebase);
     });
   }, []);
->>>>>>> ed107f6b349cb8c92e9e423984ee3d57f18f6eba
 
   const paymentHandler = () => {
     setLoading(true);
