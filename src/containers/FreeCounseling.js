@@ -43,7 +43,7 @@ const FreeCounseling = (props) => {
     if (visible[1]) {
       changeVisible(2);
       fetch(
-        `https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/u/3/d/e/1FAIpQLScLp0GxKSMF9I9b2rhlU-BCBmGAm9QVfcsiBA-fChOk19N5_w/formResponse?entry.455918560=${name}&entry.2020669080=${email}&entry.1690252233=${number}&entry.1628414300=${final}&entry.788657994=${description}`,
+        `https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLScLp0GxKSMF9I9b2rhlU-BCBmGAm9QVfcsiBA-fChOk19N5_w/formResponse?entry.455918560=${name}&entry.2020669080=${email}&entry.1690252233=${number}&entry.677116190=18&entry.2130726129=31&entry.1628414300=${final}&entry.788657994=${description}`,
         {
           type: "POST",
           headers: { Content: "xml" },
@@ -56,6 +56,7 @@ const FreeCounseling = (props) => {
           setNumber("");
           setDescription("");
           setSelected([true, false, false]);
+          console.log("submitter");
           setTimeout(() => setRedirect(true), 300);
         })
         .catch(() => {
@@ -150,7 +151,9 @@ const FreeCounseling = (props) => {
         </React.Fragment>
       ) : null}
       {visible[2] ? (
-        <h1 className={styles.finalTitle}>Your response has been recorded</h1>
+        <h1 className={styles.finalTitle}>
+          Please wait we are recording your response
+        </h1>
       ) : null}
       {!visible[2] ? (
         <div className={styles.buttonWrapper} onClick={submitHandler}>
